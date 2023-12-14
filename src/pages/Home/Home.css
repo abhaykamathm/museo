@@ -4,17 +4,17 @@
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  font-family: var(--robot);
+  overflow-y: auto;
 }
 
 #home-container .layer {
-  height: 100%;
+  height: fit-content;
   width: 100%;
-  padding: 1.25rem 0.75rem;
-  font-family: var(--robot);
-  opacity: 0.95;
+  padding: 1rem 0.25rem;
+  /* opacity: 0.95; */
   background: linear-gradient(0deg, #141414 33.64%, rgba(20, 20, 20, 0) 100%),
-    linear-gradient(0deg, #141414 27.7%, rgba(20, 20, 20, 0) 54.45%);
-  overflow-y: auto;
+    linear-gradient(0deg, #141414 27.7%, rgba(20, 20, 20, 0) 84.45%);
 }
 
 #home-container #home-main {
@@ -48,11 +48,21 @@
   border-radius: 0.5rem;
 }
 
+#home-container #home-main .live-paintings-container {
+}
+
+#home-container #home-main .live-paintings-container .collection-name {
+  padding: 0 1rem;
+  padding-top: 2rem;
+  font-weight: 500;
+  color: #e8e8e8;
+}
+
 #home-container #home-main .live-paintings {
+  height: 16rem;
+  width: 100%;
   display: flex;
   gap: 1rem;
-  width: 100%;
-  height: 16rem;
   overflow: auto;
   overflow-y: hidden;
   padding: 1rem;
@@ -86,18 +96,35 @@
   width: 1.25rem;
 }
 
-#home-container #home-main .live-paintings .img-container:hover {
+#home-container #home-main .live-paintings .img-container .auction_piece:hover {
   border: 2px solid #ccc;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   transform: scale(1.01);
   box-shadow: 0px 0px 16px 0px rgba(255, 202, 96, 0.5);
   cursor: pointer;
 }
 
-#home-container #home-main .live-paintings .img-container img {
+#home-container #home-main .live-paintings .img-container > img {
   height: 100%;
   width: 30vw;
   object-fit: cover;
   object-position: center;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+#home-container #home-main .live-paintings .img-container .auction-piece-name {
+  position: absolute;
+  color: #e8e8e8;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 1rem;
+  background: linear-gradient(
+    23deg,
+    #141414 21.95%,
+    rgba(20, 20, 20, 0) 172.95%
+  );
+
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }

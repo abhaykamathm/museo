@@ -8,6 +8,7 @@ export function useGlobalInfo() {
 
 export function GlobalProvider({ children }) {
   const [state, setState] = useState("M Abhay Kamath");
+  const [landingView, setLandingView] = useState("list"); //gallery, carousel, list views
 
   return (
     <GlobalContext.Provider
@@ -15,6 +16,10 @@ export function GlobalProvider({ children }) {
         state,
         changeState: (new_state) => {
           setState(new_state);
+        },
+        landingView,
+        changeLandingView: (new_view) => {
+          setLandingView(new_view);
         },
       }}
     >

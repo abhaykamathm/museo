@@ -1,20 +1,37 @@
 :root {
+  --primary-color: #2d0043;
   --primary-background: linear-gradient(
-    180deg,
-    #520079 0%,
-    #520079 0%,
-    #520079 0%,
-    #520079 0%,
-    #520079 0%,
-    #520079 0%,
-    #520079 0.01%,
-    #080609 100%
+    181deg,
+    #390a4f 0.5%,
+    #520079 0.5%,
+    #520079 0.5%,
+    #520079 0.5%,
+    #520079 0.5%,
+    #520079 0.5%,
+    #351840 0.51%,
+    #17071f 99.5%
   );
   --robot: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "supravitally"; /* Choose a name for your font */
+  src: url("/fonts/supravitally.otf") format("otf"),
+    url("./fonts/supravitally.ttf") format("ttf");
+  /* Add additional formats if needed for cross-browser compatibility */
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+}
+
+input {
+  font-family: var(--robot);
 }

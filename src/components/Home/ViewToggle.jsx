@@ -1,14 +1,43 @@
 import React from "react";
-import CarouselView from "./CarouselView.svg";
-import GalleryView from "./GalleryView.svg";
-import ListView from "./ListView.svg";
+import CarouselView from "./Images/CarouselView.svg";
+import GalleryView from "./Images/GalleryView.svg";
+import ListView from "./Images/ListView.svg";
+import { useGlobalInfo } from "../../contexts/globalContext";
 
 function ViewToggle() {
+  const context = useGlobalInfo();
   return (
     <div className="view-toggle-container">
-      <img src={GalleryView} />
-      <img src={CarouselView} />
-      <img src={ListView} />
+      <img
+        style={{
+          backgroundColor:
+            context.landingView === "gallery" ? "var(--primary-color)" : "",
+        }}
+        onClick={() => {
+          context.changeLandingView("gallery");
+        }}
+        src={GalleryView}
+      />
+      <img
+        style={{
+          backgroundColor:
+            context.landingView === "carousel" ? "var(--primary-color)" : "",
+        }}
+        onClick={() => {
+          context.changeLandingView("carousel");
+        }}
+        src={CarouselView}
+      />
+      <img
+        style={{
+          backgroundColor:
+            context.landingView === "list" ? "var(--primary-color)" : "",
+        }}
+        onClick={() => {
+          context.changeLandingView("list");
+        }}
+        src={ListView}
+      />
     </div>
   );
 }

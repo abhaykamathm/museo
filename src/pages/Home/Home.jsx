@@ -1,104 +1,75 @@
 import React, { useState } from "react";
-import pages from "./pages.svg";
-
+import auction_pieces from "../../assets/Home/auctionPieces";
 import "./Home.css";
 import HomeNav from "../../components/Home/HomeNav";
+import PaintingInfo from "../../components/Home/PaintingInfo";
+import AuctionPiecesRow from "../../components/Home/AuctionPiecesRow";
+import { useGlobalInfo } from "../../contexts/globalContext";
+import ListView from "./ListView";
 
 function Home() {
-  const [liveAuctions, setLiveAuctions] = useState([
-    {
-      name: "Portrait of Young Man Holding a Roundel",
-      img_path: "/Images/Home/painting1.png",
-      artist: "By Sandro Botticelli",
-      count: 5,
-    },
-    {
-      name: "Adoration of the Magi",
-      img_path: "/Images/Home/painting2.png",
-      artist: "By Sandro Botticelli",
-      count: 12,
-    },
-    {
-      name: "Portrait of Young Man Holding a Roundel",
-      img_path: "/Images/Home/painting1.png",
-      artist: "By Sandro Botticelli",
-      count: 5,
-    },
-    {
-      name: "Adoration of the Magi",
-      img_path: "/Images/Home/painting2.png",
-      artist: "By Sandro Botticelli",
-      count: 12,
-    },
-  ]);
-  const [background, setBackground] = useState(liveAuctions[0]);
+  const context = useGlobalInfo();
+  const [auctionPieces, setAuctionPieces] = useState(auction_pieces);
+  const [background, setBackground] = useState(auction_pieces[0]);
   return (
     <div
       id="home-container"
       style={{
-        background: `url(${background.img_path})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        background:
+          context.landingView === "gallery"
+            ? `url(${background.img_path})`
+            : "",
       }}
     >
-      <div className="layer">
-        <HomeNav />
-        <div id="home-main">
-          <div className="painting-info">
-            <div id="painting-name">{background.name}</div>
-            <div id="artist-name">{background.artist}</div>
-            <button>Watch</button>
-          </div>
-          <div
-            style={{
-              fontWeight: "500",
-              color: "#e8e8e8",
-              padding: "1rem",
-            }}
-          >
-            Take a look at live TV shows
-          </div>
-          <div className="live-paintings">
-            {liveAuctions.map((painting, index) => {
-              return (
-                <div
-                  className="img-container"
-                  key={index}
-                  onClick={() => {
-                    setBackground(painting);
-                  }}
-                >
-                  <img src={painting.img_path} />
-                  <div className="pages-svg">
-                    <img src={pages} />
-                    <div>{painting.count}</div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <div className="live-paintings">
-            {liveAuctions.map((painting, index) => {
-              return (
-                <div
-                  className="img-container"
-                  key={index}
-                  onClick={() => {
-                    setBackground(painting);
-                  }}
-                >
-                  <img src={painting.img_path} />
-                  <div className="pages-svg">
-                    <img src={pages} />
-                    <div>{painting.count}</div>
-                  </div>
-                </div>
-              );
-            })}
+      <HomeNav />
+      {context.landingView === "gallery" ? (
+        <div className="layer">
+          <div id="home-main">
+            <PaintingInfo background={background} />
+            <AuctionPiecesRow
+              rowType={"live_tv"}
+              rowTypeName={"Take a look at live TV Shows"}
+              auctionPieces={auctionPieces}
+              setBackground={setBackground}
+            />
+            <AuctionPiecesRow
+              rowType={"live_tv_others"}
+              rowTypeName={"Take a look at other live shows"}
+              auctionPieces={auctionPieces}
+              setBackground={setBackground}
+            />
+            <AuctionPiecesRow
+              rowType={"ends_soon"}
+              rowTypeName={"Auction ends soon"}
+              auctionPieces={auctionPieces}
+              setBackground={setBackground}
+            />
+            <AuctionPiecesRow
+              rowType={"online"}
+              rowTypeName={"Online masterpieces that might interest you"}
+              auctionPieces={auctionPieces}
+              setBackground={setBackground}
+            />
+            <AuctionPiecesRow
+              rowType={"interests"}
+              rowTypeName={"Here's a spotlight on your interests"}
+              auctionPieces={auctionPieces}
+              setBackground={setBackground}
+            />
+            <AuctionPiecesRow
+              rowType={"music"}
+              rowTypeName={"Music artists you might like"}
+              auctionPieces={auctionPieces}
+              setBackground={setBackground}
+            />
           </div>
         </div>
-      </div>
+      ) : (
+        ""
+      )}
+      {context.landingView === "list" && (
+        <ListView auctionPieces={auctionPieces} />
+      )}
     </div>
   );
 }

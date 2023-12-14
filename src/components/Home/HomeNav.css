@@ -1,8 +1,11 @@
 #home-container #home-nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   font-weight: 300;
   align-items: center;
+  padding: 1rem 0.75rem;
+  padding-top: 1.5rem;
   /* width: 100%; */
 }
 
@@ -29,6 +32,18 @@
   cursor: pointer;
 }
 
+#home-container #home-nav input {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #84899d;
+  padding: 1rem;
+  width: 35%;
+  position: relative;
+  left: 3rem;
+  outline: none;
+  color: #84899d;
+}
+
 #home-container #home-nav .view-filter-container {
   display: flex;
   gap: 1rem;
@@ -36,12 +51,22 @@
 
 #home-container #home-nav .view-filter-container .view-toggle-container {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
-  padding: 1rem;
+  padding: 0.25rem 0.35rem;
   border-radius: 0.5rem;
   background-color: rgba(115, 115, 115, 1);
   color: #e8e8e8;
+}
+
+.view-toggle-container img {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.view-toggle-container img:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
 }
 
 #home-container #home-nav .filter {
