@@ -1,0 +1,99 @@
+@media screen and (max-width: 430px) {
+  #socialLogin {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+#socialLogin {
+  display: flex;
+  padding: 1rem;
+}
+#form-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#form-detail .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.66rem;
+}
+
+#form-detail .detail h6 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#form-detail .detail .row {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+#form-detail .detail .dropdown,
+.inputs {
+  border: 1px solid #7e8195;
+  border-radius: 0.125rem;
+}
+#form-detail .detail .dropdown p,
+.dropdown select,
+.inputs p,
+.inputBtn button,
+.detail p,
+.inputs label,
+.dropdown label {
+  font-family: Roboto;
+  font-size: 0.75rem;
+  background: linear-gradient(94deg, #7e8195 3.63%, #7e8195 96.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#form-detail .detail .dropdown select,
+input {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  border: none;
+  background-color: transparent;
+  gap: 3rem;
+  color: #7e8195;
+}
+#form-detail .detail .inputs-1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.detail button {
+  padding: 0.5rem 1rem;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #a3a9be;
+}
+#credit {
+  color: #fff;
+
+  font-family: Roboto;
+  font-size: 0.875rem;
+}
+#submitBtn {
+  display: flex;
+  gap: 2rem;
+}
+#submitBtn button {
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.125rem;
+  border: 0.5px solid #7e8195;
+  background-color: transparent;
+  color: #e8e8e8;
+  font-family: Roboto;
+  font-size: 0.75rem;
+}
+#submitBtn button:hover {
+  border: 0.5px solid var(--CTA-Purple, #811db4);
+  background: var(--Foundation-Primary-primary-400, #753394);
+}
