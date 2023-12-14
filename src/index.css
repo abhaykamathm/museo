@@ -1,0 +1,20 @@
+:root {
+  --primary-background: linear-gradient(
+    180deg,
+    #520079 0%,
+    #520079 0%,
+    #520079 0%,
+    #520079 0%,
+    #520079 0%,
+    #520079 0%,
+    #520079 0.01%,
+    #080609 100%
+  );
+  --robot: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
