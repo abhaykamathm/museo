@@ -1,24 +1,30 @@
-import React,{useState} from 'react'
-import './ProfileWallet.css'
+import React, { useState } from "react";
+import "./ProfileWallet.css";
+import PaymentCard from "./AllCards/PaymentCard";
 
 export const ProfileWallet = () => {
-    const [paymentDetails, setPaymentDetails] = useState({
-        cardName: "AVI SHANE",
-        method: "VISA",
-      });
+  const [paymentDetails, setPaymentDetails] = useState({
+    cardName: "AVI SHANE",
+    method: "VISA",
+  });
+
+  const paypalSelected = () => {
+    console.log('paypal seleccted');
+    
+  }
   return (
-    <div id='profile-wallet'>
-       <div id="header">
+    <div id="profile-wallet">
+      <div id="header">
         <div id="header-text">Your Wallet</div>
         <div id="sub-header">
-            <div id="text1">Wallet Balance</div>
-            <div id="text2">$20000</div>
+          <div id="text1">Wallet Balance</div>
+          <div id="text2">$20000</div>
         </div>
       </div>
-      <div id='cards-header'>Credit and Debit Cards</div>
-      <div id='cards-container'>
-        <div className='card'>
-        <div className="payment-details">
+      <div id="cards-header">Credit and Debit Cards</div>
+      <div id="cards-container">
+        {/* <div className='card'> */}
+        {/* <div className="payment-details">
             <div className="payment-header">
               <div>
                 <img src="./Images/Profile/Rectangle 11662.png" alt="" />
@@ -45,10 +51,19 @@ export const ProfileWallet = () => {
                 <img src="./Images/Profile/Payment Method.svg" alt="" className='visa-img'/>
               </div>
             </div>
-          </div>
+          </div> */}
+        {}
+        <div className="card">
+          <PaymentCard cardNumber={1} />
         </div>
-        <div className='card'>
-        <div className="payment-details">
+
+        <div className="card">
+          <PaymentCard cardNumber={2} />
+        </div>
+
+        {/* </div> */}
+        {/* <div className='card'> */}
+        {/* <div className="payment-details">
             <div className="payment-header">
               <div className="payment-header-text">Platinum</div>
             </div>
@@ -72,9 +87,23 @@ export const ProfileWallet = () => {
                 <img src="./Images/Profile/Mastercard.svg" alt="" className='visa-img'/>
               </div>
             </div>
-          </div>
+          </div> */}
+        {/* </div> */}
+      </div>
+      <div id="add-newCard-div">
+        <div>
+          <img src="./Images/Profile/Add 1.svg" alt="" />
+        </div>
+        <div id="add-newCard-text">Add a New Card</div>
+      </div>
+      <div id="footer-wallet-text">Wallet</div>
+      <div id="link-account-footer">
+        <div className="circle-paypal" onClick={paypalSelected}></div>
+        <div id="paypal-text">Paypal</div>
+        <div id="link-account-text">
+          Link account
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
