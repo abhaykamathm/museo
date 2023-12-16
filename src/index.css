@@ -32,6 +32,18 @@
 body {
 }
 
+button {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 input {
+  font-family: var(--robot);
+}
+
+select {
   font-family: var(--robot);
 }

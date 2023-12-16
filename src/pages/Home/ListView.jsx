@@ -1,5 +1,6 @@
 import React from "react";
 import "./ListView.css";
+import ListOpen from "./ListOpen.svg";
 
 function ListView({ auctionPieces }) {
   return (
@@ -23,15 +24,21 @@ function ListView({ auctionPieces }) {
       {auctionPieces.map((piece, index) => {
         return (
           <div key={index} className="artpiece">
-            <img src={piece.img_path} />
+            <img className="art-image" src={piece.img_path} />
             <div className="info">
-              <div>{piece.lot}</div>
-              <div>
-                <div>{piece.name}</div>
-                <div>{piece.collection_name}</div>
+              <div className="lot">LOT Number : {piece.lot}</div>
+              <div className="piece-name">
+                <span>{piece.name} | </span>
+                <span className="collection">{piece.collection_name}</span>
               </div>
-              <div>Estimate range - {piece.estimate_range}</div>
-              <div>{piece.date}</div>
+              <div className="range">
+                Estimate range |{" "}
+                <span className="price">{piece.estimate_range}</span>
+              </div>
+              <div className="date">{piece.date}</div>
+            </div>
+            <div className="list-opener">
+              <img className="list-open" src={ListOpen} />
             </div>
           </div>
         );
