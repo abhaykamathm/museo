@@ -6,18 +6,19 @@
   background-repeat: no-repeat !important;
   font-family: var(--robot);
   overflow-y: auto;
+  position: relative;
+}
+
+#home-container::-webkit-scrollbar {
+  display: none;
 }
 
 #home-container .layer {
   height: fit-content;
   width: 100%;
   padding: 1rem 0.25rem;
-  /* opacity: 0.95; */
   background: linear-gradient(0deg, #141414 33.64%, rgba(20, 20, 20, 0) 100%),
     linear-gradient(0deg, #141414 27.7%, rgba(20, 20, 20, 0) 84.45%);
-}
-
-#home-container #home-main {
 }
 
 #home-container #home-main .painting-info {
@@ -53,7 +54,7 @@
 
 #home-container #home-main .live-paintings-container .collection-name {
   padding: 0 1rem;
-  padding-top: 2rem;
+  padding-top: 1.25rem;
   font-weight: 500;
   color: #e8e8e8;
 }
@@ -120,9 +121,9 @@
   left: 0;
   padding: 1rem;
   background: linear-gradient(
-    23deg,
-    #141414 21.95%,
-    rgba(20, 20, 20, 0) 172.95%
+    0deg,
+    rgba(0, 0, 0, 0.8) 25%,
+    rgba(71, 71, 71, 0) 100%
   );
 
   border-bottom-left-radius: 0.5rem;

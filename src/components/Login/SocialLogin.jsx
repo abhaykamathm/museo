@@ -1,6 +1,5 @@
 import React from "react";
 import "./SocialLogin.css";
-import Timeline from "../../../public/Images/Login/Mobile.png";
 function SocialLogin() {
   return (
     <>
