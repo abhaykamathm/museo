@@ -7,10 +7,17 @@ import AccountCreation from "./pages/Login/AccountCreation";
 import MobileLogin from "./pages/Login/MobileLogin";
 import OtpLoginPage from "./pages/Login/OtpLoginPage";
 import AddCardPage from "./pages/Login/AddCardPage";
+import { useGlobalInfo } from "./contexts/globalContext";
 
 function App() {
+  const context = useGlobalInfo();
   return (
-    <div id="root-container">
+    <div
+      id="root-container"
+      style={{
+        background: context.landingView === "carousel" ? "#111" : "",
+      }}
+    >
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<Home />} />
