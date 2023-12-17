@@ -6,6 +6,7 @@ import PaintingInfo from "../../components/Home/PaintingInfo";
 import AuctionPiecesRow from "../../components/Home/AuctionPiecesRow";
 import { useGlobalInfo } from "../../contexts/globalContext";
 import ListView from "./ListView";
+import CarouselView from "./CarouselView";
 
 function Home() {
   const context = useGlobalInfo();
@@ -66,6 +67,9 @@ function Home() {
         </div>
       ) : (
         ""
+      )}
+      {context.landingView === "carousel" && (
+        <CarouselView auctionPieces={auctionPieces} />
       )}
       {context.landingView === "list" && (
         <ListView auctionPieces={auctionPieces} />

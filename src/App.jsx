@@ -1,21 +1,36 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Profile from './pages/Profile/Profile'
+import Profile from "./pages/Profile/Profile";
 import Login from "./pages/Login/Login";
 import { ActiveSales } from "./components/Profile/ActiveSales";
 import { PastSales } from "./components/Profile/PastSales";
 import ProfilePanel from "./components/Profile/ProfilePanel";
+import AccountCreation from "./pages/Login/AccountCreation";
+import MobileLogin from "./pages/Login/MobileLogin";
+import OtpLoginPage from "./pages/Login/OtpLoginPage";
+import AddCardPage from "./pages/Login/AddCardPage";
+import { useGlobalInfo } from "./contexts/globalContext";
 
 function App() {
+  const context = useGlobalInfo();
   return (
-    <div id="root-container">
+    <div
+      id="root-container"
+      style={{
+        background: context.landingView === "carousel" ? "#111" : "",
+      }}
+    >
       <BrowserRouter>
         <Routes>
         <Route path="/home" element={<Home />} />
           <Route path="/profile/*" element={<Profile />}/>
           <Route path="/login" element={<Login />} />
-          </Routes>
+          <Route path="/createAccount" element={<AccountCreation />} />
+          <Route path="/login/mobileLogin" element={<MobileLogin />} />
+          <Route path="/login/otpLogin" element={<OtpLoginPage />} />
+          <Route path="/login/addCard" element={<AddCardPage />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );

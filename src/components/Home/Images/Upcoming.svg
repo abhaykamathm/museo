@@ -1,0 +1,17 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Calendar Upload" clip-path="url(#clip0_4424_15920)">
+<path id="Vector" d="M14.375 9.375C13.0489 9.375 11.7771 9.90178 10.8395 10.8395C9.90178 11.7771 9.375 13.0489 9.375 14.375C9.375 15.7011 9.90178 16.9729 10.8395 17.9105C11.7771 18.8482 13.0489 19.375 14.375 19.375C15.7011 19.375 16.9729 18.8482 17.9105 17.9105C18.8482 16.9729 19.375 15.7011 19.375 14.375C19.375 13.0489 18.8482 11.7771 17.9105 10.8395C16.9729 9.90178 15.7011 9.375 14.375 9.375Z" stroke="#E8E8E8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M11.875 14.375L16.875 14.375" stroke="#E8E8E8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M16.875 14.375L15 12.5" stroke="#E8E8E8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M16.875 14.375L15 16.25" stroke="#E8E8E8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M6.875 14.375H1.875C1.54348 14.375 1.22554 14.2433 0.991117 14.0088C0.756696 13.7744 0.625 13.4565 0.625 13.125V3.13745C0.625 2.80593 0.756696 2.48799 0.991117 2.25357C1.22554 2.01915 1.54348 1.88745 1.875 1.88745H13.125C13.4565 1.88745 13.7745 2.01915 14.0089 2.25357C14.2433 2.48799 14.375 2.80593 14.375 3.13745V6.87495" stroke="#E8E8E8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M0.625 5.625H14.375" stroke="#E8E8E8" stroke-linejoin="round"/>
+<path id="Vector_7" d="M4.37109 3.125V0.625" stroke="#E8E8E8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M10.6211 3.125V0.625" stroke="#E8E8E8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_4424_15920">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
