@@ -1,0 +1,107 @@
+#cardAddedContainer {
+  width: 100%;
+  height: 100%;
+}
+#cardAddedContainer .cardAddedDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 2.25rem;
+}
+#cardAddedContainer .cardAddedDiv .cardAddedTimeline {
+  width: 23.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 5.25rem;
+}
+#cardAddedContainer .cardAddedDiv .visa {
+  width: 19.125rem;
+  height: 12.3125rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.88rem 1.56rem;
+  border-radius: 0.75rem;
+  gap: 0.94rem;
+  border: 1px solid rgba(127, 127, 127, 0.23);
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.39) -51.38%,
+    rgba(255, 255, 255, 0) 62.84%,
+    rgba(196, 196, 196, 0) 100.12%
+  );
+  box-shadow: 21px 19px 19px -5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+}
+#cardAddedContainer .cardAddedDiv .visaCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#cardAddedContainer .cardAddedDiv .chase {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+#cardAddedContainer .cardAddedDiv .chase p {
+  color: #fdfdfd;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 100;
+}
+
+#cardAddedContainer .cardAddedDiv .cardNo p {
+  height: 1rem;
+  color: rgba(212, 212, 212, 0.8);
+  text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+}
+#cardAddedContainer .cardAddedDiv .visaImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#cardAddedContainer .cardAddedDiv .avi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cardAddedContainer .cardAddedDiv .avi p {
+  color: rgba(197, 197, 197, 0.8);
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+  font-family: IBM Plex Mono;
+  font-size: 0.6875rem;
+  font-weight: 300;
+  letter-spacing: 0.55rem;
+}
+#cardAddedContainer .cardAddedDiv .endLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 2.56rem;
+}
+#cardAddedContainer .cardAddedDiv .endLogo button {
+  padding: 1.5rem 8.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--Foundation-Primary-primary-400, #753394);
+}
+#cardAddedContainer .cardAddedDiv .endLogo img {
+  width: 3.0625rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}

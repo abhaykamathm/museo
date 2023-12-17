@@ -1,0 +1,101 @@
+#verificationContainer {
+  width: 100%;
+  height: 100%;
+}
+#verificationContainer .verificationDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem;
+  gap: 1.5rem;
+}
+
+#verificationContainer .verificationDiv .verificationTimeline {
+  width: 23.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 5.25rem;
+}
+#verificationContainer .verificationDiv .veriDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+#verificationContainer .verificationDiv .veriDiv p {
+  color: #a3a9be;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+}
+#verificationContainer .verificationDiv .uploadDiv {
+  display: flex;
+  padding: 1.06425rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.06425rem;
+  border-radius: 0.39913rem;
+  background: var(--Foundation-Primary-primary-800, #2d0043);
+  box-shadow: 1.33px 1.33px 15.964px 3.991px rgba(30, 119, 204, 0.1),
+    -1.33px -1.33px 15.964px 3.991px rgba(30, 119, 204, 0.1);
+}
+#verificationContainer .verificationDiv .uploadDiv .dashedLine {
+  display: flex;
+  width: 21.61775rem;
+  height: 11.64031rem;
+  padding: 0.16631rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.16631rem;
+  border-radius: 0.39913rem;
+  border: 1.33px dashed #1e77cc;
+}
+#verificationContainer .verificationDiv .uploadDiv p {
+  color: var(--Foundation-Primary-primary-100, #c9b0d5);
+  font-family: Roboto;
+  font-size: 0.79819rem;
+  font-weight: 400;
+}
+#verificationContainer .verificationDiv .fileDiv {
+  width: 21.61775rem;
+  display: flex;
+  padding: 0.33256rem 0.49888rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.39913rem;
+  background: var(--Foundation-Primary-primary-100, #c9b0d5);
+}
+#verificationContainer .verificationDiv .deleteDiv p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 0.73169rem;
+  font-weight: 400;
+}
+#verificationContainer .verificationDiv .deleteDiv {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.29931rem;
+}
+#verificationContainer .verificationDiv .buttonDiv {
+  display: flex;
+  gap: 1rem;
+}
+#verificationContainer .verificationDiv .buttonDiv button {
+  display: flex;
+  padding: 0.75rem 1rem;
+  align-items: center;
+}
+#verificationContainer .verificationDiv .buttonDiv button:hover {
+  color: var(--Color, #fff);
+  border-radius: 0.125rem;
+  border: 0.5px solid var(--CTA-Purple, #811db4);
+  background: var(--Foundation-Primary-primary-400, #753394);
+}
