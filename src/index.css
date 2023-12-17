@@ -38,6 +38,11 @@ button {
 
 button:hover {
   cursor: pointer;
+  opacity: 0.9 !important;
+}
+
+button:active {
+  opacity: 0.75 !important;
 }
 
 input {

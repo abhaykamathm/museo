@@ -14,7 +14,6 @@ const Profile = () => {
   return (
     <div id="profile-container">
       <ProfilePanel />
-
       <Outlet />
 
       {/* Additional components specific to the Profile route */}
