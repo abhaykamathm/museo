@@ -1,0 +1,93 @@
+.side-info-panel-container .top-fixed-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background-color: #203;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.side-info-panel-container button {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.side-info-panel-container .lot {
+  padding: 0.5rem 1rem;
+}
+
+.side-info-panel-container .header-border {
+  width: 100%;
+}
+
+.side-info-panel-container .title {
+  font-weight: 500;
+}
+
+.side-info-panel-container .artist {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.side-info-panel-container .artist span {
+  font-weight: 500;
+}
+
+.side-info-panel-container .dimension {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.side-info-panel-container .dimension .width,
+.height {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.side-info-panel-container .condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.side-info-panel-container .condition .value {
+  font-weight: 300;
+}
+
+.side-info-panel-container .appreciation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-info-panel-container #place-bid {
+  background-color: #520079 !important;
+}
+
+.side-info-panel-container .similar-works {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.side-info-panel-container .similar-works img {
+  border: 1px solid #af8ac1;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.side-info-panel-container .similar-works button {
+  width: 100%;
+  color: #af8ac1;
+  border: 1px solid #af8ac1 !important;
+}
+
+.side-info-panel-container .similar-works button:active {
+  background-color: #af8ac1;
+  color: #fff;
+}

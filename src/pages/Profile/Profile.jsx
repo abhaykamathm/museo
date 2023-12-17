@@ -24,9 +24,9 @@ const Profile = () => {
       {/* <QRCodeForProfile /> */}
       {/* <QRAccountLink /> */}
       {/* <QRAddNewCard /> */}
+
       {/* <ProfileWallet /> */}
       <ActiveSales />
-
     </div>
   );
 };

@@ -56,19 +56,19 @@
   font-weight: 600;
 }
 
-.footer {
+#accountContainer .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2.5rem;
 }
-.footer p {
+#accountContainer .footer p {
   color: #eee6f2;
   /* font-family: Inter; */
   font-size: 0.875rem;
   font-weight: 400;
 }
-.footer a {
+#accountContainer .footer a {
   color: #eee6f2;
   /* font-family: Inter; */
   font-size: 0.875rem;
