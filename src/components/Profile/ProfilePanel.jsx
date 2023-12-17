@@ -2,6 +2,7 @@ import React from "react";
 import "./ProfilePanel.css";
 import Vector from "./Vector.svg";
 import Rectangle from "./Rectangle 11542.svg";
+import { Link } from "react-router-dom";
 
 function ProfilePanel() {
   return (
@@ -30,7 +31,9 @@ function ProfilePanel() {
         <div id="wallet-img">
           <img src="/Images/Profile/Money Wallet.png" alt="" />
         </div>
+        <Link to="/profile/yourWallet">
         <div id="wallet-text">Your Wallet</div>
+      </Link>
       </div>
       <div className="panel-options">
         <div className="panel-option-1">
@@ -42,8 +45,12 @@ function ProfilePanel() {
             <div className="options-text">My buyings & biddings</div>
           </div>
           <div className="sub-options">
+            <Link to='/profile/activeSales'>
             <div>Active Sales</div>
+            </Link>
+            <Link to='/profile/pastSales'>
             <div>Past Sales</div>
+            </Link>
             <div>Ready to checkout</div>
           </div>
         </div>

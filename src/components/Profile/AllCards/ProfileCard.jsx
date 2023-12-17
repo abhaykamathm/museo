@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../CompleteProfileCard.css'
 import { useState } from 'react';
 import { useGlobalInfo } from '../../../contexts/globalContext';
+import { Link } from 'react-router-dom';
 
 function ProfileCard() {
   const context = useGlobalInfo();
@@ -35,7 +36,9 @@ function ProfileCard() {
             </div>
           </div>
           <div>
+            <Link to='/profile/qrProfile'>
             <button className="edit-btn" onClick={handleClick}>Edit</button>
+            </Link>
           </div>
         </div>:''
     }</>
