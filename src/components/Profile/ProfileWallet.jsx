@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ProfileWallet.css";
 import PaymentCard from "./AllCards/PaymentCard";
+import { Link } from "react-router-dom";
 
 export const ProfileWallet = () => {
   const [paymentDetails, setPaymentDetails] = useState({
@@ -94,11 +95,12 @@ export const ProfileWallet = () => {
         <div>
           <img src="./Images/Profile/Add 1.svg" alt="" />
         </div>
-        <div id="add-newCard-text">Add a New Card</div>
+        <Link to='/profile/newCard'>
+        <div id="add-newCard-text">Add a New Card</div></Link>
       </div>
       <div id="footer-wallet-text">Wallet</div>
       <div id="link-account-footer">
-        <div className="circle-paypal" onClick={paypalSelected}></div>
+        <Link to='/profile/linkAccount'><div className="circle-paypal" onClick={paypalSelected}></div></Link>
         <div id="paypal-text">Paypal</div>
         <div id="link-account-text">
           Link account

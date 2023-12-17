@@ -1,10 +1,10 @@
-const active_sales = [
+
+const past_sales = [
     {
         name: "Birth of Venus | Sandro Botticelli’s Collection ",
         img_path: "/Images/Profile/Venus-img.png",
         artist: "By Sandro Botticelli",
         collection_name: `Sandro Botticelli’s Collection`,
-        estimate_range: `$30k - $100k`,
         date: `12 August 2022`,
         Auction_registration:'1 August',
         count: 5,
@@ -18,7 +18,6 @@ const active_sales = [
         img_path: "/Images/Home/painting2.png",
         artist: "By Sandro Botticelli",
         collection_name: `Sandro Botticelli’s Collection`,
-        estimate_range: `$30k - $100k`,
         date: `12 August 2022`,
         Auction_registration:'1 August',
         count: 5,
@@ -32,7 +31,6 @@ const active_sales = [
         img_path: "/Images/Home/painting2.png",
         artist: "By Sandro Botticelli",
         collection_name: `Sandro Botticelli’s Collection`,
-        estimate_range: `$30k - $100k`,
         date: `12 August 2022`,
         Auction_registration:'1 August',
         count: 5,
@@ -43,4 +41,4 @@ const active_sales = [
         yourMaxBid:''
       }
 ]
-export default active_sales;
+export default past_sales;

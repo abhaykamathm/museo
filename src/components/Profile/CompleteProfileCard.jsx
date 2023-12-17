@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { useGlobalInfo } from "../../contexts/globalContext";
 import ProfileCard from "./AllCards/ProfileCard";
 import PaymentCard from "./AllCards/PaymentCard";
+import { Link } from "react-router-dom";
 
 export const CompleteProfileCard = () => {
   const context = useGlobalInfo()
@@ -34,7 +35,8 @@ export const CompleteProfileCard = () => {
         <div id="payment-div">
           <div>Your Payment Method</div>
           <div>
-            <button className="edit-btn" onClick={handleClick}>Edit</button>
+            <Link to='/profile/yourWallet'><button className="edit-btn" onClick={handleClick}>Edit</button></Link>
+            
           </div>
         </div>
         
