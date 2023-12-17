@@ -6,7 +6,7 @@ export const QRCodeForProfile = () => {
   const qrCodeValue = "https://example.com";
   return (
     <div id="QR-Complete-profile">
-      <div id="header-text">Complete Profile</div>
+      <div id="complete-profile-header-text">Complete Profile</div>
 
       <div id="middle-container">
         <div className="qr-container">
