@@ -1,0 +1,82 @@
+#preferencesContainer {
+  width: 100%;
+  height: 100%;
+}
+#preferencesContainer .preferencesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem;
+  gap: 1.5rem;
+}
+
+#preferencesContainer .preferencesDiv .preferencesTimeline {
+  width: 23.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 5.25rem;
+}
+#preferencesContainer .preferencesDiv .preferDiv {
+  display: flex;
+  gap: 0.5rem;
+}
+#preferencesContainer .preferencesDiv .preferDiv .name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+#preferencesContainer .preferencesDiv .text_div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#preferencesContainer .preferencesDiv .searchBtn {
+  display: flex;
+  width: 23.75rem;
+  padding: 0.5rem 9.5rem 0.5rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.125rem;
+  border: 1px solid #7e8195;
+}
+#preferencesContainer .preferencesDiv .preferImageDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.37rem;
+}
+#preferencesContainer .preferencesDiv .preferDiv p {
+  color: #a3a9be;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+}
+#preferencesContainer .preferencesDiv .imagePrefer {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  overflow: auto;
+  overflow-y: scroll;
+}
+#preferencesContainer .preferencesDiv .image_div {
+  width: 11.375rem;
+  height: 11.375rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 0.47394rem;
+  /* border: 1.896px solid var(--Primary-Yellow, #dddf1c); */
+  background: linear-gradient(
+      0deg,
+      rgba(193, 193, 193, 0.2) 0%,
+      rgba(193, 193, 193, 0.2) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
