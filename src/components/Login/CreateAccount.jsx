@@ -20,24 +20,20 @@ function CreateAcccount() {
           </div>
           <div className="loginBtn">
             <button>
-              <div className="btnDiv">
-                <img src={Google} alt="google"></img>Continue with Google
-              </div>
+              <img src={Google} alt="google"></img>
+              <span>Continue with Google</span>
             </button>
             <button>
-              <div className="btnDiv">
-                <img src={Facebook} alt="google"></img>Continue with Facebook
-              </div>
+              <img src={Facebook} alt="google"></img>
+              <span>Continue with Facebook</span>
             </button>
             <button>
-              <div className="btnDiv">
-                <img src={Apple} alt="google"></img>Continue with Apple
-              </div>
+              <img src={Apple} alt="google"></img>
+              <span>Continue with Apple</span>
             </button>
             <button>
-              <div className="btnDiv">
-                <img src={Phone} alt="google"></img>Enter your mobile number
-              </div>
+              <img src={Phone} alt="google"></img>
+              <span>Enter your mobile number</span>
             </button>
           </div>
         </div>

@@ -4,10 +4,12 @@
     height: 100vh;
   }
 }
+
 #socialLogin {
-  display: flex;
+  /* display: flex; */
   padding: 1rem;
 }
+
 #form-detail {
   display: flex;
   flex-direction: column;

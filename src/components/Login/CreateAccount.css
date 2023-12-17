@@ -3,54 +3,68 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0.62rem;
-  overflow: auto;
-  overflow-y: scroll;
+  padding: 0.5rem;
+  overflow-y: auto;
 }
+
 #account {
-  width: 91.55%;
+  margin-top: 2rem;
+  width: 90%;
   border-radius: 1.25rem;
   background: var(--Foundation-Primary-primary-200, #af8ac1);
 }
+
+#account .imageDiv img {
+  width: 100%;
+}
+
 #account .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
+
 #account .text h1 {
-  font-family: Roboto;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 700;
 }
+
 #accountContainer #account .text p {
   color: rgba(0, 0, 0, 0.7);
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;
 }
+
 #account .loginBtn {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0.62rem 1.98rem 0.62rem;
+  padding: 2rem 0.75rem;
   gap: 0.625rem;
 }
+
 #account .loginBtn button {
   display: flex;
   justify-content: flex-start;
-  padding: 1.0625rem 7.9375rem 1.0625rem 1.1875rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
   border-radius: 0.75rem;
   border: 1px solid #d8dadc;
   background: var(--Foundation-Primary-primary-100, #c9b0d5);
 }
-#account .loginBtn .btnDiv {
-  width: 100%;
+
+#account .loginBtn button img {
+  width: 1.5rem;
+}
+
+#account .loginBtn button span {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.625rem;
+  width: 100%;
   color: #000;
   font-size: 0.85rem;
   font-weight: 600;
@@ -58,19 +72,20 @@
 
 #accountContainer .footer {
   display: flex;
+  gap: 0.5rem;
   justify-content: center;
   align-items: center;
   padding: 2.5rem;
-}
-#accountContainer .footer p {
+  font-family: "Inter", sans-serif;
   color: #eee6f2;
-  /* font-family: Inter; */
   font-size: 0.875rem;
+}
+
+#accountContainer .footer p {
   font-weight: 400;
 }
+
 #accountContainer .footer a {
-  color: #eee6f2;
-  /* font-family: Inter; */
   font-size: 0.875rem;
   font-weight: 600;
   text-decoration-line: underline;
