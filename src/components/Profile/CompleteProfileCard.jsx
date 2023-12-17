@@ -36,7 +36,7 @@ export const CompleteProfileCard = () => {
           <div>Your Payment Method</div>
           <div>
             <button>
-              <sapn>Edit</sapn>
+              <span>Edit</span>
             </button>
           </div>
         </div>

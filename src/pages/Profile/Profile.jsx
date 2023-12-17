@@ -11,11 +11,11 @@ const Profile = () => {
   return (
     <div id="profile-container">
       <ProfilePanel />
-      <CompleteProfileCard /> 
+      {/* <CompleteProfileCard />  */}
       {/* <QRCodeForProfile /> */}
       {/* <QRAccountLink /> */}
       {/* <QRAddNewCard /> */}
-      {/* <ProfileWallet /> */}
+      <ProfileWallet />
 
     </div>
   );

@@ -8,6 +8,7 @@ import MobileLogin from "./pages/Login/MobileLogin";
 import OtpLoginPage from "./pages/Login/OtpLoginPage";
 import AddCardPage from "./pages/Login/AddCardPage";
 import { useGlobalInfo } from "./contexts/globalContext";
+import Live from "./pages/Live/Live";
 
 function App() {
   const context = useGlobalInfo();
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/live" element={<Live />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/createAccount" element={<AccountCreation />} />
