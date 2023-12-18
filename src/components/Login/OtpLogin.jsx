@@ -1,7 +1,9 @@
 import React from "react";
 import Timeline from "./Images/Mobile.svg";
 import "./otpLogin.css";
+import { useNavigate } from "react-router-dom";
 function OtpLogin() {
+  const naviagte = useNavigate();
   return (
     <>
       <div id="otpContainer">
@@ -140,8 +142,20 @@ function OtpLogin() {
               </div>
             </div>
             <div className="buttonDiv">
-              <button>Go Back</button>
-              <button>Continue</button>
+              <button
+                onClick={() => {
+                  useNavigate("/login/otpVerify");
+                }}
+              >
+                Go Back
+              </button>
+              <button
+                onClick={() => {
+                  useNavigate("/login");
+                }}
+              >
+                Continue
+              </button>
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./SocialLogin.css";
+import { useNavigate } from "react-router-dom";
 function SocialLogin() {
+  const navigate = useNavigate();
   return (
     <>
       <div id="socialLogin">
@@ -75,8 +77,20 @@ function SocialLogin() {
             </div>
           </div>
           <div id="submitBtn">
-            <button>Go Back</button>
-            <button>Continue</button>
+            <button
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              Go Back
+            </button>
+            <button
+              onClick={() => {
+                navigate("/login/addCard");
+              }}
+            >
+              Continue
+            </button>
           </div>
         </form>
       </div>

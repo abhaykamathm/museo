@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./MobileSignIn.css";
 import Pic from "./Images/Pic.svg";
 import Line from "./Images/Line 1.svg";
 function MobileSignIn() {
+  const navigate = useNavigate();
   return (
     <>
       <div id="MobileContainer">
@@ -35,7 +37,13 @@ function MobileSignIn() {
                   <img src={Line}></img>
                 </div>
               </div>
-              <button>Get OTP</button>
+              <button
+                onClick={() => {
+                  navigate("/login/otpLogin");
+                }}
+              >
+                Get OTP
+              </button>
             </div>
           </div>
         </div>

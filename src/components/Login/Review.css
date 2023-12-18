@@ -25,18 +25,30 @@
 #reviewContainer .reviewDiv .wrapReview {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.69rem;
+}
+#reviewContainer .reviewDiv .wrapDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.69rem;
+  height: 41.9375rem;
+  overflow: auto;
+  overflow-y: scroll;
+}
+#reviewContainer .reviewDiv .nameHead {
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 #reviewContainer .reviewDiv .name {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   color: var(--Color, #fff);
   font-family: Roboto;
   font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1rem;
 }
 #reviewContainer .reviewDiv p {
   display: flex;
@@ -57,11 +69,10 @@
 
 #reviewContainer .reviewDiv .profileInfo {
   width: 23.75rem;
-  height: 13rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1rem 1.5rem 0.8rem 1rem;
+  padding: 1rem 0.8rem 0.8rem 1rem;
   border-radius: 0.75rem;
   border: 1px solid rgba(127, 127, 127, 0.23);
   background: linear-gradient(
@@ -72,3 +83,178 @@
   );
   backdrop-filter: blur(20px);
 }
+#reviewContainer .reviewDiv .buttonDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#reviewContainer .reviewDiv .buttonDiv button {
+  display: flex;
+  padding: 0rem 1.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(112, 115, 127, 0.8);
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 400;
+  background: transparent;
+}
+#reviewContainer .reviewDiv .paymentCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#reviewContainer .reviewDiv .paymentDiv {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 9.75rem;
+}
+#reviewContainer .reviewDiv .paymentHead {
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+#reviewContainer .reviewDiv .visa {
+  width: 23.75rem;
+  /* height: 12.3125rem; */
+  display: flex;
+  flex-direction: column;
+  padding: 0.88rem 1.56rem;
+  border-radius: 0.75rem;
+  gap: 0.94rem;
+  border: 1px solid rgba(127, 127, 127, 0.23);
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.39) -51.38%,
+    rgba(255, 255, 255, 0) 62.84%,
+    rgba(196, 196, 196, 0) 100.12%
+  );
+  box-shadow: 21px 19px 19px -5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+}
+#reviewContainer .reviewDiv .visaCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#reviewContainer .reviewDiv .chase {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+#reviewContainer .reviewDiv .chase p {
+  color: #fdfdfd;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 100;
+  padding-top: 1rem;
+}
+
+#reviewContainer .reviewDiv .cardNo p {
+  height: 1rem;
+  color: rgba(212, 212, 212, 0.8);
+  text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+}
+#reviewContainer .reviewDiv .visaImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#reviewContainer .reviewDiv .avi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#reviewContainer .reviewDiv .avi p {
+  color: rgba(197, 197, 197, 0.8);
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+  font-family: IBM Plex Mono;
+  font-size: 0.6875rem;
+  font-weight: 300;
+  letter-spacing: 0.55rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+#reviewContainer .reviewDiv .uploadDiv {
+  width: 23.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.06425rem;
+  gap: 1.06425rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(127, 127, 127, 0.23);
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.39) -51.38%,
+    rgba(255, 255, 255, 0) 62.84%,
+    rgba(196, 196, 196, 0) 100.12%
+  );
+  backdrop-filter: blur(20px);
+}
+#reviewContainer .reviewDiv .uploadDiv .dashedLine {
+  display: flex;
+  width: 21.61775rem;
+  height: 11.64031rem;
+  padding: 0.16631rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.16631rem;
+  border-radius: 0.39913rem;
+  border: 1.33px dashed #1e77cc;
+}
+#reviewContainer .reviewDiv .uploadDiv p {
+  color: var(--Foundation-Primary-primary-100, #c9b0d5);
+  font-family: Roboto;
+  font-size: 0.79819rem;
+  font-weight: 400;
+}
+#reviewContainer .reviewDiv .fileDiv {
+  width: 21.61775rem;
+  display: flex;
+  padding: 0.33256rem 0.49888rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.39913rem;
+  background: var(--Foundation-Primary-primary-100, #c9b0d5);
+}
+#reviewContainer .reviewDiv .deleteDiv p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 0.73169rem;
+  font-weight: 400;
+}
+#reviewContainer .reviewDiv .deleteDiv {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.29931rem;
+}
+/* #reviewContainer .reviewDiv .buttonDiv {
+  display: flex;
+  gap: 1rem;
+}
+#reviewContainer .reviewDiv .buttonDiv button {
+  display: flex;
+  padding: 0.75rem 1rem;
+  align-items: center;
+}
+#reviewContainer .reviewDiv .buttonDiv button:hover {
+  color: var(--Color, #fff);
+  border-radius: 0.125rem;
+  border: 0.5px solid var(--CTA-Purple, #811db4);
+  background: var(--Foundation-Primary-primary-400, #753394);
+} */
