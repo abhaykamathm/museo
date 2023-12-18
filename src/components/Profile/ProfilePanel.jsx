@@ -10,6 +10,7 @@ function ProfilePanel() {
   const handleBackgroundColor = (n) => {
     setSelectingOpt(n);
   };
+
   return (
     <div id="profile-card">
       <div id="profile-header">
@@ -32,7 +33,7 @@ function ProfilePanel() {
           <div id="text">Complete Profile</div>
         </div>
       </div>
-      <div id="wallet" className={selectingOpt === 1 ? "my-bgm-highlight" : ""}>
+      <div id="wallet">
         <div id="wallet-img">
           <img src="/Images/Profile/Money Wallet.png" alt="" />
         </div>
@@ -71,7 +72,7 @@ function ProfilePanel() {
             <Link to="/profile/readyToCheckOut">
               <div
                 onClick={() => handleBackgroundColor(4)}
-                id={selectingOpt === 4? "my-bgm-highlight" : ""}
+                id={selectingOpt === 4 ? "my-bgm-highlight" : ""}
               >
                 Ready to checkout
               </div>
