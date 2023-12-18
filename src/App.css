@@ -3,3 +3,6 @@
   width: 100vw;
   background: var(--primary-background);
 }
+a{
+  text-decoration: none;
+}

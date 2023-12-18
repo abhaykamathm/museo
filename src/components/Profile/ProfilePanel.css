@@ -115,3 +115,9 @@
 /* .panel-options :nth-child(4){
     gap:3rem
 } */
+#my-bgm-highlight{
+  background-color: #520079 !important;
+}
+.my-bgm-highlight{
+  background-color: #520079 !important;
+}
