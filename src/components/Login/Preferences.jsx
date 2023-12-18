@@ -21,7 +21,10 @@ function Preferences() {
       <div id="preferencesContainer">
         <div className="preferencesDiv">
           <div className="preferencesTimeline">
-            <img src={Timeline}></img>
+            <img
+              src={Timeline}
+              style={{ objectFit: "cover", width: "100%" }}
+            ></img>
           </div>
           <div className="preferDiv">
             <div className="preferImageDiv">

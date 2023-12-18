@@ -3,14 +3,18 @@
   height: 100%;
 }
 #successContainer .successDiv {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.2rem;
+  overflow-y: auto;
+  /* gap: 1.5rem; */
   gap: 9.5rem;
 }
 
 #successContainer .successDiv .successTimeline {
-  width: 23.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,17 +41,13 @@
   box-shadow: 4px 1px 10px 0px rgba(129, 29, 180, 0.25);
 }
 #successContainer .successDiv .profileLogo {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  left: 24%;
+  width: fit-content;
+  margin: 0 auto;
 }
 #successContainer .successDiv .verifyLogo {
-  position: absolute;
-  top: 70%;
-  left: 22%;
+  position: relative;
+  bottom: 0.25rem;
+  left: 4rem;
 }
 #successContainer .successDiv .buttonDiv {
   display: flex;

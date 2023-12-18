@@ -8,10 +8,11 @@
   justify-content: space-between;
   padding: 1.2rem;
   gap: 1.5rem;
+  height: 100%;
+  overflow-y: auto;
 }
-
 #reviewContainer .reviewDiv .reviewTimeline {
-  width: 23.75rem;
+  /* width: 23.75rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +26,7 @@
 #reviewContainer .reviewDiv .wrapReview {
   display: flex;
   flex-direction: column;
-  gap: 1.69rem;
+  gap: 0.69rem;
 }
 #reviewContainer .reviewDiv .wrapDiv {
   display: flex;
@@ -68,7 +69,7 @@
 }
 
 #reviewContainer .reviewDiv .profileInfo {
-  width: 23.75rem;
+  /* width: 23.75rem; */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -106,8 +107,8 @@
 }
 #reviewContainer .reviewDiv .paymentDiv {
   display: flex;
-  /* justify-content: space-between; */
-  gap: 9.75rem;
+  justify-content: space-between;
+  padding-right: 1rem;
 }
 #reviewContainer .reviewDiv .paymentHead {
   color: var(--Color, #fff);
@@ -117,7 +118,7 @@
   line-height: 1rem;
 }
 #reviewContainer .reviewDiv .visa {
-  width: 23.75rem;
+  /* width: 23.75rem; */
   /* height: 12.3125rem; */
   display: flex;
   flex-direction: column;
@@ -189,7 +190,7 @@
 }
 
 #reviewContainer .reviewDiv .uploadDiv {
-  width: 23.75rem;
+  /* width: 23.75rem; */
   display: flex;
   flex-direction: column;
   align-items: center;

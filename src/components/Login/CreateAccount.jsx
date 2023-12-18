@@ -33,15 +33,13 @@ function CreateAcccount() {
               <img src={Apple} alt="google"></img>
               <span>Continue with Apple</span>
             </button>
-            <button>
-              <div
-                className="btnDiv"
-                onClick={() => {
-                  navigate("/login/mobileLogin");
-                }}
-              >
-                <img src={Phone} alt="google"></img>Enter your mobile number
-              </div>
+            <button
+              className="btnDiv"
+              onClick={() => {
+                navigate("/login/mobileLogin");
+              }}
+            >
+              <img src={Phone} alt="google"></img>Enter your mobile number
             </button>
           </div>
         </div>

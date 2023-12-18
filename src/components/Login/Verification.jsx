@@ -12,7 +12,10 @@ function Verification() {
       <div id="verificationContainer">
         <div className="verificationDiv">
           <div className="verificationTimeline">
-            <img src={Timeline}></img>
+            <img
+              src={Timeline}
+              style={{ objectFit: "cover", width: "100%" }}
+            ></img>
           </div>
           <div className="veriDiv">
             <div>Verification</div>

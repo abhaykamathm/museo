@@ -3,15 +3,18 @@
   height: 100%;
 }
 #preferencesContainer .preferencesDiv {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 1.2rem;
+  overflow-y: auto;
   gap: 1.5rem;
 }
 
 #preferencesContainer .preferencesDiv .preferencesTimeline {
-  width: 23.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +24,7 @@
 #preferencesContainer .preferencesDiv .preferDiv {
   display: flex;
   gap: 0.5rem;
+  width: 100%;
 }
 #preferencesContainer .preferencesDiv .preferDiv .name {
   display: flex;
@@ -39,7 +43,7 @@
 }
 #preferencesContainer .preferencesDiv .searchBtn {
   display: flex;
-  width: 23.75rem;
+  /* width: 23.75rem; */
   padding: 0.5rem 9.5rem 0.5rem 1rem;
   align-items: center;
   gap: 0.5rem;
@@ -49,6 +53,7 @@
 #preferencesContainer .preferencesDiv .preferImageDiv {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 1.37rem;
 }
 #preferencesContainer .preferencesDiv .preferDiv p {
@@ -59,24 +64,29 @@
   line-height: 1.375rem;
 }
 #preferencesContainer .preferencesDiv .imagePrefer {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  overflow: auto;
-  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 35rem; */
+  gap: 0.5rem;
+  width: 100%;
 }
 #preferencesContainer .preferencesDiv .image_div {
-  width: 11.375rem;
-  height: 11.375rem;
+  width: 100%;
+  aspect-ratio: 1;
   display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  border-radius: 0.47394rem;
-  /* border: 1.896px solid var(--Primary-Yellow, #dddf1c); */
-  background: linear-gradient(
+  /* border-radius: 0.47394rem; */
+  /* background: linear-gradient(
       0deg,
       rgba(193, 193, 193, 0.2) 0%,
       rgba(193, 193, 193, 0.2) 100%
     ),
-    url(<path-to-image>), lightgray 50% / cover no-repeat;
+    url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+
+#preferencesContainer .preferencesDiv .image_div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  object-position: center;
 }

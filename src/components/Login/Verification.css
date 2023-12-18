@@ -3,15 +3,17 @@
   height: 100%;
 }
 #verificationContainer .verificationDiv {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 1.2rem;
+  overflow-y: auto;
   gap: 1.5rem;
 }
 
 #verificationContainer .verificationDiv .verificationTimeline {
-  width: 23.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,8 +38,9 @@
   line-height: 1.375rem;
 }
 #verificationContainer .verificationDiv .uploadDiv {
+  width: 100%;
   display: flex;
-  padding: 1.06425rem;
+  padding: 1.6rem;
   flex-direction: column;
   align-items: center;
   gap: 1.06425rem;
@@ -48,9 +51,8 @@
 }
 #verificationContainer .verificationDiv .uploadDiv .dashedLine {
   display: flex;
-  width: 21.61775rem;
-  height: 11.64031rem;
-  padding: 0.16631rem;
+  width: 100%;
+  height: 11.6rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -65,9 +67,9 @@
   font-weight: 400;
 }
 #verificationContainer .verificationDiv .fileDiv {
-  width: 21.61775rem;
+  width: 100%;
   display: flex;
-  padding: 0.33256rem 0.49888rem;
+  padding: 0.3rem 0.5rem;
   justify-content: space-between;
   align-items: center;
   border-radius: 0.39913rem;

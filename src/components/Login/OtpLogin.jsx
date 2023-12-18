@@ -3,13 +3,16 @@ import Timeline from "./Images/Mobile.svg";
 import "./otpLogin.css";
 import { useNavigate } from "react-router-dom";
 function OtpLogin() {
-  const naviagte = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <div id="otpContainer">
         <div className="otpDiv">
           <div className="timeline">
-            <img src={Timeline}></img>
+            <img
+              src={Timeline}
+              style={{ objectFit: "cover", width: "100%" }}
+            ></img>
           </div>
           <div className="otpInputDiv">
             <div className="infoDiv">
@@ -144,14 +147,14 @@ function OtpLogin() {
             <div className="buttonDiv">
               <button
                 onClick={() => {
-                  useNavigate("/login/otpVerify");
+                  navigate("/login/otpVerify");
                 }}
               >
                 Go Back
               </button>
               <button
                 onClick={() => {
-                  useNavigate("/login");
+                  navigate("/login/addCard");
                 }}
               >
                 Continue

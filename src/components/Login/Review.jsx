@@ -16,7 +16,10 @@ function Review() {
       <div id="reviewContainer">
         <div className="reviewDiv">
           <div className="reviewTimeline">
-            <img src={Timeline}></img>
+            <img
+              src={Timeline}
+              style={{ objectFit: "cover", width: "100%" }}
+            ></img>
           </div>
           <div className="wrapReview">
             <div className="nameHead">Review</div>
