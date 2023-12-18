@@ -17,6 +17,7 @@
 .side-info-panel-container .top-fixed-card-container #view-carousel:hover {
   cursor: pointer;
   opacity: 0.9;
+  transform: scale(1.05);
 }
 
 .side-info-panel-container button {

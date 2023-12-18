@@ -9,15 +9,20 @@ import Width from "./Images/Width.svg";
 import Height from "./Images/Height.svg";
 import Appreciation from "./Images/Appreciation.svg";
 import ViewCarousel from "./Images/ViewCarousel.svg";
+import { useNavigate } from "react-router-dom";
+import { useGlobalInfo } from "../../contexts/globalContext";
 
-function TopFixedCard({ setShowInfo }) {
+function TopFixedCard() {
+  const context = useGlobalInfo();
+  const navigate = useNavigate();
   return (
     <div className="top-fixed-card-container">
       <img
         id="view-carousel"
         src={ViewCarousel}
         onClick={() => {
-          setShowInfo((showInfo) => !showInfo);
+          context.changeLandingView("carousel");
+          navigate("/");
         }}
       />
       <div className="lot">LOT NUMBER 25</div>

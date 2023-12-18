@@ -6,21 +6,39 @@ import Diamond from "./Images/Diamond.svg";
 import LiveDot from "./Images/LiveDot.svg";
 import "./Live.css";
 import SideInfoPanel from "../../components/Live/SideInfoPanel";
+import ActionIcons from "../../components/Live/ActionIcons";
+import Location from "../../components/Live/Location";
+import { useGlobalInfo } from "../../contexts/globalContext";
 
 function Live() {
+  const context = useGlobalInfo();
   const [showInfo, setShowInfo] = useState(false);
   return (
-    <div className="live-container">
-      {showInfo && <SideInfoPanel setShowInfo={setShowInfo} />}
+    <div
+      className="live-container"
+      style={{
+        background:
+          context.liveBackground === "map"
+            ? `url("/Images/Live/Background2.png")`
+            : "",
+      }}
+    >
+      {showInfo && <SideInfoPanel />}
       <div className="live-top-bar">
-        <img src={LiveDot} />
-        <div>Live</div>
-        <img src={Wall} />
-        <img src={Eye} />
-        <div>All Viewers (5k)</div>
-        <img src={Wall} />
-        <img src={Diamond} />
-        <div>VIPSs (101)</div>
+        <div className="info-location-container">
+          <div className="info">
+            <img src={LiveDot} />
+            <div>Live</div>
+            <img src={Wall} />
+            <img src={Eye} />
+            <div>All Viewers (5k)</div>
+            <img src={Wall} />
+            <img src={Diamond} />
+            <div>VIPSs (101)</div>
+          </div>
+          <Location />
+        </div>
+        <ActionIcons setShowInfo={setShowInfo} />
       </div>
       {!showInfo && (
         <div className="parent">

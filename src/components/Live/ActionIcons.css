@@ -1,0 +1,21 @@
+.action-icons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.action-icons img {
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.8rem;
+  background-color: #84899d;
+}
+
+.action-icons img:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.action-icons img:active {
+  opacity: 0.75;
+  transform: scale(1);
+}
