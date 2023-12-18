@@ -4,7 +4,9 @@ import Upload from "./Images/uploadPic.svg";
 import File from "./Images/fileImg.svg";
 import Delete from "./Images/deleteImg.svg";
 import "./Verification.css";
+import { useNavigate } from "react-router-dom";
 function Verification() {
+  const navigate = useNavigate();
   return (
     <>
       <div id="verificationContainer">
@@ -68,8 +70,20 @@ function Verification() {
             </div>
           </div>
           <div className="buttonDiv">
-            <button>Go Back</button>
-            <button>Continue</button>
+            <button
+              onClick={() => {
+                navigate("/login/cardAdded");
+              }}
+            >
+              Go Back
+            </button>
+            <button
+              onClick={() => {
+                navigate("/login/successVerification");
+              }}
+            >
+              Continue
+            </button>
           </div>
         </div>
       </div>

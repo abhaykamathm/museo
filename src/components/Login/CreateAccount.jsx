@@ -6,7 +6,9 @@ import Facebook from "./Images/Mail Send.svg";
 import Apple from "./Images/Apple.svg";
 import Phone from "./Images/Phone Mobile Phone.svg";
 import { GoogleLogin } from "react-google-login";
+import { useNavigate } from "react-router-dom";
 function CreateAcccount() {
+  const navigate = useNavigate();
   return (
     <>
       <div id="accountContainer">
@@ -32,8 +34,14 @@ function CreateAcccount() {
               <span>Continue with Apple</span>
             </button>
             <button>
-              <img src={Phone} alt="google"></img>
-              <span>Enter your mobile number</span>
+              <div
+                className="btnDiv"
+                onClick={() => {
+                  navigate("/login/mobileLogin");
+                }}
+              >
+                <img src={Phone} alt="google"></img>Enter your mobile number
+              </div>
             </button>
           </div>
         </div>

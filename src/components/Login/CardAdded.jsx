@@ -7,8 +7,9 @@ import NFC from "./Images/NFC.svg";
 import Payment from "./Images/Payment Method.svg";
 import Logo from "./Images/Arrow Right.svg";
 import "./CardAdded.css";
-
+import { useNavigate } from "react-router-dom";
 function CardAdded() {
+  const navigate = useNavigate();
   return (
     <>
       <div id="cardAddedContainer">
@@ -42,7 +43,13 @@ function CardAdded() {
           </div>
           <div className="endLogo">
             <img src={Logo}></img>
-            <button>Continue</button>
+            <button
+              onClick={() => {
+                navigate("/login/verification");
+              }}
+            >
+              Continue
+            </button>
           </div>
         </div>
       </div>
