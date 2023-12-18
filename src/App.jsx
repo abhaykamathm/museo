@@ -12,6 +12,11 @@ import OtpLoginPage from "./pages/Login/OtpLoginPage";
 import AddCardPage from "./pages/Login/AddCardPage";
 import { useGlobalInfo } from "./contexts/globalContext";
 import Live from "./pages/Live/Live";
+import { ProfileWallet } from "./components/Profile/ProfileWallet";
+import { QRAddNewCard } from "./components/Profile/QRAddNewCard";
+import { QRAccountLink } from "./components/Profile/QRAccountLink";
+import { QRCodeForProfile } from "./components/Profile/QRCodeForProfile";
+import { CompleteProfileCard } from "./components/Profile/CompleteProfileCard";
 
 function App() {
   const context = useGlobalInfo();
@@ -26,7 +31,15 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/live" element={<Live />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile />}>
+            <Route path="" element={<CompleteProfileCard />} />
+            <Route path="qrProfile" element={<QRCodeForProfile />} />
+            <Route path="yourWallet" element={<ProfileWallet />} />
+            <Route path="newCard" element={<QRAddNewCard />} />
+            <Route path="linkAccount" element={<QRAccountLink />} />
+            <Route path="activeSales" element={<ActiveSales />} />
+            <Route path="pastSales" element={<PastSales />} />
+          </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/createAccount" element={<AccountCreation />} />
           <Route path="/login/mobileLogin" element={<MobileLogin />} />
