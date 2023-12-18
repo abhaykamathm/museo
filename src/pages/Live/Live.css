@@ -1,0 +1,30 @@
+.live-container {
+  height: 100%;
+  position: relative;
+  font-family: var(--robot);
+  background: url("/public/Images/Live/Background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+
+.live-container .footer {
+  background-color: #203;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  color: #e8e8e8;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.live-container .footer div:nth-child(2) {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  color: #c9b0d5;
+}
