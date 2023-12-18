@@ -2,7 +2,7 @@
 const past_sales = [
     {
         name: "Birth of Venus | Sandro Botticelli’s Collection ",
-        img_path: "/Images/Profile/Venus-img.png",
+        img_path: "/Images/Profile/Adoration-Magi-img.png",
         artist: "By Sandro Botticelli",
         collection_name: `Sandro Botticelli’s Collection`,
         date: `12 August 2022`,
@@ -15,7 +15,7 @@ const past_sales = [
         yourMaxBid:''
       },{
         name: "Adoration of the Magi | Sandro Botticelli’s Collection ",
-        img_path: "/Images/Home/painting2.png",
+        img_path: "/Images/Profile/Adoration-Magi-img.png",
         artist: "By Sandro Botticelli",
         collection_name: `Sandro Botticelli’s Collection`,
         date: `12 August 2022`,
@@ -28,7 +28,7 @@ const past_sales = [
         yourMaxBid:'USD 2700'
       },{
         name: "Adoration of the Magi | Sandro Botticelli’s Collection ",
-        img_path: "/Images/Home/painting2.png",
+        img_path: "/Images/Profile/Adoration-Magi-img.png",
         artist: "By Sandro Botticelli",
         collection_name: `Sandro Botticelli’s Collection`,
         date: `12 August 2022`,

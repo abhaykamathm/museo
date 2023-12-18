@@ -1,104 +1,107 @@
 #PastSales {
-    width: 73%;
-    height: 94%;
-    position: relative;
-    background-color: #2d0043;
-    border-radius: 0.5em;
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-  }
-  .PastSales-top-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .PastSales-top-nav .PastSales-top-nav-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .PastSales-top-nav-left #header-1 {
-    color: #e8e8e8;
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-  }
-  .PastSales-top-nav-left .line {
-    color: #e8e8e8;
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 300;
-  }
-  .PastSales-top-nav-left #header-2 {
-    color: #e8e8e8;
-    font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-  }
-  .PastSales-top-nav .PastSales-top-nav-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-  .PastSales-top-nav-right .search-bar-div {
-    display: flex;
-    background: rgba(115, 115, 115, 0.5);
-    border-radius: 0.5rem;
-    padding: 0 1rem;
-  }
-  .PastSales-top-nav-right #search-text {
-    color: #e8e8e8;
-    font-family: Roboto;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 300;
-  }
-  .PastSales-top-nav-right .search-img {
-    padding: 0.6rem 1rem;
-  }
-  .PastSales-top-nav-right .filter-div {
-    background: rgba(115, 115, 115, 0.5);
-    border-radius: 0.5rem;
-    padding: 0.75rem 1rem;
-  }
-  
-  #PastSales {
-    width: 100%;
-    color: #e8e8e8;
-  }
-  
-  #PastSales .artist-collection-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 2rem;
-    margin: 0 1rem;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-    position: relative;
-    background-color: #203;
-    border-radius: 0.5rem;
-  }
-  .infoStatus {
-    display: flex;
-    gap: 1rem;
-  }
-  .infoStatus > div {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-  }
-  .infoStatus #bid-status-btn {
+  width: 73%;
+  height: 94%;
+  position: relative;
+  background-color: #2d0043;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+.PastSales-top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.PastSales-top-nav .PastSales-top-nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.PastSales-top-nav-left #header-1 {
+  color: #e8e8e8;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.PastSales-top-nav-left .line-bar {
+  color: #e8e8e8;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+}
+.PastSales-top-nav-left #header-2 {
+  color: #e8e8e8;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.PastSales-top-nav .PastSales-top-nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.PastSales-top-nav-right .search-bar-div {
+  display: flex;
+  background: rgba(115, 115, 115, 0.5);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+}
+.PastSales-top-nav-right #search-text {
+  color: #e8e8e8;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+}
+.PastSales-top-nav-right .search-img {
+  padding: 0.6rem 1rem;
+}
+.PastSales-top-nav-right .filter-div {
+  background: rgba(115, 115, 115, 0.5);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+#PastSales {
+  width: 100%;
+  color: #e8e8e8;
+}
+
+#PastSales .artist-collection-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  margin: 0 1rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  position: relative;
+  background-color: #203;
+  border-radius: 0.5rem;
+}
+.past-Sale-date {
+  width: fit-content;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #af8ac1;
+  color: #e8e8e8;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* .infoStatus #bid-status-btn {
     color: #ffff;
     background-color: #8b54a5;
     border-radius: 0.5rem;
@@ -126,9 +129,9 @@
     border-radius: 50%;
     background-color: #b71212;
     border: 1px solid #b71212;
-  }
-  
-  #PastSales .artist-name {
+  } */
+
+/* #PastSales .artist-name {
     font-size: 1.75rem;
     color: #ffca60;
     font-family: supravitally;
@@ -140,13 +143,13 @@
     line-height: 1.5rem;
     font-weight: 300;
     width: calc(100% - 10rem);
-  }
-  #PastSales .lite-text {
-    color: #e8e8e8;
-    font-family: Roboto;
-    font-weight: 300;
-  }
-  #PastSales #current-bid{
+  } */
+#PastSales .lite-text {
+  color: #e8e8e8;
+  font-family: Roboto;
+  font-weight: 300;
+}
+/* #PastSales #current-bid{
     font-weight: 500;
   }
   #PastSales .curator-host {
@@ -164,72 +167,71 @@
     width: 1px;
     border: 1px solid #e8e8e8;
   }
-  
-  #PastSales .artist-collection-card img {
-    width: 10rem;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-  
-  #PastSales .artpiece {
-    cursor: pointer;
-    display: flex;
-    gap: 1rem;
-    background-color: #203;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 0.5rem 1rem;
-    transition: transform 0.25s ease;
-  }
-  
-  .selected {
-    transform: scale(1.02);
-    box-shadow: 0px 0px 26px 0px rgba(255, 202, 96, 0.5);
-  }
-  
-  #PastSales .artpiece img {
-    height: 9rem;
-    width: 9rem;
-    object-fit: cover;
-  }
-  
-  #PastSales .artpiece .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-  }
-  
-  .btn-update-bid {
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--Primary-Yellow, #dddf1c);
-    color: var(--Color, #fff);
-  
-    /* T1 300/Text 1 */
-    font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 300;
-    display: inline-flex;
-    padding: 0.75rem 1rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    background: none;
-  }
-  .active-sale-container {
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    height: 80vh;
-  }
-  
+   */
+#PastSales .artist-collection-card img {
+  width: 10rem;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+#PastSales .artpiece {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  background-color: #203;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+  transition: transform 0.25s ease;
+}
+
+.selected {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 26px 0px rgba(255, 202, 96, 0.5);
+}
+
+#PastSales .artpiece img {
+  height: 9rem;
+  width: 9rem;
+  object-fit: cover;
+}
+
+#PastSales .artpiece .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.btn-update-bid {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Primary-Yellow, #dddf1c);
+  color: var(--Color, #fff);
+
+  /* T1 300/Text 1 */
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  display: inline-flex;
+  padding: 0.75rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+}
+.active-sale-container {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 80vh;
+}

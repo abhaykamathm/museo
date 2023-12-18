@@ -16,7 +16,7 @@ export const ActiveSales = () => {
       <div className="ActiveSales-top-nav">
         <div className="ActiveSales-top-nav-left">
           <div id="header-1">My buying & biddings</div>
-          <div className="line">|</div>
+          <div className="line-bar">|</div>
           <div id="header-2">Active sales (3)</div>
         </div>
         <div className="ActiveSales-top-nav-right">
