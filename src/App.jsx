@@ -25,6 +25,7 @@ import { QRAddNewCard } from "./components/Profile/QRAddNewCard";
 import { QRAccountLink } from "./components/Profile/QRAccountLink";
 import { QRCodeForProfile } from "./components/Profile/QRCodeForProfile";
 import { CompleteProfileCard } from "./components/Profile/CompleteProfileCard";
+import { ReadyToCheckOut } from "./components/Profile/ReadyToCheckOut";
 
 function App() {
   const context = useGlobalInfo();
@@ -47,6 +48,7 @@ function App() {
             <Route path="linkAccount" element={<QRAccountLink />} />
             <Route path="activeSales" element={<ActiveSales />} />
             <Route path="pastSales" element={<PastSales />} />
+            <Route path="readyToCheckOut" element={<ReadyToCheckOut />} />
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/createAccount" element={<AccountCreation />} />
