@@ -30,7 +30,7 @@ function OtpLogin() {
                       fontSize: " 0.875rem",
                       display: "flex",
                       alignItems: "center",
-                      padding: "0",
+                      // padding: "0",
                     }}
                   >
                     <option value="item1">Mr</option>
@@ -86,18 +86,7 @@ function OtpLogin() {
               <div>Date Of Birth</div>
               <div className="otpInput">
                 <div className="dropdown">
-                  <select
-                    style={{
-                      width: "100%",
-                      outline: "none",
-                      color: "#131313",
-                      fontFamily: "Roboto",
-                      fontSize: " 0.875rem",
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "0.75rem 1rem",
-                    }}
-                  >
+                  <select>
                     <option value="">Month</option>
                     <option value="item1">January</option>
                     <option value="item2">February</option>
@@ -105,36 +94,14 @@ function OtpLogin() {
                   </select>
                 </div>
                 <div className="dropdown">
-                  <select
-                    style={{
-                      width: "100%",
-                      outline: "none",
-                      color: "#131313",
-                      fontFamily: "Roboto",
-                      fontSize: " 0.875rem",
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "0.75rem 1rem",
-                    }}
-                  >
+                  <select>
                     <option value="">Day</option>
                     <option value="item2">01</option>
                     <option value="item3">02</option>
                   </select>
                 </div>
                 <div className="dropdown">
-                  <select
-                    style={{
-                      width: "100%",
-                      outline: "none",
-                      color: "#131313",
-                      fontFamily: "Roboto",
-                      fontSize: " 0.875rem",
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "0.75rem 1rem",
-                    }}
-                  >
+                  <select>
                     <option value="">Year</option>
                     <option value="item2">2023</option>
                     <option value="item3">2022</option>
@@ -146,18 +113,7 @@ function OtpLogin() {
               <div>Enter Your Shipping Address</div>
               <div className="Address">
                 <div className="dropdown">
-                  <select
-                    style={{
-                      width: "100%",
-                      outline: "none",
-                      color: "#131313",
-                      fontFamily: "Roboto",
-                      fontSize: " 0.875rem",
-                      display: "flex",
-                      alignItems: "center",
-                      padding: "0.75rem 1rem",
-                    }}
-                  >
+                  <select>
                     <option value="">Country</option>
                     <option value="item1">India</option>
                     <option value="item2">US</option>
@@ -165,29 +121,12 @@ function OtpLogin() {
                   </select>
                 </div>
                 <div className="nameDiv">
-                  <input
-                    type="text"
-                    placeholder="Street Address"
-                    style={{
-                      width: "100%",
-                      outline: "none",
-                      color: "#131313",
-                      fontFamily: "Roboto",
-                      fontSize: " 0.875rem",
-                    }}
-                  ></input>
+                  <input type="text" placeholder="Street Address"></input>
                 </div>
                 <div className="nameDiv">
                   <input
                     type="text"
                     placeholder="Apartment,suite,flat,...floor"
-                    style={{
-                      width: "100%",
-                      outline: "none",
-                      color: "#131313",
-                      fontFamily: "Roboto",
-                      fontSize: " 0.875rem",
-                    }}
                   ></input>
                 </div>
                 <button className="shippingBtn">+ Add Shipping Address</button>
@@ -195,7 +134,7 @@ function OtpLogin() {
             </div>
             <div className="infoDiv">
               <div>Add a Payment Method</div>
-              <div className="Address">
+              <div className="add-card">
                 <p>Credit & Debit Cards</p>
                 <button className="shippingBtn">+ Add a new card</button>
               </div>
