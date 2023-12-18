@@ -7,6 +7,61 @@
   background-size: cover;
   background-position: center;
   padding: 1rem;
+  display: flex;
+}
+
+.live-container .live-top-bar {
+  padding: 0.5rem;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(
+    108deg,
+    rgba(43, 43, 43, 0.26) 0%,
+    rgba(255, 255, 255, 0.07) 100%
+  );
+  border-radius: 0.5rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.live-container .parent {
+  min-height: 4rem;
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  width: 100%;
+}
+
+.live-container .parent .info-place-bid-container {
+  padding: 1rem;
+  background: linear-gradient(
+    0deg,
+    rgba(32, 0, 51, 0.5) 0%,
+    rgba(34, 0, 51, 0) 100%
+  );
+  display: flex;
+  gap: 1rem;
+  display: none;
+}
+
+.live-container .parent:hover > .info-place-bid-container {
+  display: flex;
+}
+
+.live-container .info-place-bid-container button {
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-family: var(--robot);
+  font-weight: 500;
+}
+
+.live-container .info-place-bid-container button:nth-child(1) {
+  background-color: #203;
+  color: #fff;
 }
 
 .live-container .footer {
@@ -27,4 +82,15 @@
   gap: 0.25rem;
   align-items: center;
   color: #c9b0d5;
+}
+
+.live-container .footer button {
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  font-size: 0.5rem;
+  background-color: transparent;
+  color: #fff;
+  position: absolute;
+  right: 1rem;
 }

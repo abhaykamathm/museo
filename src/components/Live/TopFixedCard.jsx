@@ -8,10 +8,18 @@ import Proile from "./Images/Profile.svg";
 import Width from "./Images/Width.svg";
 import Height from "./Images/Height.svg";
 import Appreciation from "./Images/Appreciation.svg";
+import ViewCarousel from "./Images/ViewCarousel.svg";
 
-function TopFixedCard() {
+function TopFixedCard({ setShowInfo }) {
   return (
     <div className="top-fixed-card-container">
+      <img
+        id="view-carousel"
+        src={ViewCarousel}
+        onClick={() => {
+          setShowInfo((showInfo) => !showInfo);
+        }}
+      />
       <div className="lot">LOT NUMBER 25</div>
       <img className="header-border" src={HeaderBorder} />
       <div className="title">Portrait of Young Man Holding a Roundel</div>

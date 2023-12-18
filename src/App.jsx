@@ -37,7 +37,7 @@ function App() {
     >
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/live" element={<Live />} />
           <Route path="/profile" element={<Profile />}>
             <Route path="" element={<CompleteProfileCard />} />

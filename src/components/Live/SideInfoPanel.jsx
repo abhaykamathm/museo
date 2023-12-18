@@ -4,10 +4,10 @@ import TopFixedCard from "./TopFixedCard";
 import CatelougeCard from "./CatelougeCard";
 import ArtistCard from "./ArtistCard";
 
-function SideInfoPanel() {
+function SideInfoPanel({ setShowInfo }) {
   return (
     <div className="side-info-panel-container">
-      <TopFixedCard />
+      <TopFixedCard setShowInfo={setShowInfo} />
       <div className="scroll-container">
         <CatelougeCard />
         <ArtistCard />

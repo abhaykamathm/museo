@@ -5,6 +5,18 @@
   background-color: #203;
   padding: 0.75rem;
   border-radius: 0.5rem;
+  position: relative;
+}
+
+.side-info-panel-container .top-fixed-card-container #view-carousel {
+  width: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.side-info-panel-container .top-fixed-card-container #view-carousel:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .side-info-panel-container button {
@@ -67,6 +79,9 @@
 
 .side-info-panel-container #place-bid {
   background-color: #520079 !important;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  color: #fff;
 }
 
 .side-info-panel-container .similar-works {
@@ -85,6 +100,8 @@
   width: 100%;
   color: #af8ac1;
   border: 1px solid #af8ac1 !important;
+  border-radius: 0.25rem;
+  background-color: transparent;
 }
 
 .side-info-panel-container .similar-works button:active {
