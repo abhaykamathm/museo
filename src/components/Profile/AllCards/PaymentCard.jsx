@@ -28,7 +28,7 @@ function PaymentCard({cardNumber}) {
                 <div>
                   <img src="./Images/Profile/Group 244.png" alt="" />
                 </div>
-                <div>
+                <div id='wifi-img'>
                   <img src="./Images/Profile/NFC.png" alt="" />
                 </div>
               </div>

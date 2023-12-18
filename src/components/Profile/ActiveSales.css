@@ -232,3 +232,7 @@
   overflow: scroll;
   height: 80vh;
 }
+
+.active-sale-container::-webkit-scrollbar {
+  display: none;
+}

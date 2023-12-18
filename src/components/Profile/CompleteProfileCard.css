@@ -24,9 +24,13 @@
   height: 100%;
   overflow-y: auto;
 }
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
 .profile-information {
   width: 41%;
-  height: 40%;
+  /* height: 40%; */
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -70,6 +74,7 @@
   float: right;
   border-radius: 0.25em;
   border: 1px solid rgba(112, 115, 127, 0.8);
+  background-color: #2d0043;
   padding: 0 1.5em;
   color: #fff;
   font-family: Roboto;
@@ -119,15 +124,17 @@
   font-weight: 500;
 }
 #payment-header {
+  height: 15%;
   display: flex;
   flex-direction: row;
   gap: 0.25em;
 }
 #header-text {
   padding: 0.5em;
-  align-items:center ;
+  align-items: center;
 }
 #card-number {
+  height: 14%;
   display: flex;
   flex-direction: row;
   gap: 3em;
@@ -142,11 +149,16 @@
   font-weight: 500;
 }
 #card-images {
+  height: 15%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+#card-images #wifi-img {
+  padding-right: 2rem;
+}
 #payment-footer {
+  height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -163,8 +175,11 @@
   font-weight: 300;
   letter-spacing: 0.5em;
 }
+#payment-footer #payment-method {
+  padding-right: 2rem;
+}
 
-.verification-details{
+.verification-details {
   width: 41%;
   height: 40%;
   display: flex;
