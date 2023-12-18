@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ProfileWallet.css";
 import PaymentCard from "./AllCards/PaymentCard";
+// import Add from './Images/Profile/Add 1.svg'
 import { Link } from "react-router-dom";
 
 export const ProfileWallet = () => {
@@ -10,9 +11,8 @@ export const ProfileWallet = () => {
   });
 
   const paypalSelected = () => {
-    console.log('paypal seleccted');
-    
-  }
+    console.log("paypal seleccted");
+  };
   return (
     <div id="profile-wallet">
       <div id="header">
@@ -91,20 +91,22 @@ export const ProfileWallet = () => {
           </div> */}
         {/* </div> */}
       </div>
-      <div id="add-newCard-div">
-        <div>
-          <img src="./Images/Profile/Add 1.svg" alt="" />
-        </div>
-        <Link to='/profile/newCard'>
-        <div id="add-newCard-text">Add a New Card</div></Link>
+      <div >
+        <Link to="/profile/newCard" id="add-newCard-div">
+          <div id="Add-img-div">
+            <img src="../Images/Profile/Add 1.svg" alt="" />
+          </div>
+
+          <div id="add-newCard-text">Add a New Card</div>
+        </Link>
       </div>
       <div id="footer-wallet-text">Wallet</div>
       <div id="link-account-footer">
-        <Link to='/profile/linkAccount'><div className="circle-paypal" onClick={paypalSelected}></div></Link>
+        <Link to="/profile/linkAccount">
+          <div className="circle-paypal" onClick={paypalSelected}></div>
+        </Link>
         <div id="paypal-text">Paypal</div>
-        <div id="link-account-text">
-          Link account
-        </div>
+        <div id="link-account-text">Link account</div>
       </div>
     </div>
   );
