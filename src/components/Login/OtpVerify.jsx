@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Line from "./Images/Line.svg";
 import "./OtpVerify.css";
+import Logo from "./Images/Arrow Right.svg";
 import { useNavigate } from "react-router-dom";
 function OtpVerify() {
   const navigate = useNavigate();
@@ -79,6 +79,9 @@ function OtpVerify() {
                 </button>
               </div>
             </div>
+          </div>
+          <div className="endLogo">
+            <img src={Logo}></img>
           </div>
         </div>
       </div>

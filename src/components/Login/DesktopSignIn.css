@@ -1,0 +1,97 @@
+#desktopSignIn {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#desktopSignIn .desktopDiv {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#desktopSignIn .desktopDiv .imageDiv {
+  position: relative;
+}
+
+#desktopSignIn .desktopDiv .overlay-div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 1.5rem;
+  gap: 2.5rem;
+  padding-top: 5rem;
+}
+#desktopSignIn .desktopDiv .text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#desktopSignIn .desktopDiv .text-div div {
+  color: var(--Foundation-Blacks-black-100, #bebebe);
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+#desktopSignIn .desktopDiv .text-div span {
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+#desktopSignIn .desktopDiv .text-div p {
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+#desktopSignIn .desktopDiv .qr-scan-div {
+  background-color: #fff;
+  display: flex;
+  height: 7.25rem;
+  padding: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#desktopSignIn .desktopDiv .qr-scan {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+#desktopSignIn .desktopDiv .steps-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+#desktopSignIn .desktopDiv .step-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  color: var(--Neutral-White, #e8e8e8);
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+#desktopSignIn .desktopDiv .vector-div {
+  top: -1rem;
+  right: -1rem;
+  position: absolute;
+}

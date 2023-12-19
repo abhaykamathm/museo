@@ -6,24 +6,23 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 1.2rem;
   overflow-y: auto;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 #verificationContainer .verificationDiv .verificationTimeline {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
   gap: 5.25rem;
 }
 #verificationContainer .verificationDiv .veriDiv {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
   color: var(--Color, #fff);
   font-family: Roboto;
   font-size: 1.25rem;
@@ -108,7 +107,7 @@
   background: transparent;
   color: var(--Color, #fff);
 }
-#verificationContainer .verificationDiv .buttonDiv button:hover {
+#verificationContainer .verificationDiv .buttonDiv button:nth-child(2) {
   color: var(--Color, #fff);
   border-radius: 0.125rem;
   border: 0.5px solid var(--CTA-Purple, #811db4);

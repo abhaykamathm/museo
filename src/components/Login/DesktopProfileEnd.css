@@ -1,0 +1,38 @@
+#desktopEnd {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#desktopEnd .desktopEndDiv {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#desktopEnd .desktopEndDiv .imageDiv {
+  position: relative;
+}
+#desktopEnd .vector-div {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+}
+#desktopEnd .desktopEndDiv .flash {
+  top: 0rem;
+  /* right: -1rem; */
+  position: absolute;
+  /* fill: linear-gradient(
+    180deg,
+    rgba(245, 248, 245, 0.27) -0.16%,
+    rgba(245, 248, 230, 0) 99.28%
+  );
+  opacity: 0.69; */
+}
+#desktopEnd .desktopEndDiv .scrollImage {
+  display: flex;
+  justify-content: center;
+}

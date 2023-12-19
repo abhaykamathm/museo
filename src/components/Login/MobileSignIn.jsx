@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./MobileSignIn.css";
 import Pic from "./Images/Pic.svg";
 import Line from "./Images/Line 1.svg";
+import Logo from "./Images/Arrow Right.svg";
 function MobileSignIn() {
   const navigate = useNavigate();
   return (
@@ -46,6 +47,9 @@ function MobileSignIn() {
               </button>
             </div>
           </div>
+        </div>
+        <div className="endLogo">
+          <img src={Logo}></img>
         </div>
       </div>
     </>

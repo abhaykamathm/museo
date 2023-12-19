@@ -8,8 +8,24 @@ import Payment from "./Images/Payment Method.svg";
 import Upload from "./Images/uploadPic.svg";
 import File from "./Images/fileImg.svg";
 import Delete from "./Images/deleteImg.svg";
+import Image1 from "./Images/Image1.svg";
+import Image2 from "./Images/Image2.svg";
+import Image3 from "./Images/Image3.svg";
+import Image4 from "./Images/Image4.svg";
+import Image5 from "./Images/Image5.svg";
+import Image6 from "./Images/Image6.svg";
 import "./Review.css";
 function Review() {
+  const Images = [
+    { id: "1", imageName: Image1 },
+    { id: "2", imageName: Image2 },
+    { id: "3", imageName: Image3 },
+    { id: "4", imageName: Image4 },
+    { id: "5", imageName: Image5 },
+    { id: "6", imageName: Image6 },
+    { id: "5", imageName: Image5 },
+    { id: "6", imageName: Image6 },
+  ];
   const navigate = useNavigate();
   const [selectedFiles, setSelectedFiles] = useState([]);
 
@@ -120,13 +136,46 @@ function Review() {
                     </div>
                   </div>
                 ))}
-                {/* <div className="fileDiv">
-                  <img src={File}></img>
-                  <div className="deleteDiv">
-                    <p>Driver's License</p>
-                    <img src={Delete}></img>
+              </div>
+              <div className="preferDiv">
+                <div className="preferImageDiv">
+                  <div className="name">Preferences</div>
+                  {/* <div className="text_div">
+                    <input
+                      className="searchBtn"
+                      type="search"
+                      placeholder="search"
+                    ></input>
+                  </div> */}
+                  <div className="imagePrefer">
+                    {Images.map((data) => {
+                      return (
+                        <div className="image_div">
+                          <img src={data.imageName}></img>
+                        </div>
+                      );
+                    })}
                   </div>
-                </div> */}
+                </div>
+              </div>
+              <div className="addMoreButton">
+                <button>Add More</button>
+              </div>
+              <div className="footerButtonDiv">
+                <button
+                  onClick={() => {
+                    navigate("/login/preferences");
+                  }}
+                >
+                  Go Back
+                </button>
+                <button
+                  onClick={() => {
+                    navigate("/login/success");
+                  }}
+                >
+                  Continue
+                </button>
               </div>
             </div>
           </div>
