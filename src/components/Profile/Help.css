@@ -1,0 +1,97 @@
+#Help-container {
+  width: 73%;
+  height: 100%;
+  position: relative;
+  background-color: #2d0043;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  font-family: Roboto;
+}
+#Help-container .image-div {
+  width: 100%;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-image: url("/Images/Profile/Rectangle 11664.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+}
+.image-div .image-div-text {
+  color: #c9b0d5;
+  padding-top: 4rem;
+}
+.image-div .search-div {
+  width: fit-content;
+  display: flex;
+  border: 1px solid #af8ac1;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.image-div .search-div #search-image {
+  width: 0.8rem;
+}
+
+.btns-container {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.btns-container .btn-types {
+  color: #eee6f2;
+  background-color: #4b006e;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: 300;
+  padding: 0.8rem 6rem;
+  cursor: pointer;
+}
+
+#Help-container .footer-header{
+    color: #EEE6F2;
+}
+.Buying-cards-container{
+    height: 40%;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+#Help-container .Buying-cards-container::-webkit-scrollbar{
+    display: none;
+}
+.Buying-cards-container .data-card{
+    display: flex;
+    width: 50%;
+    height: 95%;
+    color: #EEE6F2;
+    background-color: #3A0056;
+    border: 1px solid #C9B0D5;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s, color 0.3s; 
+}
+.data-card:hover{
+    cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 26px 0px rgba(255, 202, 96, 0.5);
+}
+.data-card .selected-data-card{
+    display: flex;
+    height: fit-content;
+    box-shadow: 0px 0px 26px 0px rgba(255, 202, 96, 0.50);
+}
+.data-card .selected-data-card .selected-data-card-text{
+    color: #E8E8E8;
+
+}

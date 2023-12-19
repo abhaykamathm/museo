@@ -39,30 +39,27 @@ export const ReadyToCheckOut = () => {
               className={`artpiece ${selectedSale === index ? "selected" : ""}`}
               onClick={() => handleReadyToCheckOutelected(index)}
             >
-              <img src={piece.img_path} />
-              <div className="info">
-                <div>{piece.name}</div>
+              <div className="image-div">
+                <img src={piece.img_path} className="auction-image"/>
+              </div>
+              <div className="bottom-container">
+                <div className="info">
+                  <div className="text-container">
+                    <div className="peice-name bold-font-weight">{piece.name}</div>
+                    <div className="artist-name">{piece.artist}</div>
+                    <div className="peice-date normal-font-weight">{piece.date}</div>
+                  </div>
 
-                <div className="lite-text">{piece.artist}</div>
-                <div className="past-Sale-date">{piece.date}</div>
+                  <div className="bid-container">
+                    <div className="bid-value bold-font-weight">{piece.your_bid}</div>
+                    <div className="bid-text normal-font-weight">Your Bid</div>
+                  </div>
+                </div>
+                <div className="btn-container">
+                  <div className="cost-btn medium-font-weight">Cost Calculator</div>
+                  <div className="checkout-btn medium-font-weight">Checkout</div>
+                </div>
               </div>
-              <div className="bid-container">
-                <div>{piece.your_bid}</div>
-                <div>Your Bid</div>
-              </div>
-              <div className="btn-container">
-                <div>Cost Calculator</div>
-                <div>Checkout</div>
-              </div>
-              {/* <div className="lite-text">
-                  Auction registration made on {piece.Auction_registration}
-                </div> */}
-
-              {/* {index == selectedSale ? (
-                  <button className="btn-update-bid">Auction Won</button>
-                ) : (
-                  ""
-                )} */}
             </div>
           );
         })}
