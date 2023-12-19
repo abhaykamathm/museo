@@ -14,7 +14,10 @@ export default function VerificationSuccess() {
       <div id="successContainer">
         <div className="successDiv">
           <div className="successTimeline">
-            <img src={Timeline}></img>
+            <img
+              src={Timeline}
+              style={{ objectFit: "cover", width: "100%" }}
+            ></img>
           </div>
           <div className="profileVerifyDiv">
             <div className="logoDiv">

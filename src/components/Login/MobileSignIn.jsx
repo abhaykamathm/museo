@@ -39,7 +39,7 @@ function MobileSignIn() {
               </div>
               <button
                 onClick={() => {
-                  navigate("/login/otpLogin");
+                  navigate("/login/otpVerify");
                 }}
               >
                 Get OTP

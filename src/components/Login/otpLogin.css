@@ -3,7 +3,7 @@
   height: 100%;
 }
 
-.otpDiv {
+#otpContainer .otpDiv {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -13,37 +13,39 @@
   overflow-y: auto;
 }
 
-.timeline {
-  width: 100%;
+#otpContainer .otpDiv .timeline {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 5.25rem;
 }
 
-.timeline img {
+/* .timeline img {
   width: 105%;
   position: relative;
   left: 0.25rem;
-}
+} */
 
-.otpInputDiv {
+#otpContainer .otpDiv .otpInputDiv {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.infoDiv {
+#otpContainer .otpDiv .infoDiv {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.otpInputDiv div {
+#otpContainer .otpDiv .otpInputDiv div {
   color: var(--Color, #fff);
   font-family: Roboto;
   font-weight: 500;
 }
 
-.otpInput {
+#otpContainer .otpDiv .otpInput {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
@@ -53,11 +55,11 @@
   /* padding: 0.25rem 0.75rem; */
 }
 
-.otpInput div {
+#otpContainer .otpDiv .otpInput div {
   width: 100%;
 }
 
-.dropdown {
+#otpContainer .otpDiv .dropdown {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +69,7 @@
   padding: 0.75rem;
 }
 
-.nameDiv {
+#otpContainer .otpDiv .nameDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,7 +79,7 @@
   padding: 0.75rem;
 }
 
-.dropdown select,
+#otpContainer .otpDiv .dropdown select,
 input,
 label {
   width: 100%;
@@ -92,34 +94,34 @@ label {
   -webkit-text-fill-color: transparent;
 }
 
-.Address {
+#otpContainer .otpDiv .Address {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: flex-start;
 }
 
-.Address div {
+#otpContainer .otpDiv .Address div {
   width: 100%;
 }
 
-.infoDiv .add-card {
+#otpContainer .otpDiv .infoDiv .add-card {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.infoDiv .add-card p {
+#otpContainer .otpDiv .infoDiv .add-card p {
   margin-top: 0.25rem;
   font-weight: 300;
   font-size: 0.85rem;
 }
 
-.infoDiv .add-card button {
+#otpContainer .otpDiv .infoDiv .add-card button {
   width: fit-content;
 }
 
-.shippingBtn {
+#otpContainer .otpDiv .shippingBtn {
   display: flex;
   padding: 0.75rem 1rem;
   align-items: center;
@@ -132,19 +134,19 @@ label {
   -webkit-text-fill-color: transparent;
 }
 
-.Address p {
+#otpContainer .otpDiv .Address p {
   color: var(--Color, #fff);
   font-family: Roboto;
   font-size: 0.875rem;
   font-weight: 300;
 }
 
-.buttonDiv {
+#otpContainer .otpDiv .buttonDiv {
   display: flex;
   gap: 1rem;
 }
 
-.buttonDiv button:nth-child(1) {
+#otpContainer .otpDiv .buttonDiv button:nth-child(1) {
   display: flex;
   padding: 0.75rem 1rem;
   align-items: center;
@@ -155,7 +157,7 @@ label {
   border-radius: 0.125rem;
 }
 
-.buttonDiv button:nth-child(2) {
+#otpContainer .otpDiv .buttonDiv button:nth-child(2) {
   display: flex;
   padding: 0.75rem 1rem;
   align-items: center;

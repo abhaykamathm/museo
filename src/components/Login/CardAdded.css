@@ -3,20 +3,32 @@
   height: 100%;
 }
 #cardAddedContainer .cardAddedDiv {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1.2rem;
+  overflow-y: auto;
+}
+#cardAddedContainer .cardAddedDiv .cardAddedSection {
+  display: flex;
+  flex-direction: column;
   gap: 2.25rem;
 }
 #cardAddedContainer .cardAddedDiv .cardAddedTimeline {
-  width: 23.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   gap: 5.25rem;
+}
+#cardAddedContainer .cardAddedDiv .cardSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 #cardAddedContainer .cardAddedDiv .visa {
   width: 19.125rem;
@@ -96,6 +108,7 @@
   align-items: center;
   gap: 0.5rem;
   border-radius: 0.5rem;
+  color: #fff;
   background: var(--Foundation-Primary-primary-400, #753394);
 }
 #cardAddedContainer .cardAddedDiv .endLogo img {

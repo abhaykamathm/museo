@@ -86,7 +86,7 @@ function SocialLogin() {
             </button>
             <button
               onClick={() => {
-                navigate("/login/addCard");
+                navigate("/login/");
               }}
             >
               Continue

@@ -14,30 +14,37 @@ function CardAdded() {
     <>
       <div id="cardAddedContainer">
         <div className="cardAddedDiv">
-          <div className="cardAddedTimeline">
-            <img src={Timeline}></img>
-          </div>
-          <div className="blur">
-            <img src={Success} alt="success"></img>
-          </div>
-          <div className="visa">
-            <div className="visaCard">
-              <div className="chase">
-                <img src={Rectangle} alt=""></img>
-                <p>CHASE</p>
-              </div>
-              <div className="cardNo">
-                <p>**** **** **** 6 4 5 7</p>
-              </div>
-              <div className="visaImg">
-                <img src={Group} alt=""></img>
-                <img src={NFC} alt=""></img>
-              </div>
+          <div className="cardAddedSection">
+            <div className="cardAddedTimeline">
+              <img
+                src={Timeline}
+                style={{ objectFit: "cover", width: "100%" }}
+              ></img>
             </div>
-            <div className="avi">
-              <p>AVI SHANE</p>
-              <div>
-                <img src={Payment}></img>
+            <div className="cardSection">
+              <div className="blur">
+                <img src={Success} alt="success"></img>
+              </div>
+              <div className="visa">
+                <div className="visaCard">
+                  <div className="chase">
+                    <img src={Rectangle} alt=""></img>
+                    <p>CHASE</p>
+                  </div>
+                  <div className="cardNo">
+                    <p>**** **** **** 6 4 5 7</p>
+                  </div>
+                  <div className="visaImg">
+                    <img src={Group} alt=""></img>
+                    <img src={NFC} alt=""></img>
+                  </div>
+                </div>
+                <div className="avi">
+                  <p>AVI SHANE</p>
+                  <div>
+                    <img src={Payment}></img>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
