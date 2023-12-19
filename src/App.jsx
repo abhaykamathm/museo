@@ -27,6 +27,7 @@ import { QRAccountLink } from "./components/Profile/QRAccountLink";
 import { QRCodeForProfile } from "./components/Profile/QRCodeForProfile";
 import { CompleteProfileCard } from "./components/Profile/CompleteProfileCard";
 import { ReadyToCheckOut } from "./components/Profile/ReadyToCheckOut";
+import { Help } from "./components/Profile/Help";
 import DesktopSignIn from "./components/Login/DesktopSignIn";
 import DesktopProfileCompleted from "./components/Login/DesktopProfileCompleted";
 
@@ -52,6 +53,7 @@ function App() {
             <Route path="activeSales" element={<ActiveSales />} />
             <Route path="pastSales" element={<PastSales />} />
             <Route path="readyToCheckOut" element={<ReadyToCheckOut />} />
+            <Route path="help" element={<Help/>} />
           </Route>
           <Route path="/createAccount" element={<CreateAcccount />} />
           <Route path="/login/mobileLogin" element={<MobileSignIn />} />
