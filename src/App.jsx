@@ -6,26 +6,29 @@ import Login from "./pages/Login/Login";
 import { ActiveSales } from "./components/Profile/ActiveSales";
 import { PastSales } from "./components/Profile/PastSales";
 import ProfilePanel from "./components/Profile/ProfilePanel";
-import AccountCreation from "./pages/Login/AccountCreation";
-import MobileLogin from "./pages/Login/MobileLogin";
-import OtpLoginPage from "./pages/Login/OtpLoginPage";
-import AddCardPage from "./pages/Login/AddCardPage";
-import CardAddedPage from "./pages/Login/CardAddedPage";
-import VerificationPage from "./pages/Login/VerificationPage";
-import VerificationSuccessPage from "./pages/Login/VerificationSuccessPage";
-import PreferencePage from "./components/Home/PreferencePage";
-import ReviewPage from "./pages/Login/ReviewPage";
+import CreateAcccount from "./components/Login/CreateAccount";
+import MobileSignIn from "./components/Login/MobileSignIn";
+import OtpVerify from "./components/Login/OtpVerify";
+import OtpLogin from "./components/Login/OtpLogin";
+import AddCard from "./components/Login/AddCard";
+import CardAdded from "./components/Login/CardAdded";
+import Verification from "./components/Login/Verification";
+import VerificationSuccess from "./components/Login/VerificationSuccess";
+import Preferences from "./components/Login/Preferences";
+import Review from "./components/Login/Review";
+import ProfileCompleted from "./components/Login/ProfileCompleted";
+import DesktopProfileEnd from "./components/Login/DesktopProfileEnd";
 
 import { useGlobalInfo } from "./contexts/globalContext";
 import Live from "./pages/Live/Live";
-import OtpVerifyPage from "./pages/Login/OtpVerifyPage";
-import ProfileCompletedPage from "./pages/Login/ProfileCompletedPage";
 import { ProfileWallet } from "./components/Profile/ProfileWallet";
 import { QRAddNewCard } from "./components/Profile/QRAddNewCard";
 import { QRAccountLink } from "./components/Profile/QRAccountLink";
 import { QRCodeForProfile } from "./components/Profile/QRCodeForProfile";
 import { CompleteProfileCard } from "./components/Profile/CompleteProfileCard";
 import { ReadyToCheckOut } from "./components/Profile/ReadyToCheckOut";
+import DesktopSignIn from "./components/Login/DesktopSignIn";
+import DesktopProfileCompleted from "./components/Login/DesktopProfileCompleted";
 
 function App() {
   const context = useGlobalInfo();
@@ -50,22 +53,26 @@ function App() {
             <Route path="pastSales" element={<PastSales />} />
             <Route path="readyToCheckOut" element={<ReadyToCheckOut />} />
           </Route>
-          <Route path="/login" element={<Login />} />
-          <Route path="/createAccount" element={<AccountCreation />} />
-          <Route path="/login/mobileLogin" element={<MobileLogin />} />
-          <Route path="/login/otpVerify" element={<OtpVerifyPage />} />
-          <Route path="/login/otpLogin" element={<OtpLoginPage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/login/addCard" element={<AddCardPage />} />
-          <Route path="/login/cardAdded" element={<CardAddedPage />} />
-          <Route path="/login/verification" element={<VerificationPage />} />
+          <Route path="/createAccount" element={<CreateAcccount />} />
+          <Route path="/login/mobileLogin" element={<MobileSignIn />} />
+          <Route path="/login/otpVerify" element={<OtpVerify />} />
+          <Route path="/login/otpLogin" element={<OtpLogin />} />
+          <Route path="/login/addCard" element={<AddCard />} />
+          <Route path="/login/cardAdded" element={<CardAdded />} />
+          <Route path="/login/verification" element={<Verification />} />
           <Route
             path="/login/successVerification"
-            element={<VerificationSuccessPage />}
+            element={<VerificationSuccess />}
           />
-          <Route path="/login/preferences" element={<PreferencePage />} />
-          <Route path="/login/review" element={<ReviewPage />} />
-          <Route path="/login/success" element={<ProfileCompletedPage />} />
+          <Route path="/login/preferences" element={<Preferences />} />
+          <Route path="/login/review" element={<Review />} />
+          <Route path="/login/success" element={<ProfileCompleted />} />
+          <Route path="/SignIn" element={<DesktopSignIn />} />
+          <Route
+            path="/SignIn/Completed"
+            element={<DesktopProfileCompleted />}
+          />
+          <Route path="/SignIn/profileEnd" element={<DesktopProfileEnd />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Timeline from "./Images/Mobile.svg";
 import "./Preferences.css";
 import Image1 from "./Images/Image1.svg";
@@ -15,7 +16,12 @@ function Preferences() {
     { id: "4", imageName: Image4 },
     { id: "5", imageName: Image5 },
     { id: "6", imageName: Image6 },
+    { id: "7", imageName: Image5 },
+    { id: "8", imageName: Image6 },
+    { id: "9", imageName: Image5 },
+    { id: "10", imageName: Image6 },
   ];
+  const navigate = useNavigate();
   return (
     <>
       <div id="preferencesContainer">
@@ -50,6 +56,22 @@ function Preferences() {
                 })}
               </div>
             </div>
+          </div>
+          <div className="buttonDiv">
+            <button
+              onClick={() => {
+                navigate("/login/successVerification");
+              }}
+            >
+              Go Back
+            </button>
+            <button
+              onClick={() => {
+                navigate("/login/review");
+              }}
+            >
+              Continue
+            </button>
           </div>
         </div>
       </div>

@@ -5,18 +5,18 @@
 #reviewContainer .reviewDiv {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 1.2rem;
   gap: 1.5rem;
   height: 100%;
-  overflow-y: auto;
+  overflow: auto;
 }
 #reviewContainer .reviewDiv .reviewTimeline {
   /* width: 23.75rem; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  /* margin: auto; */
   gap: 5.25rem;
 }
 #reviewContainer .reviewDiv .reviewTimeline {
@@ -24,6 +24,7 @@
   gap: 0.5rem;
 }
 #reviewContainer .reviewDiv .wrapReview {
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.69rem;
@@ -32,7 +33,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.69rem;
-  height: 41.9375rem;
   overflow: auto;
   overflow-y: scroll;
 }
@@ -212,8 +212,8 @@
 #reviewContainer .reviewDiv .uploadDiv .dashedLine {
   display: flex;
   width: 100%;
-  height: 11rem;
-  padding: 0.16631rem;
+  /* height: 11rem; */
+  padding: 0.16rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -273,18 +273,92 @@
   align-items: flex-end;
   gap: 0.29931rem;
 }
-/* #reviewContainer .reviewDiv .buttonDiv {
+#reviewContainer .reviewDiv .preferImageDiv {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.37rem;
+}
+#reviewContainer .reviewDiv .preferDiv {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+#reviewContainer .reviewDiv .preferDiv p {
+  color: #a3a9be;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+}
+#reviewContainer .reviewDiv .imagePrefer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 35rem; */
+  gap: 0.5rem;
+  width: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+}
+#reviewContainer .reviewDiv .image_div {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  /* border-radius: 0.47394rem; */
+  /* background: linear-gradient(
+      0deg,
+      rgba(193, 193, 193, 0.2) 0%,
+      rgba(193, 193, 193, 0.2) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+
+#reviewContainer .reviewDiv .image_div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  object-position: center;
+}
+
+#reviewContainer .reviewDiv .footerButtonDiv {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
   gap: 1rem;
 }
-#reviewContainer .reviewDiv .buttonDiv button {
+#reviewContainer .reviewDiv .footerButtonDiv button:nth-child(1) {
   display: flex;
   padding: 0.75rem 1rem;
   align-items: center;
+  border-radius: 0.2rem;
+  border: 0.5px solid #7e8195;
+  background: linear-gradient(94deg, #7e8195 3.63%, #7e8195 96.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-#reviewContainer .reviewDiv .buttonDiv button:hover {
-  color: var(--Color, #fff);
-  border-radius: 0.125rem;
+#reviewContainer .reviewDiv .footerButtonDiv button:nth-child(2) {
+  display: flex;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  border-radius: 0.2rem;
+  border: 0.5px solid #7e8195;
+  color: #e8e8e8;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-weight: 500;
   border: 0.5px solid var(--CTA-Purple, #811db4);
   background: var(--Foundation-Primary-primary-400, #753394);
-} */
+}
+#reviewContainer .reviewDiv .addMoreButton button {
+  padding: 0.75rem 1rem;
+  align-items: center;
+  border-radius: 0.3rem;
+  border: 0.5px solid #7e8195;
+  background: linear-gradient(94deg, #7e8195 3.63%, #7e8195 96.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

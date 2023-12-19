@@ -6,7 +6,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 1.2rem;
   overflow-y: auto;
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  /* margin: auto; */
 }
 #successContainer .successDiv .profileVerifyDiv {
   display: flex;
@@ -49,25 +49,31 @@
   bottom: 0.25rem;
   left: 4rem;
 }
+
 #successContainer .successDiv .buttonDiv {
   display: flex;
   justify-content: center;
-
+  padding-top: 5rem;
   gap: 1rem;
 }
-#successContainer .successDiv .buttonDiv button {
+#successContainer .successDiv .buttonDiv button:nth-child(1) {
   display: flex;
   padding: 0.75rem 1rem;
   align-items: center;
-  border-radius: 0.125rem;
+  border-radius: 0.2rem;
   border: 0.5px solid #7e8195;
   background: linear-gradient(94deg, #7e8195 3.63%, #7e8195 96.37%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#successContainer .successDiv .buttonDiv button:hover {
-  color: var(--Neutral-White, #e8e8e8);
+#successContainer .successDiv .buttonDiv button:nth-child(2) {
+  display: flex;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  border-radius: 0.2rem;
+  border: 0.5px solid #7e8195;
+  color: #e8e8e8;
   font-family: Roboto;
   font-size: 0.75rem;
   font-weight: 500;

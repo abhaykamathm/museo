@@ -1,0 +1,32 @@
+#desktopCompleted {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#desktopCompleted .desktopCompletedDiv {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#desktopCompleted .desktopCompletedDiv .imageDiv {
+  position: relative;
+}
+#desktopCompleted .desktopCompletedDiv .vector-div {
+  top: -1rem;
+  right: -1rem;
+  position: absolute;
+}
+#desktopCompleted .desktopCompletedDiv .flash {
+  top: 0rem;
+  /* right: -1rem; */
+  position: absolute;
+  /* fill: linear-gradient(
+    180deg,
+    rgba(245, 248, 245, 0.27) -0.16%,
+    rgba(245, 248, 230, 0) 99.28%
+  );
+  opacity: 0.69; */
+}
