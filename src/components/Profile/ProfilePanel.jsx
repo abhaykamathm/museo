@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function ProfilePanel() {
-  const [selectingOpt , setSelectingOpt] = useState(0);
+  const [selectingOpt, setSelectingOpt] = useState(0);
   const handleBackgroundColor = (n) => {
-    setSelectingOpt(n)
-  }
+    setSelectingOpt(n);
+  };
+
   return (
     <div id="profile-card">
       <div id="profile-header">
@@ -32,41 +33,50 @@ function ProfilePanel() {
           <div id="text">Complete Profile</div>
         </div>
       </div>
-      <div id="wallet" className={selectingOpt === 1 ? 'my-bgm-highlight' : ''}>
+      <div id="wallet">
         <div id="wallet-img">
           <img src="/Images/Profile/Money Wallet.png" alt="" />
         </div>
         <Link to="/profile/yourWallet">
-        <div onClick={()=>handleBackgroundColor(1)} 
-        id='wallet-text'>Your Wallet</div>
-      </Link>
+          <div onClick={() => handleBackgroundColor(1)} id="wallet-text">
+            Your Wallet
+          </div>
+        </Link>
       </div>
       <div className="panel-options">
         <div className="panel-option-1">
           <div className="panel-option">
             <div>
-            <img src={Rectangle} alt="" />
+              <img src={Rectangle} alt="" />
             </div>
-            
+
             <div className="options-text">My buyings & biddings</div>
           </div>
           <div className="sub-options">
-            <Link to='/profile/activeSales'>
-            <div onClick={()=>handleBackgroundColor(2)} 
-            id={selectingOpt === 2 ? 'my-bgm-highlight' : ''}
-
-            >Active Sales</div>
+            <Link to="/profile/activeSales">
+              <div
+                onClick={() => handleBackgroundColor(2)}
+                id={selectingOpt === 2 ? "my-bgm-highlight" : ""}
+              >
+                Active Sales
+              </div>
             </Link>
-            <Link to='/profile/pastSales'>
-            <div
-  onClick={() => handleBackgroundColor(3)}
-  id={selectingOpt === 3 ? 'my-bgm-highlight' : ''}
->
-  Past Sales
-</div>
-
+            <Link to="/profile/pastSales">
+              <div
+                onClick={() => handleBackgroundColor(3)}
+                id={selectingOpt === 3 ? "my-bgm-highlight" : ""}
+              >
+                Past Sales
+              </div>
             </Link>
-            <div>Ready to checkout</div>
+            <Link to="/profile/readyToCheckOut">
+              <div
+                onClick={() => handleBackgroundColor(4)}
+                id={selectingOpt === 4 ? "my-bgm-highlight" : ""}
+              >
+                Ready to checkout
+              </div>
+            </Link>
           </div>
         </div>
         <div className="panel-option">
