@@ -37,9 +37,25 @@ export default function VerificationSuccess() {
                 <img src={Verified}></img>
               </div>
             </div>
+            <div className="buttonDiv">
+              <button
+                onClick={() => {
+                  navigate("/login/verification");
+                }}
+              >
+                Go Back
+              </button>
+              <button
+                onClick={() => {
+                  navigate("/login/preferences");
+                }}
+              >
+                Continue
+              </button>
+            </div>
           </div>
 
-          <div className="buttonDiv">
+          {/* <div className="buttonDiv">
             <button
               onClick={() => {
                 navigate("/login/verification");
@@ -54,7 +70,7 @@ export default function VerificationSuccess() {
             >
               Continue
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

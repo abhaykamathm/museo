@@ -3,10 +3,10 @@
   height: 100%;
 }
 #otpVerify .otpVerifyDiv,
-.LineSection,
-.LineSectionDiv,
-.lineSection,
-.resendDiv {
+#otpVerify .otpVerifyDiv .LineSection,
+#otpVerify .otpVerifyDiv .LineSectionDiv,
+#otpVerify .otpVerifyDiv .lineSection,
+#otpVerify .otpVerifyDiv .resendDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,33 +37,31 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.52856rem; /* 152.854% */
+  line-height: 1.5rem;
 }
 #otpVerify .otpVerifyDiv {
+  height: 100%;
   display: flex;
-  /* gap: 0.75rem; */
   text-align: center;
   font-size: 16px;
-  /* margin: 0 5px; */
   border: none;
-  background: url("./Images/Line.svg") center bottom no-repeat; /* Set the background image for the underline effect */
-  background-size: 100% 2px; /* Adjust the size of the underline */
+  background: url("./Images/Line.svg") center bottom no-repeat;
+  background-size: 100% 2px;
   outline: none;
-  /* gap: 4rem; */
 }
 
-.lineDiv {
+#otpVerify .otpVerifyDiv .lineDiv {
   display: flex;
   align-items: center;
 }
 
-.line-item {
+#otpVerify .otpVerifyDiv .line-item {
   height: 2px;
   width: 20px;
   margin: 0 5px;
 }
 
-.otp-input {
+#otpVerify .otpVerifyDiv .otp-input {
   width: 40px;
   height: 40px;
   text-align: center;
@@ -74,6 +72,7 @@
   outline: none;
   padding: 0;
   box-sizing: border-box;
+  color: #ffffff;
 }
 
 #otpVerify .otpVerifyDiv .lineSection {
@@ -81,13 +80,11 @@
 }
 #otpVerify .otpVerifyDiv .resendDiv p,
 a {
-  /* width: 14.4375rem; */
   color: #f1eeea;
   text-align: center;
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;
-  /* line-height: 1.52856rem; */
 }
 
 #otpVerify .otpVerifyDiv .resendBtn button {
@@ -103,4 +100,10 @@ a {
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 600;
+}
+#otpVerify .otpVerifyDiv .endLogo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

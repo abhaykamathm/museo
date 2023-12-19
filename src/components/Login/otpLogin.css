@@ -17,8 +17,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  gap: 5.25rem;
+  /* margin: auto; */
+  /* gap: 5.25rem; */
 }
 
 /* .timeline img {
@@ -80,8 +80,8 @@
 }
 
 #otpContainer .otpDiv .dropdown select,
-input,
-label {
+#otpContainer .otpDiv .dropdown input,
+#otpContainer .otpDiv .dropdown label {
   width: 100%;
   border: none;
   background-color: transparent;

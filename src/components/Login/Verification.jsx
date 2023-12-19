@@ -62,45 +62,46 @@ function Verification() {
                 </ul>
               </p>
             </div>
-          </div>
-          <div className="uploadDiv">
-            <div className="dashedLine">
-              {/* <img src={Upload} alt=""></img>
+            <div className="uploadDiv">
+              <div className="dashedLine">
+                {/* <img src={Upload} alt=""></img>
               <p>Browse Files to upload</p> */}
-              <label htmlFor="fileInput" className="uploadLabel">
-                <img src={Upload} alt="" />
-                <p>Browse Files to upload</p>
-              </label>
-              <input
-                type="file"
-                id="fileInput"
-                style={{ display: "none" }}
-                onChange={handleFileChange}
-                multiple
-              />
-            </div>
-            {selectedFiles.map((file, index) => (
-              <div key={index} className="fileDiv">
-                <img src={File} alt="" />
-                <div className="deleteDiv">
-                  <p>{file.name}</p>
-                  <img
-                    src={Delete}
-                    alt=""
-                    onClick={() => handleDelete(index)}
-                    style={{ cursor: "pointer" }}
-                  />
-                </div>
+                <label htmlFor="fileInput" className="uploadLabel">
+                  <img src={Upload} alt="" />
+                  <p>Browse Files to upload</p>
+                </label>
+                <input
+                  type="file"
+                  id="fileInput"
+                  style={{ display: "none" }}
+                  onChange={handleFileChange}
+                  multiple
+                />
               </div>
-            ))}
-            {/* <div className="fileDiv">
+              {selectedFiles.map((file, index) => (
+                <div key={index} className="fileDiv">
+                  <img src={File} alt="" />
+                  <div className="deleteDiv">
+                    <p>{file.name}</p>
+                    <img
+                      src={Delete}
+                      alt=""
+                      onClick={() => handleDelete(index)}
+                      style={{ cursor: "pointer" }}
+                    />
+                  </div>
+                </div>
+              ))}
+              {/* <div className="fileDiv">
               <img src={File}></img>
               <div className="deleteDiv">
                 <p>Driver's License</p>
                 <img src={Delete}></img>
               </div>
             </div> */}
+            </div>
           </div>
+
           <div className="buttonDiv">
             <button
               onClick={() => {
