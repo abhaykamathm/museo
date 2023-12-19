@@ -63,8 +63,8 @@
   border: 0.5px solid #7e8195;
   background: linear-gradient(94deg, #7e8195 3.63%, #7e8195 96.37%);
   background-clip: text;
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #successContainer .successDiv .buttonDiv button:hover {
   color: var(--Neutral-White, #e8e8e8);

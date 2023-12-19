@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Timeline from "./Images/Mobile.svg";
 import Rectangle from "./Images/rectangle.svg";
@@ -11,6 +11,17 @@ import Delete from "./Images/deleteImg.svg";
 import "./Review.css";
 function Review() {
   const navigate = useNavigate();
+  const [selectedFiles, setSelectedFiles] = useState([]);
+
+  const handleFileChange = (event) => {
+    const files = event.target.files;
+    setSelectedFiles([...selectedFiles, ...files]);
+  };
+  const handleDelete = (index) => {
+    const updatedFiles = [...selectedFiles];
+    updatedFiles.splice(index, 1);
+    setSelectedFiles(updatedFiles);
+  };
   return (
     <>
       <div id="reviewContainer">
@@ -37,8 +48,8 @@ function Review() {
                   </div>
                   <div className="nameInfo">
                     <p>
-                      <div></div>Address : 49 Featherstone Street,London, EC1Y
-                      8SY United Kingdom
+                      Address: 49 Featherstone Street,London, EC1Y 8SY United
+                      Kingdom
                     </p>
                   </div>
                   <div className="buttonDiv">
@@ -76,24 +87,46 @@ function Review() {
                 </div>
               </div>
               <div className="uploadDiv">
+                <div className="verifyUpload">
+                  <div className="verifyName">Verification</div>
+                  <span>Your documents have been successfully verified</span>
+                </div>
                 <div className="dashedLine">
-                  <img src={Upload} alt=""></img>
-                  <p>Browse Files to upload</p>
+                  {/* <img src={Upload} alt=""></img>
+                  <p>Browse Files to upload</p> */}
+                  <label htmlFor="fileInput" className="uploadLabel">
+                    <img src={Upload} alt="" />
+                    <p>Browse Files to upload</p>
+                  </label>
+                  <input
+                    type="file"
+                    id="fileInput"
+                    style={{ display: "none" }}
+                    onChange={handleFileChange}
+                    multiple
+                  />
                 </div>
-                <div className="fileDiv">
-                  <img src={File}></img>
-                  <div className="deleteDiv">
-                    <p>Passport</p>
-                    <img src={Delete}></img>
+                {selectedFiles.map((file, index) => (
+                  <div key={index} className="fileDiv">
+                    <img src={File} alt="" />
+                    <div className="deleteDiv">
+                      <p>{file.name}</p>
+                      <img
+                        src={Delete}
+                        alt=""
+                        onClick={() => handleDelete(index)}
+                        style={{ cursor: "pointer" }}
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="fileDiv">
+                ))}
+                {/* <div className="fileDiv">
                   <img src={File}></img>
                   <div className="deleteDiv">
                     <p>Driver's License</p>
                     <img src={Delete}></img>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

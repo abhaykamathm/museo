@@ -60,6 +60,12 @@
   border-radius: 0.39913rem;
   border: 1.33px dashed #1e77cc;
 }
+#verificationContainer .verificationDiv .uploadDiv .dashedLine .uploadLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #verificationContainer .verificationDiv .uploadDiv p {
   color: var(--Foundation-Primary-primary-100, #c9b0d5);
   font-family: Roboto;
@@ -87,13 +93,20 @@
   gap: 0.29931rem;
 }
 #verificationContainer .verificationDiv .buttonDiv {
+  width: 100%;
   display: flex;
+  align-items: self-start;
   gap: 1rem;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 #verificationContainer .verificationDiv .buttonDiv button {
   display: flex;
   padding: 0.75rem 1rem;
   align-items: center;
+  background: transparent;
+  color: var(--Color, #fff);
 }
 #verificationContainer .verificationDiv .buttonDiv button:hover {
   color: var(--Color, #fff);

@@ -39,7 +39,8 @@ function CreateAcccount() {
                 navigate("/login/mobileLogin");
               }}
             >
-              <img src={Phone} alt="google"></img>Enter your mobile number
+              <img src={Phone} alt="google"></img>
+              <span>Enter your mobile number</span>
             </button>
           </div>
         </div>

@@ -90,13 +90,14 @@
   align-items: center;
   gap: 0.5rem;
 }
-#addCardContainer .addCardDiv .checkDivCheck {
+#addCardContainer .addCardDiv .checkDiv .checkDivCheck {
   width: 1rem;
   height: 1rem;
   border-radius: 0.125rem;
   background-color: transparent;
   border: 1px solid var(--Foundation-Neutral-neutral-50, #fdfdfd);
 }
+
 #addCardContainer .addCardDiv .endLogo {
   width: 100%;
   display: flex;

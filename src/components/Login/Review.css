@@ -51,6 +51,11 @@
   font-size: 0.875rem;
   font-weight: 500;
 }
+#reviewContainer .reviewDiv .infoDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 #reviewContainer .reviewDiv p {
   display: flex;
 
@@ -152,7 +157,6 @@
   font-family: Roboto;
   font-size: 0.875rem;
   font-weight: 100;
-  padding-top: 1rem;
 }
 
 #reviewContainer .reviewDiv .cardNo p {
@@ -186,7 +190,6 @@
   display: flex;
   text-align: center;
   align-items: center;
-  padding-top: 1rem;
 }
 
 #reviewContainer .reviewDiv .uploadDiv {
@@ -194,8 +197,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.06425rem;
-  gap: 1.06425rem;
+  padding: 1.6rem;
+  gap: 1rem;
   border-radius: 0.75rem;
   border: 1px solid rgba(127, 127, 127, 0.23);
   background: linear-gradient(
@@ -208,8 +211,8 @@
 }
 #reviewContainer .reviewDiv .uploadDiv .dashedLine {
   display: flex;
-  width: 21.61775rem;
-  height: 11.64031rem;
+  width: 100%;
+  height: 11rem;
   padding: 0.16631rem;
   flex-direction: column;
   justify-content: center;
@@ -218,6 +221,32 @@
   border-radius: 0.39913rem;
   border: 1.33px dashed #1e77cc;
 }
+#reviewContainer .reviewDiv .uploadDiv .dashedLine .uploadLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#reviewContainer .reviewDiv .uploadDiv .verifyName {
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+#reviewContainer .reviewDiv .uploadDiv span {
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+#reviewContainer .reviewDiv .uploadDiv .verifyUpload {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 #reviewContainer .reviewDiv .uploadDiv p {
   color: var(--Foundation-Primary-primary-100, #c9b0d5);
   font-family: Roboto;

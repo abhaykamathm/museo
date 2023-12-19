@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Timeline from "./Images/Mobile.svg";
 import Upload from "./Images/uploadPic.svg";
 import File from "./Images/fileImg.svg";
@@ -7,6 +7,17 @@ import "./Verification.css";
 import { useNavigate } from "react-router-dom";
 function Verification() {
   const navigate = useNavigate();
+  const [selectedFiles, setSelectedFiles] = useState([]);
+
+  const handleFileChange = (event) => {
+    const files = event.target.files;
+    setSelectedFiles([...selectedFiles, ...files]);
+  };
+  const handleDelete = (index) => {
+    const updatedFiles = [...selectedFiles];
+    updatedFiles.splice(index, 1);
+    setSelectedFiles(updatedFiles);
+  };
   return (
     <>
       <div id="verificationContainer">
@@ -54,23 +65,41 @@ function Verification() {
           </div>
           <div className="uploadDiv">
             <div className="dashedLine">
-              <img src={Upload} alt=""></img>
-              <p>Browse Files to upload</p>
+              {/* <img src={Upload} alt=""></img>
+              <p>Browse Files to upload</p> */}
+              <label htmlFor="fileInput" className="uploadLabel">
+                <img src={Upload} alt="" />
+                <p>Browse Files to upload</p>
+              </label>
+              <input
+                type="file"
+                id="fileInput"
+                style={{ display: "none" }}
+                onChange={handleFileChange}
+                multiple
+              />
             </div>
-            <div className="fileDiv">
-              <img src={File}></img>
-              <div className="deleteDiv">
-                <p>Passport</p>
-                <img src={Delete}></img>
+            {selectedFiles.map((file, index) => (
+              <div key={index} className="fileDiv">
+                <img src={File} alt="" />
+                <div className="deleteDiv">
+                  <p>{file.name}</p>
+                  <img
+                    src={Delete}
+                    alt=""
+                    onClick={() => handleDelete(index)}
+                    style={{ cursor: "pointer" }}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="fileDiv">
+            ))}
+            {/* <div className="fileDiv">
               <img src={File}></img>
               <div className="deleteDiv">
                 <p>Driver's License</p>
                 <img src={Delete}></img>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="buttonDiv">
             <button
