@@ -1,0 +1,12 @@
+.provenance-card {
+  background-color: #2d0043;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: 300;
+}
+
+.provenance-card .title {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500 !important;
+}

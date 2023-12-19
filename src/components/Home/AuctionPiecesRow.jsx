@@ -20,9 +20,9 @@ function AuctionPiecesRow({
                 setBackground(painting);
               }}
             >
-              <img className="auction_piece" src={painting.img_path} />
+              <img loading="lazy" className="auction_piece" src={painting.img_path} />
               <div className="pages-svg">
-                <img src={pages} />
+                <img loading="lazy" src={pages} />
                 <div>{painting.count}</div>
               </div>
               <div className="auction-piece-name">{painting.name}</div>

@@ -1,0 +1,33 @@
+.side-info-panel-container .price-factor-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.side-info-panel-container .price-factor-card .title {
+  font-size: 1.25rem;
+}
+
+.side-info-panel-container .price-factor-card .sub-title {
+  font-weight: 300;
+}
+
+.side-info-panel-container .price-factor-card .info {
+  font-size: 0.85rem;
+}
+
+.side-info-panel-container .price-factor-card .type {
+  margin-bottom: 0.25rem;
+}
+
+.side-info-panel-container .price-factor-card .limits {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.side-info-panel-container .price-factor-card img {
+  width: 100%;
+  position: relative;
+  top: -0.25rem;
+}

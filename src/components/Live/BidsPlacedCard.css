@@ -1,0 +1,19 @@
+.side-info-panel-container .bid-placed-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.side-info-panel-container .bid-placed-card .info {
+}
+
+.side-info-panel-container .bid-placed-card .info .numbers {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.side-info-panel-container .bid-placed-card .info img {
+  width: 100%;
+}

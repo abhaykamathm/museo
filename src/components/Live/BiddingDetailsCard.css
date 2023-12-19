@@ -1,0 +1,26 @@
+.side-info-panel-container .bidding-details-card {
+  background-color: #2d0043;
+  /* border-radius: 0.5rem; */
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.side-info-panel-container .bidding-details-card .title {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.side-info-panel-container .bidding-details-card .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-info-panel-container .bidding-details-card .info .key {
+  font-weight: 300;
+}
+
+.side-info-panel-container .bidding-details-card .info .value {
+  font-weight: 500;
+}

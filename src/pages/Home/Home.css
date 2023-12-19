@@ -69,6 +69,12 @@
   padding: 1rem;
 }
 
+@media screen and (min-height: 1000px) {
+  #home-container #home-main .live-paintings {
+    height: 18rem;
+  }
+}
+
 #home-container #home-main .live-paintings::-webkit-scrollbar {
   display: none;
 }
