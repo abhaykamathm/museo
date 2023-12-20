@@ -1,0 +1,22 @@
+.provenance-card {
+  background-color: #2d0043;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.provenance-card .title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.provenance-card .owners {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-left: 1rem;
+}

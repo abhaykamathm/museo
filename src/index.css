@@ -52,3 +52,13 @@ input {
 select {
   font-family: var(--robot);
 }
+
+/* FONT SIZE 1rem clamped */
+.fs-16 {
+  font-size: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+/* FONT SIZE 1rem clamped */
+.fs-16 {
+  font-size: clamp(1rem, 0rem + 1.25vw, 3rem);
+}

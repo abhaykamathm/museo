@@ -32,12 +32,12 @@
 }
 
 #home-container #home-main .painting-info #painting-name {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
   font-weight: 500;
 }
 
 #home-container #home-main .painting-info #artist-name {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
   font-weight: 300;
 }
 
@@ -60,7 +60,7 @@
 }
 
 #home-container #home-main .live-paintings {
-  height: 16rem;
+  height: 50vh;
   width: 100%;
   display: flex;
   gap: 1rem;
@@ -69,11 +69,11 @@
   padding: 1rem;
 }
 
-@media screen and (min-height: 1000px) {
+/* @media screen and (min-height: 1000px) {
   #home-container #home-main .live-paintings {
     height: 18rem;
   }
-}
+} */
 
 #home-container #home-main .live-paintings::-webkit-scrollbar {
   display: none;
@@ -113,7 +113,7 @@
 
 #home-container #home-main .live-paintings .img-container > img {
   height: 100%;
-  width: 30vw;
+  width: 40vw;
   object-fit: cover;
   object-position: center;
   border-radius: 0.5rem;
@@ -125,7 +125,7 @@
   bottom: 0;
   width: 100%;
   left: 0;
-  padding: 1rem;
+  /* padding: 1rem; */
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.8) 25%,
@@ -134,4 +134,5 @@
 
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  font-size: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
 }

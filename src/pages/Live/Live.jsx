@@ -9,10 +9,11 @@ import SideInfoPanel from "../../components/Live/SideInfoPanel";
 import ActionIcons from "../../components/Live/ActionIcons";
 import Location from "../../components/Live/Location";
 import { useGlobalInfo } from "../../contexts/globalContext";
+import PlaceBid from "../../components/Live/PlaceBid";
 
 function Live() {
   const context = useGlobalInfo();
-  const [showInfo, setShowInfo] = useState(false);
+  const [showInfo, setShowInfo] = useState(true);
   return (
     <div
       className="live-container"
@@ -62,6 +63,9 @@ function Live() {
         </div>
         <button>Ask a specialist</button>
       </div>
+      {/* Absolute Content Below */}
+      <img className="corner-image" src="/favicon.png" />
+      {context.showPlaceBid && <PlaceBid />}
     </div>
   );
 }

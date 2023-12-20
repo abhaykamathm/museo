@@ -1,12 +1,51 @@
-.provenance-card {
-  background-color: #2d0043;
+.auctioneer-card {
+  background-color: #203;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auctioneer-card .profile-image {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.auctioneer-card .name {
+  font-family: "supervitally";
+  font-size: 1.5rem;
+  color: #ffca60;
+  letter-spacing: -1px;
+}
+
+.auctioneer-card .title {
   font-weight: 300;
 }
 
-.provenance-card .title {
-  text-align: center;
-  font-size: 1.125rem;
-  font-weight: 500 !important;
+.auctioneer-card .position {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 80%;
+  font-size: 0.75rem;
+}
+
+.auctioneer-card .white-cloth-sale {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.auctioneer-card .white-cloth-sale span:nth-child(1) {
+  font-size: 0.75rem;
+}
+
+.auctioneer-card .white-cloth-sale span:nth-child(2) {
+  font-weight: 300;
+  font-size: 0.75rem;
 }

@@ -109,3 +109,9 @@
   position: absolute;
   right: 1rem;
 }
+
+.live-container .corner-image {
+  position: absolute;
+  bottom: 3.5rem;
+  right: 2rem
+}

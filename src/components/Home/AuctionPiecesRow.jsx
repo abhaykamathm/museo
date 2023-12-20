@@ -25,7 +25,7 @@ function AuctionPiecesRow({
                 <img loading="lazy" src={pages} />
                 <div>{painting.count}</div>
               </div>
-              <div className="auction-piece-name">{painting.name}</div>
+              <div className="auction-piece-name pd-16">{painting.name}</div>
             </div>
           );
         })}

@@ -10,6 +10,7 @@ export function GlobalProvider({ children }) {
   const [state, setState] = useState("M Abhay Kamath");
   const [landingView, setLandingView] = useState("gallery"); //gallery, carousel, list views
   const [liveBackground, setLiveBackground] = useState("stream"); //stream, map
+  const [showPlaceBid, setShowPlaceBid] = useState(false);
   const [count, setCount] = useState(0);
 
   const [profileList, setProfileList] = useState({
@@ -57,6 +58,10 @@ export function GlobalProvider({ children }) {
         liveBackground,
         changeLiveBackground: (new_background) => {
           setLiveBackground(new_background);
+        },
+        showPlaceBid,
+        changeShowPlaceBid: (new_value) => {
+          setShowPlaceBid(new_value);
         },
       }}
     >

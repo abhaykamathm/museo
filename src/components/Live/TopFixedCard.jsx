@@ -52,7 +52,13 @@ function TopFixedCard() {
         <img src={Appreciation} />
         <span>24%</span>
       </div>
-      <button id="place-bid" className="btn btn-primary">
+      <button
+        id="place-bid"
+        className="btn btn-primary"
+        onClick={() => {
+          context.changeShowPlaceBid(!context.showPlaceBid);
+        }}
+      >
         Place Bid
       </button>
       <div className="similar-works">

@@ -16,14 +16,14 @@ function BidsPlacedCard() {
       </div>
       <div className="info">
         <div className="numbers">
-          <span>$ 80k-90k</span>
-          <span>10%</span>
+          <span>$ 90k-100k</span>
+          <span>2.5%</span>
         </div>
         <img src={BidPlaced2} />
       </div>
       <div className="info">
         <div className="numbers">
-          <span>$ 80k-90k</span>
+          <span>$ 100k-120k</span>
           <span>10%</span>
         </div>
         <img src={BidPlaced1} />
@@ -31,7 +31,7 @@ function BidsPlacedCard() {
       <div className="info">
         <div className="numbers">
           <span>$ 80k-90k</span>
-          <span>10%</span>
+          <span>2.5%</span>
         </div>
         <img src={BidPlaced2} />
       </div>
