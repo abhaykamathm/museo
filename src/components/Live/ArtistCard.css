@@ -1,9 +1,7 @@
 .artist-card-container {
   background-color: #2d0043;
-  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
   background: linear-gradient(89deg, #203 19.85%, rgba(34, 0, 51, 0) 99.44%),
     url("/Images/Live/artist.png"),
     lightgray -5.388px -8.582px / 117.768% 120.838% no-repeat;
@@ -12,21 +10,20 @@
 
 .artist-card-container .name {
   font-family: supravitally;
-  font-size: 1.75rem;
+  font-size: clamp(1.75rem, 0rem + 2.1875vw, 5.25rem);
   color: #ffca60;
 }
 
 .artist-card-container .title {
-  /* margin-top: -0.5rem; */
   font-weight: 100;
 }
 
 .artist-card-container .origin {
-  margin-top: 1rem;
+  margin-top: clamp(1rem, 0rem + 1.25vw, 3rem);
 }
 
 .artist-card-container .works {
-  margin-top: 0.5rem;
+  margin-top: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
 }
 
 .artist-card-container .key {

@@ -1,27 +1,27 @@
 .action-icons {
   display: flex;
-  gap: 0.75rem;
 }
 
-.action-icons img {
-  border-radius: 0.5rem;
-  padding: 0.75rem 0.8rem;
+.action-icons .icon-container {
   background-color: #84899d;
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
 }
 
-.action-icons img:hover {
+.action-icons .icon-container img {
+  height: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+.action-icons .icon-container:hover {
   cursor: pointer;
   opacity: 0.9;
   transform: scale(1.05);
 }
 
-.action-icons img:active {
+.action-icons .icon-container:active {
   opacity: 0.75;
   transform: scale(1);
-}
-
-.action-icons .chat {
-  border-radius: 0.5rem;
-  padding: 0.75rem 0.8rem;
-  background-color: #84899d;
 }

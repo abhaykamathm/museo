@@ -53,12 +53,143 @@ select {
   font-family: var(--robot);
 }
 
-/* FONT SIZE 1rem clamped */
-.fs-16 {
+/* FONT CLAMPS */
+/* FONT SIZE 0.5rem clamped */
+.fs-8 {
   font-size: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+/* FONT SIZE 0.75rem clamped */
+.fs-12 {
+  font-size: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
 }
 
 /* FONT SIZE 1rem clamped */
 .fs-16 {
   font-size: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+/* FONT SIZE 1.125rem clamped */
+.fs-18 {
+  font-size: clamp(1.125rem, 0rem + 1.4063vw, 3.375rem);
+}
+
+/* FONT SIZE 1.25rem clamped */
+.fs-20 {
+  font-size: clamp(1.25rem, 0rem + 1.5625vw, 3.75rem);
+}
+
+/* FONT SIZE 1.5rem clamped */
+.fs-24 {
+  font-size: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+}
+
+/* FONT SIZE 2rem clamped */
+.fs-32 {
+  font-size: clamp(2rem, 0rem + 2.5vw, 6rem);
+}
+
+/* PADDING CLAMPS */
+/* PADDING SIZE 0.25rem clamped */
+.pd-4 {
+  padding: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+}
+
+/* PADDING SIZE 0.5rem clamped */
+.pd-8 {
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+/* PADDING SIZE 0.75rem clamped */
+.pd-12 {
+  padding: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
+}
+
+/* PADDING SIZE 1rem clamped */
+.pd-16 {
+  padding: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+/* PADDING SIZE 1.5rem clamped */
+.pd-24 {
+  padding: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+}
+
+/* PADDING SIZE 2rem clamped */
+.pd-32 {
+  padding: clamp(2rem, 0rem + 2.5vw, 6rem);
+}
+
+/* MARGIN CLAMPS */
+/* MARGIN SIZE 0.5rem clamped */
+.mg-8 {
+  margin: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+/* MARGIN SIZE 1rem clamped */
+.mg-16 {
+  margin: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+/* MARGIN SIZE 1.5rem clamped */
+.mg-24 {
+  margin: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+}
+
+/* MARGIN SIZE 2rem clamped */
+.mg-32 {
+  margin: clamp(2rem, 0rem + 2.5vw, 6rem);
+}
+
+/* GAP CLAMPS */
+/* GAP SIZE 0.25rem clamped */
+.gp-4 {
+  gap: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+}
+
+/* GAP SIZE 0.5rem clamped */
+.gp-8 {
+  gap: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+/* GAP SIZE 0.75rem clamped */
+.gp-12 {
+  gap: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
+}
+
+/* GAP SIZE 1rem clamped */
+.gp-16 {
+  gap: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+/* BORDER RADIUS CLAMPS */
+/* BORDER RADIUS SIZE 0.25rem clamped */
+.br-4 {
+  border-radius: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+}
+
+/* BORDER RADIUS SIZE 0.5rem clamped */
+.br-8 {
+  border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+/* BORDER RADIUS SIZE 1rem clamped */
+.br-16 {
+  border-radius: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+.h-8 {
+  height: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+.h-12 {
+  height: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
+}
+
+.h-16 {
+  height: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+.w-16 {
+  width: clamp(1rem, 0rem + 1.25vw, 3rem);
 }

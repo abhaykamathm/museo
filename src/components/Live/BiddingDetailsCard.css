@@ -1,14 +1,11 @@
 .side-info-panel-container .bidding-details-card {
   background-color: #2d0043;
-  /* border-radius: 0.5rem; */
-  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .side-info-panel-container .bidding-details-card .title {
-  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 0rem + 1.4063vw, 3.375rem);
   text-align: center;
 }
 

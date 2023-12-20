@@ -24,7 +24,7 @@ function Home() {
     >
       <HomeNav />
       {context.landingView === "gallery" ? (
-        <div className="layer">
+        <div className="layer pd-8">
           <div id="home-main">
             <PaintingInfo background={background} />
             <AuctionPiecesRow

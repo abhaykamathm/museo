@@ -13,10 +13,10 @@ import PlaceBid from "../../components/Live/PlaceBid";
 
 function Live() {
   const context = useGlobalInfo();
-  const [showInfo, setShowInfo] = useState(true);
+  const [showInfo, setShowInfo] = useState(false);
   return (
     <div
-      className="live-container"
+      className="live-container pd-16"
       style={{
         background:
           context.liveBackground === "map"
@@ -25,16 +25,16 @@ function Live() {
       }}
     >
       {showInfo && <SideInfoPanel />}
-      <div className="live-top-bar">
-        <div className="info-location-container">
-          <div className="info">
-            <img src={LiveDot} />
+      <div className="live-top-bar fs-16 gp-8">
+        <div className="info-location-container gp-16">
+          <div className="info pd-12 br-8 gp-8">
+            <img className="h-12" src={LiveDot} />
             <div>Live</div>
-            <img src={Wall} />
-            <img src={Eye} />
+            <img className="h-16" src={Wall} />
+            <img className="h-16" src={Eye} />
             <div>All Viewers (5k)</div>
-            <img src={Wall} />
-            <img src={Diamond} />
+            <img className="h-16" src={Wall} />
+            <img className="h-16" src={Diamond} />
             <div>VIPSs (101)</div>
           </div>
           <Location />
@@ -43,25 +43,28 @@ function Live() {
       </div>
       {!showInfo && (
         <div className="parent">
-          <div className="info-place-bid-container">
+          <div className="info-place-bid-container pd-16 gp-16">
             <button
+              className="pd-8 br-4 fs-12"
               onClick={() => {
                 setShowInfo((showInfo) => !showInfo);
               }}
             >
               Info
             </button>
-            <button>Place Bid</button>
+            <button className="pd-8 br-4 fs-12">Place Bid</button>
           </div>
         </div>
       )}
-      <div className="footer">
-        <div>Call to place your bid : +44 79 7577 7666, +44 79 7572 5390</div>
+      <div className="footer gp-16">
+        <div className="fs-16">
+          Call to place your bid : +44 79 7577 7666, +44 79 7572 5390
+        </div>
         <div>
           <img src={Clock} />
-          <span>2hr : 30mins : 20sec left</span>
+          <span className="fs-16">2hr : 30mins : 20sec left</span>
         </div>
-        <button>Ask a specialist</button>
+        <button className="br-4 pd-4 fs-12">Ask a specialist</button>
       </div>
       {/* Absolute Content Below */}
       <img className="corner-image" src="/favicon.png" />

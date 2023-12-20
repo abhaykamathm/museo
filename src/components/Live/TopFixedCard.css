@@ -1,17 +1,14 @@
 .side-info-panel-container .top-fixed-card-container {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
   background-color: #203;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
   position: relative;
 }
 
 .side-info-panel-container .top-fixed-card-container #view-carousel {
-  width: 2rem;
+  width: clamp(2rem, 0rem + 2.5vw, 6rem);
   position: absolute;
-  right: 1rem;
+  right: clamp(1rem, 0rem + 1.25vw, 3rem);
 }
 
 .side-info-panel-container .top-fixed-card-container #view-carousel:hover {
@@ -27,7 +24,8 @@
 }
 
 .side-info-panel-container .lot {
-  padding: 0.5rem 1rem;
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem)
+    clamp(1rem, 0rem + 1.25vw, 3rem);
 }
 
 .side-info-panel-container .header-border {
@@ -40,7 +38,6 @@
 
 .side-info-panel-container .artist {
   display: flex;
-  gap: 0.5rem;
   align-items: center;
 }
 
@@ -58,7 +55,6 @@
 .height {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .side-info-panel-container .condition {
@@ -80,28 +76,25 @@
 
 .side-info-panel-container #place-bid {
   background-color: #520079 !important;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
   color: #fff;
 }
 
 .side-info-panel-container .similar-works {
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
 }
 
-.side-info-panel-container .similar-works img {
+.side-info-panel-container .similar-works .bell-container {
   border: 1px solid #af8ac1;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .side-info-panel-container .similar-works button {
   width: 100%;
   color: #af8ac1;
   border: 1px solid #af8ac1 !important;
-  border-radius: 0.25rem;
   background-color: transparent;
 }
 

@@ -1,49 +1,42 @@
 .numpad-container {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
   background-color: #191c22;
-  border-radius: 0.5rem;
-  margin: 0 auto;
-  padding: 1rem;
   color: #fff;
-  margin-top: 4.5rem;
+  /* margin-top: clamp(4.5rem, 0rem + 5.625vw, 13.5rem); */
 }
 
 .numpad-container .output {
-  padding: 1.5rem;
   background-color: #2a3139;
-  border-radius: 0.25rem;
 }
 
 .numpad-container .presets {
   display: flex;
   justify-content: center;
-  gap: 1rem;
 }
 
 .numpad-container .presets .amount {
   border: 1px solid #fff;
-  border-radius: 0.25rem;
-  padding: 0.5rem 0.75rem;
-  font-size: 1rem;
+  border-radius: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem)
+    clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
 }
 
 .numpad-container .input-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 0.5rem;
-  row-gap: 0.75rem;
+  row-gap: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
 }
 
 .numpad-container .input-grid .grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.75rem 1.5rem;
+  padding: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem)
+    clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
   background-color: #2a3139;
-  border-radius: 0.25rem;
-  font-size: 1.45rem;
+  border-radius: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+  font-size: clamp(1.45rem, 0rem + 1.8125vw, 4.35rem);
 }
 
 .numpad-container .input-grid .grid-item:hover {

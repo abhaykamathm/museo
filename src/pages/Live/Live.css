@@ -6,7 +6,6 @@
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
-  padding: 1rem;
   display: flex;
 }
 
@@ -15,49 +14,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
-  min-width: calc(100% - 17.5rem);
+  min-width: calc(100% - clamp(17.5rem, 0rem + 21.875vw, 52.5rem));
   max-width: 100%;
   width: 100%;
-  margin-left: 1rem;
+  margin-left: clamp(1rem, 0rem + 1.25vw, 3rem);
 }
 
 .live-container .live-top-bar .info-location-container {
   display: flex;
-  gap: 1rem;
 }
 
 .live-container .live-top-bar .info {
-  padding: 0.75rem;
   background: linear-gradient(
     108deg,
     rgba(43, 43, 43, 0.26) 0%,
     rgba(255, 255, 255, 0.07) 100%
   );
-  border-radius: 0.5rem;
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .live-container .parent {
-  min-height: 4rem;
+  min-height: clamp(4rem, 0rem + 5vw, 12rem);
   position: absolute;
   left: 0;
-  bottom: 2.5rem;
+  padding-bottom: clamp(2.5rem, 0rem + 3.125vw, 7.5rem);
+  bottom: 0;
   width: 100%;
 }
 
 .live-container .parent .info-place-bid-container {
-  padding: 1rem;
   background: linear-gradient(
     0deg,
     rgba(32, 0, 51, 0.5) 0%,
     rgba(34, 0, 51, 0) 100%
   );
   display: flex;
-  gap: 1rem;
   display: none;
 }
 
@@ -67,8 +60,6 @@
 
 .live-container .info-place-bid-container button {
   outline: none;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
   border: none;
   font-family: var(--robot);
   font-weight: 500;
@@ -83,8 +74,8 @@
   background-color: #203;
   width: 100%;
   display: flex;
-  gap: 1rem;
-  padding: 0.75rem 1rem;
+  padding: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem)
+    clamp(1rem, 0rem + 1.25vw, 3rem);
   align-items: center;
   color: #e8e8e8;
   position: absolute;
@@ -101,9 +92,6 @@
 
 .live-container .footer button {
   border: 1px solid #fff;
-  border-radius: 0.25rem;
-  padding: 0.25rem;
-  font-size: 0.75rem;
   background-color: transparent;
   color: #fff;
   position: absolute;
@@ -113,5 +101,5 @@
 .live-container .corner-image {
   position: absolute;
   bottom: 3.5rem;
-  right: 2rem
+  right: 2rem;
 }

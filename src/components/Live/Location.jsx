@@ -11,7 +11,7 @@ function Location() {
       style={{
         backgroundColor: context.liveBackground === "map" ? "#422747" : "",
       }}
-      className="location"
+      className="location gp-8"
       onClick={() => {
         if (context.liveBackground === "stream") {
           context.changeLiveBackground("map");
@@ -20,7 +20,7 @@ function Location() {
         }
       }}
     >
-      <img src={LocationPin} />
+      <img className="h-16" src={LocationPin} />
       <span>London</span>
     </div>
   );

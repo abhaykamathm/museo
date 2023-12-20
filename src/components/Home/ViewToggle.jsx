@@ -7,7 +7,7 @@ import { useGlobalInfo } from "../../contexts/globalContext";
 function ViewToggle() {
   const context = useGlobalInfo();
   return (
-    <div className="view-toggle-container">
+    <div className="view-toggle-container pd-8 br-8">
       <img
         style={{
           backgroundColor:

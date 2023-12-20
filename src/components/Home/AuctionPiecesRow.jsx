@@ -9,7 +9,7 @@ function AuctionPiecesRow({
 }) {
   return (
     <div className="live-paintings-container">
-      <div className="collection-name">{rowTypeName}</div>
+      <div className="collection-name fs-16">{rowTypeName}</div>
       <div className="live-paintings">
         {auctionPieces.map((painting, index) => {
           return (
@@ -21,7 +21,7 @@ function AuctionPiecesRow({
               }}
             >
               <img loading="lazy" className="auction_piece" src={painting.img_path} />
-              <div className="pages-svg">
+              <div className="pages-svg pd-8 fs-16">
                 <img loading="lazy" src={pages} />
                 <div>{painting.count}</div>
               </div>

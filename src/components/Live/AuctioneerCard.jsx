@@ -5,11 +5,11 @@ import "./AuctioneerCard.css";
 
 function AuctioneerCard() {
   return (
-    <div className="auctioneer-card">
+    <div className="auctioneer-card br-8 pd-8 gp-8">
       <img className="profile-image" src={Auctioneer2} />
-      <div className="name">Oliver Barker</div>
+      <div className="name fs-24">Oliver Barker</div>
       <div className="title">Auctioneer</div>
-      <div className="position">
+      <div className="position fs-12">
         Chairman, Sotheby’s Europe, Senior International Specialist
       </div>
       <img src={HeaderBorder} />

@@ -16,7 +16,7 @@ function TopFixedCard() {
   const context = useGlobalInfo();
   const navigate = useNavigate();
   return (
-    <div className="top-fixed-card-container">
+    <div className="top-fixed-card-container pd-16 gp-8 br-8">
       <img
         id="view-carousel"
         src={ViewCarousel}
@@ -25,45 +25,47 @@ function TopFixedCard() {
           navigate("/");
         }}
       />
-      <div className="lot">LOT NUMBER 25</div>
+      <div className="lot fs-16">LOT NUMBER 25</div>
       <img className="header-border" src={HeaderBorder} />
-      <div className="title">Portrait of Young Man Holding a Roundel</div>
-      <div className="artist">
-        <img src={Proile} />
+      <div className="title fs-16">Portrait of Young Man Holding a Roundel</div>
+      <div className="artist fs-16 gp-8">
+        <img className="h-16" src={Proile} />
         <span>Sandro Botticelli</span>
       </div>
-      <div className="dimension">
-        <div className="width">
-          <img src={Width} />
+      <div className="dimension fs-16">
+        <div className="width gp-8">
+          <img className="w-16" src={Width} />
           <span>38.9 cm</span>
         </div>
         <div className="height">
-          <img src={Height} />
+          <img className="h-16" src={Height} />
           <span>58.7 cm</span>
         </div>
       </div>
-      <div className="condition">
+      <div className="condition fs-16">
         <span className="key">Condition</span>
         <span className="value">High</span>
       </div>
       <img src={Condition} />
-      <div className="appreciation">
+      <div className="appreciation fs-16">
         <span>Predicted appreciation</span>
-        <img src={Appreciation} />
+        <img className="h-16" src={Appreciation} />
         <span>24%</span>
       </div>
       <button
         id="place-bid"
-        className="btn btn-primary"
+        className="btn btn-primary fs-16 br-4 pd-8"
         onClick={() => {
           context.changeShowPlaceBid(!context.showPlaceBid);
         }}
       >
         Place Bid
       </button>
-      <div className="similar-works">
-        <img src={Bell} />
-        <button className="btn">View Similar Works</button>
+      <div className="similar-works fs-16 gp-8">
+        <div className="bell-container pd-8 br-4">
+          <img className="h-16" src={Bell} />
+        </div>
+        <button className="btn fs-16 br-4 pd-8">View Similar Works</button>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import "./BidsPlacedCard.css";
 
 function BidsPlacedCard() {
   return (
-    <div className="bid-placed-card">
+    <div className="bid-placed-card gp-16 fs-16">
       <div className="title">Bids Placed</div>
       <div className="info">
         <div className="numbers">

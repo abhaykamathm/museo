@@ -10,18 +10,30 @@ import "./ActionIcons.css";
 
 function ActionIcons({ setShowInfo }) {
   return (
-    <div className="action-icons">
-      <img src={Add} />
-      <img src={Chat} />
-      <img src={Share} />
-      <img src={AR} />
-      <img src={Video} />
-      <img
-        src={Fullscreen}
-        onClick={() => {
-          setShowInfo(false);
-        }}
-      />
+    <div className="action-icons gp-12">
+      <div className="icon-container">
+        <img src={Add} />
+      </div>
+      <div className="icon-container">
+        <img src={Chat} />
+      </div>
+      <div className="icon-container">
+        <img src={Share} />
+      </div>
+      <div className="icon-container">
+        <img src={AR} />
+      </div>
+      <div className="icon-container">
+        <img src={Video} />
+      </div>
+      <div className="icon-container">
+        <img
+          src={Fullscreen}
+          onClick={() => {
+            setShowInfo(false);
+          }}
+        />
+      </div>
     </div>
   );
 }

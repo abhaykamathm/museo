@@ -1,25 +1,21 @@
 .auctioneer-card {
   background-color: #203;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .auctioneer-card .profile-image {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: clamp(3.5rem, 0rem + 4.375vw, 10.5rem);
+  height: clamp(3.5rem, 0rem + 4.375vw, 10.5rem);
   object-fit: cover;
   position: absolute;
-  right: 0.5rem;
-  top: 0.5rem;
+  right: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  top: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
 }
 
 .auctioneer-card .name {
   font-family: "supervitally";
-  font-size: 1.5rem;
   color: #ffca60;
   letter-spacing: -1px;
 }
@@ -32,7 +28,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   width: 80%;
-  font-size: 0.75rem;
 }
 
 .auctioneer-card .white-cloth-sale {
@@ -42,10 +37,10 @@
 }
 
 .auctioneer-card .white-cloth-sale span:nth-child(1) {
-  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
 }
 
 .auctioneer-card .white-cloth-sale span:nth-child(2) {
   font-weight: 300;
-  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
 }

@@ -11,9 +11,9 @@ import PriceFactorsCard from "./PriceFactorsCard";
 
 function SideInfoPanel() {
   return (
-    <div className="side-info-panel-container">
+    <div className="side-info-panel-container br-8">
       <TopFixedCard />
-      <div className="scroll-container">
+      <div className="scroll-container pd-12 gp-16">
         <CatelougeCard />
         <ArtistCard />
         <Provenance />
