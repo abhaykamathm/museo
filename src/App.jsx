@@ -30,6 +30,7 @@ import { ReadyToCheckOut } from "./components/Profile/ReadyToCheckOut";
 import { Help } from "./components/Profile/Help";
 import DesktopSignIn from "./components/Login/DesktopSignIn";
 import DesktopProfileCompleted from "./components/Login/DesktopProfileCompleted";
+import { HowBiddingWorks } from "./components/Profile/HowBiddingWorks";
 
 function App() {
   const context = useGlobalInfo();
@@ -53,6 +54,7 @@ function App() {
             <Route path="activeSales" element={<ActiveSales />} />
             <Route path="pastSales" element={<PastSales />} />
             <Route path="readyToCheckOut" element={<ReadyToCheckOut />} />
+            <Route path="HowBiddingWorks" element={<HowBiddingWorks />} />
             <Route path="help" element={<Help/>} />
           </Route>
           <Route path="/createAccount" element={<CreateAcccount />} />

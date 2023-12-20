@@ -105,6 +105,7 @@
   gap: 0.5rem;
 }
 .sub-options div {
+  display: flex;
   color: #e8e8e8;
   font-family: Roboto;
   font-size: 1rem;
