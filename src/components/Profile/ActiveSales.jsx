@@ -32,63 +32,72 @@ export const ActiveSales = () => {
         </div>
       </div>
       <div className="active-sale-container">
-      {activeSales.map((piece, index) => {
-        return (
-          <div
-            key={index}
-            className={`artpiece ${selectedSale === index ? "selected" : ""}`}
-            onClick={() => handleActiveSaleSelected(index)}
-          >
-            <img src={piece.img_path} />
-            <div className="info">
-              <div className="infoStatus">
-              {piece.status === "live" ? (
-  <div>
-    <span id="circle"></span>
-    <span>Live</span>
-  </div>
-) : piece.status.split(' ')[0] === "Upcoming" ? (
-  <div className="online-Auction-header">
-    <span className="statusNotLive1">{piece.status}</span>
-  </div>
-) : (
-  <div className="online-Auction-header">
-    <span className="statusNotLive1">Online Auction | </span>
-    <span className="statusNotLive2">{piece.status}</span>
-  </div>
-)}
+        {activeSales.map((piece, index) => {
+          return (
+            <div
+              key={index}
+              className={`artpiece ${selectedSale === index ? "selected" : ""}`}
+              onClick={() => handleActiveSaleSelected(index)}
+            >
+              <img src={piece.img_path} />
+              <div className="info">
+                <div className="infoStatus">
+                  {piece.status === "live" ? (
+                    <div>
+                      <span id="circle"></span>
+                      <span>Live</span>
+                    </div>
+                  ) : piece.status.split(" ")[0] === "Upcoming" ? (
+                    <div className="online-Auction-header">
+                      <span className="statusNotLive1">{piece.status}</span>
+                    </div>
+                  ) : (
+                    <div className="online-Auction-header">
+                      <span className="statusNotLive1">Online Auction | </span>
+                      <span className="statusNotLive2">{piece.status}</span>
+                    </div>
+                  )}
 
-                {piece.currentBid ? <span id="bid-status-btn">Bid is with you</span> : ""}
-              </div>
-              {piece.currentBid ? (
-                <div className="lite-text">LOT - {piece.lot}</div>
-              ) : (
-                <div className="lite-text">Sale #{piece.saleId}</div>
-              )}
-              <div>
-                <div>{piece.name}</div>
-              </div>
-              {piece.currentBid ? (
-                <div className="lite-text" >Current Bid : <span id="current-bid">{piece.yourMaxBid}</span></div>
-              ) : (
-                <div className="lite-text">{piece.date}</div>
-              )}
-              {piece.currentBid ? (
-                <div className="lite-text">Your max bid : {piece.currentBid}</div>
-              ) : (
-                <div className="lite-text">
-                  Auction registration made on {piece.Auction_registration}
+                  {piece.currentBid ? (
+                    <span id="bid-status-btn">Bid is with you</span>
+                  ) : (
+                    ""
+                  )}
                 </div>
+                {piece.currentBid ? (
+                  <div className="lite-text">LOT - {piece.lot}</div>
+                ) : (
+                  <div className="lite-text">Sale #{piece.saleId}</div>
+                )}
+                <div>
+                  <div>{piece.name}</div>
+                </div>
+                {piece.currentBid ? (
+                  <div className="lite-text">
+                    Current Bid :{" "}
+                    <span id="current-bid">{piece.yourMaxBid}</span>
+                  </div>
+                ) : (
+                  <div className="lite-text">{piece.date}</div>
+                )}
+                {piece.currentBid ? (
+                  <div className="lite-text">
+                    Your max bid : {piece.currentBid}
+                  </div>
+                ) : (
+                  <div className="lite-text">
+                    Auction registration made on {piece.Auction_registration}
+                  </div>
+                )}
+              </div>
+              {index == selectedSale ? (
+                <button className="btn-update-bid">Update Bid</button>
+              ) : (
+                ""
               )}
             </div>
-            {index == selectedSale ? (
-              <button className="btn-update-bid">Update Bid</button>
-            ) : (
-              ""
-            )}
-          </div>
-        );
-      })}
+          );
+        })}
       </div>
     </div>
   );
