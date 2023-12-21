@@ -1,39 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HowBiddingWorks.css";
 import Video_button from "../../../public/Images/Profile/Video_button.svg";
+import logo from '/Images/logo.png';
+import vector from '../Login/Images/Vector.svg'
 
 export const HowBiddingWorks = () => {
+  const [mainButton , setMainButton]=useState('overview');
+  const [secondButton , setSecondButton] = useState('')
+  const handleClickMainButton = (buttonName) =>{
+    setMainButton(buttonName)
+    if(buttonName === 'buy'){
+      setSecondButton('registerToBid')
+    }else if(buttonName === 'howToBuy'){
+      setSecondButton('howToBid')
+    }
+  }
+  const handleClickSecondaryButton = (buttonName) => {
+    setSecondButton(buttonName)
+  }
   return (
     <div id="Bidding-works-container">
       <div className="header-text text-color-1 highlighter-type-1">How Bidding works</div>
+      <img src={vector} alt="" className="top-right-image"/>
       <div className="button-container">
-        <div className="main-buttons">Overview</div>
-        <div className="main-buttons">Buy</div>
-        <div className="main-buttons">How to buy</div>
+        <div className={`main-buttons ${mainButton ==='overview' ? 'active-main-btn' : ''}`} onClick={()=>handleClickMainButton('overview')}>Overview</div>
+        <div className={`main-buttons ${mainButton ==='buy' ? 'active-main-btn' : ''}`} onClick={()=>handleClickMainButton('buy')}>Buy</div>
+        <div className={`main-buttons ${mainButton ==='howToBuy' ? 'active-main-btn' : ''}`} onClick={()=>handleClickMainButton('howToBuy')}>How to buy</div>
       </div>
-      <div className="Buy-buttons-container">
-        <div className="buy-buttons">Register to Bid</div>
+      {
+        mainButton === 'buy' ?
+        <div className="Buy-buttons-container">
+        <div className={`buy-buttons ${secondButton ==="registerToBid" ? "active-second-btn" : ''}`} onClick={()=>handleClickSecondaryButton('registerToBid')}>Register to Bid</div>
         <div>|</div>
-        <div className="buy-buttons">Ways to place your bid</div>
+        <div className={`buy-buttons ${secondButton ==="waysToPlaceYourBid" ? "active-second-btn" : ''}`} onClick={()=>handleClickSecondaryButton('waysToPlaceYourBid')}>Ways to place your bid</div>
         <div>|</div>
-        <div className="buy-buttons">Pay for purchase</div>
+        <div className={`buy-buttons ${secondButton ==="payForPurchase" ? "active-second-btn" : ''}`} onClick={()=>handleClickSecondaryButton('payForPurchase')}>Pay for purchase</div>
         <div>|</div>
-        <div className="buy-buttons">Receive your property</div>
-      </div>
-      <div className="How-to-buy-buttons-container">
-        <div className="how-to-buy-buttons">How to bid online</div>
+        <div className={`buy-buttons ${secondButton ==="recieveYourProperty" ? "active-second-btn" : ''}`} onClick={()=>handleClickSecondaryButton('recieveYourProperty')}>Receive your property</div>
+      </div>:''
+      }
+      {
+        mainButton==='howToBuy' ? 
+        <div className="How-to-buy-buttons-container">
+        <div className={`how-to-buy-buttons ${secondButton ==="howToBid" ? "active-second-btn" : ''}`} onClick={()=>handleClickSecondaryButton('howToBid')}>How to bid online</div>
         <div>|</div>
-        <div className="how-to-buy-buttons">Online Only Auction</div>
+        <div className={`how-to-buy-buttons ${secondButton ==="onlineYourAuction" ? "active-second-btn" : ''}`} onClick={()=>handleClickSecondaryButton('onlineYourAuction')}>Online Only Auction</div>
         <div>|</div>
-        <div className="how-to-buy-buttons">Live Auction</div>
-      </div>
+        <div className={`how-to-buy-buttons ${secondButton ==="liveAuction" ? "active-second-btn" : ''}`} onClick={()=>handleClickSecondaryButton('liveAuction')}>Live Auction</div>
+      </div>:''
+      }
       <div className="image-div">
         <div className="image-box">
           <img src={Video_button} alt="" />
         </div>
         <div className="image-text medium-highlighter-type-1">0:20</div>
       </div>
-      {/* <div className="overview-text-container">
+      {
+        mainButton === 'overview'?
+        <div className="overview-text-container">
         <div className="text-color-1 medium-highlighter-type-1 medium-text-opac-2">
           When you wish to acquire fine art and coins, our knowledgeable
           specialists can help ensure
@@ -49,8 +73,15 @@ export const HowBiddingWorks = () => {
             <span className="highter-text">upcoming auctions</span>
           </div>
         </div>
-      </div> */}
-      {/* <div className="Register-to-bid-text-container medium-highlighter-type-1">
+      </div>:
+      ''
+      }
+      {
+        mainButton === 'buy'? 
+        <>
+        {
+          secondButton === 'registerToBid'?
+          <div className="Register-to-bid-text-container medium-highlighter-type-1">
         <div className="RTB-top-header highlighter-type-1 ">In-Person Registration</div>
         <div className="RTB-container1 medium-text-opac">
            <div>To register in person to bid at the sale location before the auction begins, you will need to </div>
@@ -70,8 +101,11 @@ export const HowBiddingWorks = () => {
           </div>
         </div>
         <div className="RTB-footer lite-text-opac">If you require further assistance while registering to bid, please contact the Bids department. You may find the related details in the <span className="highter-text">help section</span></div>
-      </div> */}
-      {/* <div className="Ways-to-placebid-text-container medium-highlighter-type-1">
+      </div>:''
+        }
+        {
+          secondButton === 'waysToPlaceYourBid'?
+          <div className="Ways-to-placebid-text-container medium-highlighter-type-1">
         <div className="highlighter-type-1">There are four ways to bid</div>
         <div className="medium-text-opac highlighter-text-2">When you click Register to Bid you will be prompted to select your preferred bidding method : </div>
         <div className="WTD-container1 medium-text-opac">
@@ -84,8 +118,11 @@ export const HowBiddingWorks = () => {
             </div>
         </div>
         <div className="lite-text-opac">If your bid is successful, our Post Sale Service teams in each selling centre will be happy to assist with payment, as well as the collection or shipment of your purchase.</div>
-      </div> */}
-      {/* <div className="Pay-for-purchase-text-container medium-highlighter-type-1">
+      </div>:''
+        }
+        {
+          secondButton === 'payForPurchase'?
+          <div className="Pay-for-purchase-text-container medium-highlighter-type-1">
         <div>
           <div className="PFP-header medium-text-opac-2">
             - Successful bidders may pay on the day of the auction, immediately
@@ -119,8 +156,11 @@ export const HowBiddingWorks = () => {
             third party. See our Conditions of Business for full details.
           </div>
         </div>
-      </div> */}
-      {/* <div className="Receive-your-purchase-text-container medium-highlighter-type-1 medium-text-opac-2">
+      </div>       :''
+        }
+        {
+          secondButton === 'recieveYourProperty'?
+          <div className="Receive-your-purchase-text-container medium-highlighter-type-1 medium-text-opac-2">
         <div>
           <div>
             - Fully knowledgeable on all international regulations, the Our
@@ -144,8 +184,17 @@ export const HowBiddingWorks = () => {
             purchases.
           </div>
         </div>
-      </div> */}
-      {/* <div className="How-to-bid-online-text-container">
+      </div>:''
+        }
+        </>
+      :''
+      }
+      {
+        mainButton === 'howToBuy'?
+        <>
+        {
+          secondButton === 'howToBid'?
+          <div className="How-to-bid-online-text-container">
         <div className="HTBO-container1 medium-highlighter-type-1">
           <div className="medium-text-opac-2">
            <span className="bold-text">Browse an auction</span> : We encourage you to contact our specialists,
@@ -179,8 +228,11 @@ export const HowBiddingWorks = () => {
             collection instructions.
           </div>
         </div>
-      </div> */}
-      {/* <div className="Online-only-auction-text-container">
+      </div>:''
+        }
+        {
+          secondButton === 'onlineYourAuction'?
+          <div className="Online-only-auction-text-container">
         <div className="medium-highlighter-type-1 medium-text-opac-3">- Select the lots you wish to bid on and place your maximum bid.</div>
         <div className="OOA-container1 medium-text-opac">
           <div>- You will be asked to either log in or create a new account.</div>
@@ -194,8 +246,11 @@ export const HowBiddingWorks = () => {
           <div> - Each lot closes in one minute increments and will be extended by two minutes if a bid is placed within the final minute before the lot’s scheduled closing time.</div>
           <div>- Lots may extend for up to two hours to accommodate competitive bidding.</div>
         </div>
-      </div> */}
-      <div className="Live-auction-text-container text-color-2">
+      </div>:''
+        }
+        {
+          secondButton === 'liveAuction'?
+          <div className="Live-auction-text-container text-color-2">
         <div className="LA-header medium-text-opac-3">
           There are <span className="highlighter-type-1">four different ways</span> to bid in a live auction : by telephone,
           online, in the room, and by either absentee or advance bidding ahead
@@ -251,7 +306,16 @@ export const HowBiddingWorks = () => {
             of the reserve ahead of the live auction.
           </div>
         </div>
-      </div>
+      </div>:''
+        }
+        </>:''
+      }
+      
+      
+      <div className="footer-image"><img src={logo} alt="" id="logo" /></div>
+      
+      
+      
     </div>
   );
 };
