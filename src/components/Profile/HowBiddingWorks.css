@@ -172,6 +172,9 @@
 .Live-auction-text-container::-webkit-scrollbar{
     display: none;
 }
+/* .Live-auction-text-container .LA-header{
+    opacity: 0.9;
+} */
 .LA-container2{
     display: flex;
     flex-direction: column;
