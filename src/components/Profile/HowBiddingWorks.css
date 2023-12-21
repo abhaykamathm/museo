@@ -16,8 +16,8 @@
 .top-right-image{
     position: absolute;
     z-index: 1;
-    right: -1.5rem;
-    top: -1rem;
+    right: -1rem;
+    top: -1.5rem;
     height: 13rem;
     width: 15rem;
 
@@ -172,9 +172,6 @@
 .Live-auction-text-container::-webkit-scrollbar{
     display: none;
 }
-/* .Live-auction-text-container .LA-header{
-    opacity: 0.9;
-} */
 .LA-container2{
     display: flex;
     flex-direction: column;

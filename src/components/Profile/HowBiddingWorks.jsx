@@ -310,12 +310,7 @@ export const HowBiddingWorks = () => {
         }
         </>:''
       }
-      
-      
       <div className="footer-image"><img src={logo} alt="" id="logo" /></div>
-      
-      
-      
     </div>
   );
 };
