@@ -1,8 +1,8 @@
-#profileComplete {
+#profile-complete {
   width: 100%;
   height: 100%;
 }
-#profileComplete .completedImage {
+#profile-complete .completed-image {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,10 +12,10 @@
   padding-top: 5.5rem;
 }
 
-.completedImage img {
+#profile-complete .completed-image img {
   width: 100%;
 }
 
-.completedImage img:nth-child(2) {
+#profile-complete .completed-image img:nth-child(2) {
   width: 3rem;
 }

@@ -2,62 +2,59 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Timeline from "./Images/Mobile.svg";
 import "./Preferences.css";
-import Image1 from "./Images/Image1.svg";
-import Image2 from "./Images/Image2.svg";
+import Image1 from "./Images/Image1.png";
+import Image2 from "./Images/Image2.png";
 import Image3 from "./Images/Image3.svg";
 import Image4 from "./Images/Image4.svg";
 import Image5 from "./Images/Image5.svg";
 import Image6 from "./Images/Image6.svg";
+import ImagePreference from "./ImagePreference";
+import SearchIcon from "./Images/SearchIcon.svg";
 function Preferences() {
   const Images = [
-    { id: "1", imageName: Image1 },
-    { id: "2", imageName: Image2 },
-    { id: "3", imageName: Image3 },
-    { id: "4", imageName: Image4 },
-    { id: "5", imageName: Image5 },
-    { id: "6", imageName: Image6 },
-    { id: "7", imageName: Image5 },
-    { id: "8", imageName: Image6 },
-    { id: "9", imageName: Image5 },
-    { id: "10", imageName: Image6 },
+    { id: "1", imageName: Image1, imageText: "Abstract" },
+    { id: "2", imageName: Image2, imageText: "Cubism" },
+    { id: "3", imageName: Image3, imageText: "Pointilism" },
+    { id: "4", imageName: Image4, imageText: "Renaissance" },
+    { id: "5", imageName: Image5, imageText: "Abstract" },
+    { id: "6", imageName: Image6, imageText: "Cubism" },
   ];
   const navigate = useNavigate();
   return (
     <>
-      <div id="preferencesContainer">
-        <div className="preferencesDiv">
-          <div className="preferencesTimeline">
+      <div id="preferences">
+        <div className="preferences-div">
+          <div className="preferences-timeline">
             <img
               src={Timeline}
               style={{ objectFit: "cover", width: "100%" }}
             ></img>
           </div>
-          <div className="preferDiv">
-            <div className="preferImageDiv">
+          <div className="prefer-div">
+            <div className="prefer-image">
               <div className="name">Preferences</div>
               <div className="text_div">
                 <p>
                   Pick your favourite art period to help us curate your
                   experience
                 </p>
-                <input
-                  className="searchBtn"
-                  type="search"
-                  placeholder="search"
-                ></input>
+                <div className="search-btn">
+                  <input
+                    // className="search-btn"
+                    type="search"
+                    placeholder="Search"
+                  />
+                  <img
+                    className="search-icon"
+                    src={SearchIcon}
+                    alt="Search Icon"
+                  />
+                </div>
               </div>
-              <div className="imagePrefer">
-                {Images.map((data) => {
-                  return (
-                    <div className="image_div">
-                      <img src={data.imageName}></img>
-                    </div>
-                  );
-                })}
-              </div>
+              <ImagePreference images={Images} />
             </div>
           </div>
-          <div className="buttonDiv">
+          <div className="button-div">
             <button
               onClick={() => {
                 navigate("/login/successVerification");

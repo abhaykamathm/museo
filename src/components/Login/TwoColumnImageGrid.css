@@ -1,0 +1,23 @@
+.grid-images {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.grid-images .left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: auto;
+  overflow-y: scroll;
+}
+.grid-images .right-column {
+  align-items: flex-start;
+  overflow: auto;
+  overflow-y: scroll;
+}
+.grid-images .left-column::-webkit-scrollbar {
+  display: none;
+}
+.grid-images .right-column::-webkit-scrollbar {
+  display: none;
+}

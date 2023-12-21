@@ -1,8 +1,8 @@
-#cardAddedContainer {
+#card-added-container {
   width: 100%;
   height: 100%;
 }
-#cardAddedContainer .cardAddedDiv {
+#card-added-container .card-added-div {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -11,26 +11,26 @@
   padding: 1.2rem;
   overflow-y: auto;
 }
-#cardAddedContainer .cardAddedDiv .cardAddedSection {
+#card-added-container .card-added-div .card-added-section {
   display: flex;
   flex-direction: column;
   gap: 2.25rem;
 }
-#cardAddedContainer .cardAddedDiv .cardAddedTimeline {
+#card-added-container .card-added-div .card-added-timeline {
   display: flex;
   justify-content: center;
   align-items: center;
   /* margin: auto; */
   gap: 5.25rem;
 }
-#cardAddedContainer .cardAddedDiv .cardSection {
+#card-added-container .card-added-div .card-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-#cardAddedContainer .cardAddedDiv .visa {
+#card-added-container .card-added-div .visa {
   width: 19.125rem;
   height: 12.3125rem;
   display: flex;
@@ -48,17 +48,17 @@
   box-shadow: 21px 19px 19px -5px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(20px);
 }
-#cardAddedContainer .cardAddedDiv .visaCard {
+#card-added-container .card-added-div .visa-card {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-#cardAddedContainer .cardAddedDiv .chase {
+#card-added-container .card-added-div .chase {
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
-#cardAddedContainer .cardAddedDiv .chase p {
+#card-added-container .card-added-div .chase p {
   color: #fdfdfd;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
   font-family: Roboto;
@@ -66,7 +66,7 @@
   font-weight: 100;
 }
 
-#cardAddedContainer .cardAddedDiv .cardNo p {
+#card-added-container .card-added-div .card-no p {
   height: 1rem;
   color: rgba(212, 212, 212, 0.8);
   text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.5);
@@ -75,19 +75,19 @@
   font-weight: 500;
   letter-spacing: 0.3rem;
 }
-#cardAddedContainer .cardAddedDiv .visaImg {
+#card-added-container .card-added-div .visa-img {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
-#cardAddedContainer .cardAddedDiv .avi {
+#card-added-container .card-added-div .avi {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#cardAddedContainer .cardAddedDiv .avi p {
+#card-added-container .card-added-div .avi p {
   color: rgba(197, 197, 197, 0.8);
   text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
   font-family: IBM Plex Mono;
@@ -95,14 +95,14 @@
   font-weight: 300;
   letter-spacing: 0.55rem;
 }
-#cardAddedContainer .cardAddedDiv .endLogo {
+#card-added-container .card-added-div .end-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   bottom: 2.56rem;
 }
-#cardAddedContainer .cardAddedDiv .endLogo button {
+#card-added-container .card-added-div .end-logo button {
   padding: 1.5rem 8.875rem;
   justify-content: center;
   align-items: center;
@@ -111,7 +111,7 @@
   color: #fff;
   background: var(--Foundation-Primary-primary-400, #753394);
 }
-#cardAddedContainer .cardAddedDiv .endLogo img {
+#card-added-container .card-added-div .end-logo img {
   width: 3.0625rem;
   padding: 0.5rem;
   justify-content: center;

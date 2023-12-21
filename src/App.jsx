@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
-import Login from "./pages/Login/Login";
 import { ActiveSales } from "./components/Profile/ActiveSales";
 import { PastSales } from "./components/Profile/PastSales";
 import ProfilePanel from "./components/Profile/ProfilePanel";
@@ -31,7 +30,7 @@ import { Help } from "./components/Profile/Help";
 import DesktopSignIn from "./components/Login/DesktopSignIn";
 import DesktopProfileCompleted from "./components/Login/DesktopProfileCompleted";
 import { HowBiddingWorks } from "./components/Profile/HowBiddingWorks";
-
+import RightSideBar from "./components/Filter/RightSideBar";
 function App() {
   const context = useGlobalInfo();
   return (
@@ -55,7 +54,7 @@ function App() {
             <Route path="pastSales" element={<PastSales />} />
             <Route path="readyToCheckOut" element={<ReadyToCheckOut />} />
             <Route path="HowBiddingWorks" element={<HowBiddingWorks />} />
-            <Route path="help" element={<Help/>} />
+            <Route path="help" element={<Help />} />
           </Route>
           <Route path="/createAccount" element={<CreateAcccount />} />
           <Route path="/login/mobileLogin" element={<MobileSignIn />} />
@@ -77,6 +76,7 @@ function App() {
             element={<DesktopProfileCompleted />}
           />
           <Route path="/SignIn/profileEnd" element={<DesktopProfileEnd />} />
+          <Route path="/filter" element={<RightSideBar />} />
         </Routes>
       </BrowserRouter>
     </div>

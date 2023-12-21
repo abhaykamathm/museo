@@ -1,38 +1,48 @@
-#desktopEnd {
+#desktop-container {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
+  display: flex;
 }
 
-#desktopEnd .desktopEndDiv {
-  position: relative;
+#desktop-container .desktop-div {
   height: 100%;
-  width: 50%;
+  position: relative;
+  flex: 1;
   display: flex;
+  gap: 1.62rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#desktopEnd .desktopEndDiv .imageDiv {
+#desktop-container .desktop-div .image-div {
   position: relative;
 }
-#desktopEnd .vector-div {
+#desktop-container .desktop-div button {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--Foundation-Primary-primary-300, #8b54a5);
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 1rem;
+}
+#desktop-container .vector-div {
   position: absolute;
   top: -1rem;
   right: -1rem;
 }
-#desktopEnd .desktopEndDiv .flash {
+#desktop-container .desktop-div .flash {
   top: 0rem;
-  /* right: -1rem; */
   position: absolute;
-  /* fill: linear-gradient(
-    180deg,
-    rgba(245, 248, 245, 0.27) -0.16%,
-    rgba(245, 248, 230, 0) 99.28%
-  );
-  opacity: 0.69; */
 }
-#desktopEnd .desktopEndDiv .scrollImage {
+#desktop-container .scroll-image {
+  width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
