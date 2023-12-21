@@ -33,6 +33,8 @@ function MobileSignIn() {
                       fontFamily: "Roboto",
                       fontSize: " 0.875rem",
                       padding: "0",
+                      background: "transparent",
+                      border:"none"
                     }}
                   ></input>
                   <img src={Line}></img>

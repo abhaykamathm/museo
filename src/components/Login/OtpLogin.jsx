@@ -35,7 +35,9 @@ function OtpLogin() {
                       fontSize: " 0.875rem",
                       display: "flex",
                       alignItems: "center",
-                      // padding: "0",
+                      padding: "0",
+                      background: "transparent",
+                      border: "none",
                     }}
                   >
                     <option value="item1">Mr</option>
@@ -61,6 +63,8 @@ function OtpLogin() {
                       fontFamily: "Roboto",
                       fontSize: " 0.875rem",
                       padding: "0",
+                      background: "transparent",
+                      border: "none",
                     }}
                   ></input>
                 </div>
@@ -82,6 +86,8 @@ function OtpLogin() {
                       fontFamily: "Roboto",
                       fontSize: " 0.875rem",
                       padding: "0",
+                      background: "transparent",
+                      border: "none",
                     }}
                   ></input>
                 </div>
@@ -126,12 +132,35 @@ function OtpLogin() {
                   </select>
                 </div>
                 <div className="nameDiv">
-                  <input type="text" placeholder="Street Address"></input>
+                  <input
+                    type="text"
+                    placeholder="Street Address"
+                    style={{
+                      width: "100%",
+                      outline: "none",
+                      color: "#131313",
+                      fontFamily: "Roboto",
+                      fontSize: " 0.875rem",
+                      padding: "0",
+                      background: "transparent",
+                      border: "none",
+                    }}
+                  ></input>
                 </div>
                 <div className="nameDiv">
                   <input
                     type="text"
                     placeholder="Apartment,suite,flat,...floor"
+                    style={{
+                      width: "100%",
+                      outline: "none",
+                      color: "#131313",
+                      fontFamily: "Roboto",
+                      fontSize: " 0.875rem",
+                      padding: "0",
+                      background: "transparent",
+                      border: "none",
+                    }}
                   ></input>
                 </div>
                 <button className="shippingBtn">+ Add Shipping Address</button>
