@@ -1,0 +1,62 @@
+.profile-info {
+  /* width: 23.75rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0.8rem 0.8rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(127, 127, 127, 0.23);
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.39) -51.38%,
+    rgba(255, 255, 255, 0) 62.84%,
+    rgba(196, 196, 196, 0) 100.12%
+  );
+  backdrop-filter: blur(20px);
+}
+.profile-info .name {
+  display: flex;
+  flex-direction: column;
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.profile-info .info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.profile-info .name-info p {
+  display: flex;
+
+  color: var(--Color, #fff);
+
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+.profile-info .name-info {
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 0.1rem;
+}
+
+.profile-info .button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.profile-info .button-div button {
+  display: flex;
+  padding: 0rem 1.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(112, 115, 127, 0.8);
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 400;
+  background: transparent;
+}

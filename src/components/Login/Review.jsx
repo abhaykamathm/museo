@@ -1,28 +1,25 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Timeline from "./Images/Mobile.svg";
-import Rectangle from "./Images/rectangle.svg";
-import Group from "./Images/Group.svg";
-import NFC from "./Images/NFC.svg";
-import Payment from "./Images/Payment Method.svg";
 import Upload from "./Images/uploadPic.svg";
 import File from "./Images/fileImg.svg";
 import Delete from "./Images/deleteImg.svg";
-import Image1 from "./Images/Image1.svg";
-import Image2 from "./Images/Image2.svg";
+import Image1 from "./Images/Image1.png";
+import Image2 from "./Images/Image2.png";
 import Image3 from "./Images/Image3.svg";
 import Image4 from "./Images/Image4.svg";
 import Image5 from "./Images/Image5.svg";
 import Image6 from "./Images/Image6.svg";
 import "./Review.css";
+import ProfileInformationCard from "./ProfileInformationCard";
+import PaymentCard from "./PaymentCard";
+import ImagePreference from "./ImagePreference";
 function Review() {
   const Images = [
     { id: "1", imageName: Image1 },
     { id: "2", imageName: Image2 },
     { id: "3", imageName: Image3 },
     { id: "4", imageName: Image4 },
-    { id: "5", imageName: Image5 },
-    { id: "6", imageName: Image6 },
     { id: "5", imageName: Image5 },
     { id: "6", imageName: Image6 },
   ];
@@ -38,79 +35,56 @@ function Review() {
     updatedFiles.splice(index, 1);
     setSelectedFiles(updatedFiles);
   };
+  const handleEditClick = () => {
+    // Handle edit button click
+    console.log("Edit button clicked");
+  };
+  const handlePaymentEditClick = () => {
+    // Handle payment card edit button click
+    console.log("Payment card edit button clicked");
+  };
   return (
     <>
-      <div id="reviewContainer">
-        <div className="reviewDiv">
-          <div className="reviewTimeline">
+      <div id="review">
+        <div className="review-div">
+          <div className="review-timeline">
             <img
               src={Timeline}
               style={{ objectFit: "cover", width: "100%" }}
             ></img>
           </div>
-          <div className="wrapReview">
-            <div className="nameHead">Review</div>
-            <div className="wrapDiv">
-              <div className="profileInfo">
-                <div className="name">Profile Information</div>
-                <div className="infoDiv">
-                  <div className="nameInfo">
-                    <div className="name">Name :</div>
-                    <p> Mr.Trevor Revera</p>
-                  </div>
-                  <div className="nameInfo">
-                    <div className="name">Date of Birth : </div>
-                    <p>August 7, 1995</p>
-                  </div>
-                  <div className="nameInfo">
-                    <p>
-                      Address: 49 Featherstone Street,London, EC1Y 8SY United
-                      Kingdom
-                    </p>
-                  </div>
-                  <div className="buttonDiv">
-                    <button>Edit</button>
+          <div className="wrap-review">
+            <div className="name-head">Review</div>
+            <div className="wrap-div">
+              <ProfileInformationCard
+                name="Mr.Trevor Revera"
+                dateOfBirth="August 7, 1995"
+                address="49 Featherstone Street, London, EC1Y 8SY United Kingdom"
+                onEditClick={handleEditClick}
+              />
+              <div className="payment-card">
+                <div className="payment-div">
+                  <div className="payment-head">Your Payment Method</div>
+                  <div className="button-div">
+                    <button onClick={handlePaymentEditClick}>Edit</button>
                   </div>
                 </div>
+                <PaymentCard
+                  bankName="CHASE"
+                  cardNumber="6457"
+                  cardHolder="AVI SHANE"
+                  onEditClick={handlePaymentEditClick}
+                />
               </div>
-              <div className="paymentCard">
-                <div className="paymentDiv">
-                  <div className="paymentHead">Your Payment Method</div>
-                  <div className="buttonDiv">
-                    <button>Edit</button>
-                  </div>
-                </div>
-                <div className="visa">
-                  <div className="visaCard">
-                    <div className="chase">
-                      <img src={Rectangle} alt=""></img>
-                      <p>CHASE</p>
-                    </div>
-                    <div className="cardNo">
-                      <p>**** **** **** 6 4 5 7</p>
-                    </div>
-                    <div className="visaImg">
-                      <img src={Group} alt=""></img>
-                      <img src={NFC} alt=""></img>
-                    </div>
-                  </div>
-                  <div className="avi">
-                    <p>AVI SHANE</p>
-                    <div>
-                      <img src={Payment}></img>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="uploadDiv">
-                <div className="verifyUpload">
-                  <div className="verifyName">Verification</div>
+              <div className="upload-div">
+                <div className="verify-upload">
+                  <div className="verify-name">Verification</div>
                   <span>Your documents have been successfully verified</span>
                 </div>
-                <div className="dashedLine">
+                <div className="dashed-line">
                   {/* <img src={Upload} alt=""></img>
                   <p>Browse Files to upload</p> */}
-                  <label htmlFor="fileInput" className="uploadLabel">
+                  <label htmlFor="fileInput" className="upload-label">
                     <img src={Upload} alt="" />
                     <p>Browse Files to upload</p>
                   </label>
@@ -123,9 +97,9 @@ function Review() {
                   />
                 </div>
                 {selectedFiles.map((file, index) => (
-                  <div key={index} className="fileDiv">
+                  <div key={index} className="file-div">
                     <img src={File} alt="" />
-                    <div className="deleteDiv">
+                    <div className="delete-div">
                       <p>{file.name}</p>
                       <img
                         src={Delete}
@@ -137,31 +111,16 @@ function Review() {
                   </div>
                 ))}
               </div>
-              <div className="preferDiv">
-                <div className="preferImageDiv">
+              <div className="prefer-div">
+                <div className="prefer-image">
                   <div className="name">Preferences</div>
-                  {/* <div className="text_div">
-                    <input
-                      className="searchBtn"
-                      type="search"
-                      placeholder="search"
-                    ></input>
-                  </div> */}
-                  <div className="imagePrefer">
-                    {Images.map((data) => {
-                      return (
-                        <div className="image_div">
-                          <img src={data.imageName}></img>
-                        </div>
-                      );
-                    })}
-                  </div>
+                  <ImagePreference images={Images} />
                 </div>
               </div>
-              <div className="addMoreButton">
+              <div className="add-more-button">
                 <button>Add More</button>
               </div>
-              <div className="footerButtonDiv">
+              <div className="footer-button">
                 <button
                   onClick={() => {
                     navigate("/login/preferences");

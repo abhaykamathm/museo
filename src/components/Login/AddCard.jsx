@@ -6,20 +6,20 @@ import { useNavigate } from "react-router-dom";
 function AddCard() {
   const navigate = useNavigate();
   return (
-    <div id="addCardContainer">
-      <div className="addCardDiv">
-        <div className="addCardSection">
-          <div className="cardTimeline">
+    <div id="addcard-container">
+      <div className="addcard-div">
+        <div className="addcard-section">
+          <div className="card-timeline">
             <img
               src={Timeline}
               style={{ objectFit: "cover", width: "100%" }}
             ></img>
           </div>
-          <div className="addCardInputDiv">
-            <div className="cardinfoDiv">
+          <div className="addcard-input-div">
+            <div className="cardinfo-div">
               <div>Add a new Card Method</div>
-              <div className="cardAddress">
-                <div className="cardNameDiv">
+              <div className="card-address">
+                <div className="cardname-div">
                   <input
                     type="text"
                     placeholder="Card Number"
@@ -32,8 +32,8 @@ function AddCard() {
                     }}
                   ></input>
                 </div>
-                <div className="cvvDiv">
-                  <div className="cardNameDiv">
+                <div className="cvv">
+                  <div className="cardname-div">
                     <input
                       type="text"
                       placeholder="Valid Through (MM/YY)"
@@ -46,7 +46,7 @@ function AddCard() {
                       }}
                     ></input>
                   </div>
-                  <div className="cardNameDiv">
+                  <div className="cardname-div">
                     <input
                       type="text"
                       placeholder="CVV"
@@ -59,9 +59,9 @@ function AddCard() {
                     ></input>
                   </div>
                 </div>
-                <div className="cardNameDiv">
+                <div className="cardname-div">
                   <input
-                    className="CardNameInput"
+                    className="Cardname-input"
                     type="text"
                     placeholder="Name on the Card"
                     style={{
@@ -72,9 +72,9 @@ function AddCard() {
                     }}
                   ></input>
                 </div>
-                <div className="cardNameDiv">
+                <div className="cardname-div">
                   <input
-                    className="CardNameInput"
+                    className="Cardname-input"
                     type="text"
                     placeholder="Card Nickname (For easy identification)"
                     style={{
@@ -85,15 +85,15 @@ function AddCard() {
                     }}
                   ></input>
                 </div>
-                <div className="checkDiv">
-                  <input className="checkDivCheck" type="checkbox"></input>
+                <div className="check">
+                  <input className="check-div" type="checkbox"></input>
                   <p>Secure this card</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="endLogo">
+        <div className="end-logo">
           <img src={Logo}></img>
           <button
             onClick={() => {

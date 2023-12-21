@@ -1,8 +1,8 @@
-#reviewContainer {
+#review {
   width: 100%;
   height: 100%;
 }
-#reviewContainer .reviewDiv {
+#review .review-div {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -11,7 +11,7 @@
   height: 100%;
   overflow: auto;
 }
-#reviewContainer .reviewDiv .reviewTimeline {
+#review .review-div .review-timeline {
   /* width: 23.75rem; */
   display: flex;
   justify-content: center;
@@ -19,82 +19,54 @@
   /* margin: auto; */
   gap: 5.25rem;
 }
-#reviewContainer .reviewDiv .reviewTimeline {
+#review .review-div .review-timeline {
   display: flex;
   gap: 0.5rem;
 }
-#reviewContainer .reviewDiv .wrapReview {
+#review .review-div .wrap-review {
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.69rem;
 }
-#reviewContainer .reviewDiv .wrapDiv {
+
+#review .review-div .wrap-review .name-head {
+  color: var(--Color, #fff);
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+#review .review-div .wrap-review .wrap-div {
   display: flex;
   flex-direction: column;
   gap: 1.69rem;
   overflow: auto;
   overflow-y: scroll;
 }
-#reviewContainer .reviewDiv .nameHead {
-  color: var(--Color, #fff);
-  font-family: Roboto;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
 
-#reviewContainer .reviewDiv .name {
-  display: flex;
-  flex-direction: column;
-  color: var(--Color, #fff);
-  font-family: Roboto;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-#reviewContainer .reviewDiv .infoDiv {
+#review .review-div .payment-card {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-#reviewContainer .reviewDiv p {
+#review .review-div .payment-div {
   display: flex;
-
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+#review .review-div .payment-head {
   color: var(--Color, #fff);
-
   font-family: Roboto;
   font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.125rem;
+  font-weight: 500;
+  line-height: 1rem;
 }
-#reviewContainer .reviewDiv .nameInfo {
-  display: flex;
-  flex-wrap: wrap;
-  letter-spacing: 0.1rem;
-}
-
-#reviewContainer .reviewDiv .profileInfo {
-  /* width: 23.75rem; */
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 1rem 0.8rem 0.8rem 1rem;
-  border-radius: 0.75rem;
-  border: 1px solid rgba(127, 127, 127, 0.23);
-  background: linear-gradient(
-    115deg,
-    rgba(255, 255, 255, 0.39) -51.38%,
-    rgba(255, 255, 255, 0) 62.84%,
-    rgba(196, 196, 196, 0) 100.12%
-  );
-  backdrop-filter: blur(20px);
-}
-#reviewContainer .reviewDiv .buttonDiv {
+#review .review-div .payment-card .button-div {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-#reviewContainer .reviewDiv .buttonDiv button {
+#review .review-div .payment-card .button-div button {
   display: flex;
   padding: 0rem 1.5rem;
   border-radius: 0.25rem;
@@ -105,94 +77,8 @@
   font-weight: 400;
   background: transparent;
 }
-#reviewContainer .reviewDiv .paymentCard {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-#reviewContainer .reviewDiv .paymentDiv {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 1rem;
-}
-#reviewContainer .reviewDiv .paymentHead {
-  color: var(--Color, #fff);
-  font-family: Roboto;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1rem;
-}
-#reviewContainer .reviewDiv .visa {
-  /* width: 23.75rem; */
-  /* height: 12.3125rem; */
-  display: flex;
-  flex-direction: column;
-  padding: 0.88rem 1.56rem;
-  border-radius: 0.75rem;
-  gap: 0.94rem;
-  border: 1px solid rgba(127, 127, 127, 0.23);
-  background: linear-gradient(
-    115deg,
-    rgba(255, 255, 255, 0.39) -51.38%,
-    rgba(255, 255, 255, 0) 62.84%,
-    rgba(196, 196, 196, 0) 100.12%
-  );
-  box-shadow: 21px 19px 19px -5px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(20px);
-}
-#reviewContainer .reviewDiv .visaCard {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-#reviewContainer .reviewDiv .chase {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  gap: 0.5rem;
-}
-#reviewContainer .reviewDiv .chase p {
-  color: #fdfdfd;
-  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-  font-family: Roboto;
-  font-size: 0.875rem;
-  font-weight: 100;
-}
 
-#reviewContainer .reviewDiv .cardNo p {
-  height: 1rem;
-  color: rgba(212, 212, 212, 0.8);
-  text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.5);
-  font-family: Roboto;
-  font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.3rem;
-}
-#reviewContainer .reviewDiv .visaImg {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-#reviewContainer .reviewDiv .avi {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#reviewContainer .reviewDiv .avi p {
-  color: rgba(197, 197, 197, 0.8);
-  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
-  font-family: IBM Plex Mono;
-  font-size: 0.6875rem;
-  font-weight: 300;
-  letter-spacing: 0.55rem;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-#reviewContainer .reviewDiv .uploadDiv {
+#review .review-div .upload-div {
   /* width: 23.75rem; */
   display: flex;
   flex-direction: column;
@@ -209,7 +95,7 @@
   );
   backdrop-filter: blur(20px);
 }
-#reviewContainer .reviewDiv .uploadDiv .dashedLine {
+#review .review-div .upload-div .dashed-line {
   display: flex;
   width: 100%;
   /* height: 11rem; */
@@ -221,39 +107,40 @@
   border-radius: 0.39913rem;
   border: 1.33px dashed #1e77cc;
 }
-#reviewContainer .reviewDiv .uploadDiv .dashedLine .uploadLabel {
+#review .review-div .upload-div .dashed-line .upload-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#reviewContainer .reviewDiv .uploadDiv .verifyName {
+#review .review-div .upload-div .verify-name,
+.prefer-div .name {
   color: var(--Color, #fff);
   font-family: Roboto;
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1rem;
 }
-#reviewContainer .reviewDiv .uploadDiv span {
+#review .review-div .upload-div span {
   color: var(--Color, #fff);
   font-family: Roboto;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.125rem;
 }
-#reviewContainer .reviewDiv .uploadDiv .verifyUpload {
+#review .review-div .upload-div .verify-upload {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
 
-#reviewContainer .reviewDiv .uploadDiv p {
+#review .review-div .upload-div p {
   color: var(--Foundation-Primary-primary-100, #c9b0d5);
   font-family: Roboto;
   font-size: 0.79819rem;
   font-weight: 400;
 }
-#reviewContainer .reviewDiv .fileDiv {
+#review .review-div .file-div {
   width: 21.61775rem;
   display: flex;
   padding: 0.33256rem 0.49888rem;
@@ -262,37 +149,38 @@
   border-radius: 0.39913rem;
   background: var(--Foundation-Primary-primary-100, #c9b0d5);
 }
-#reviewContainer .reviewDiv .deleteDiv p {
+#review .review-div .delete-div p {
   color: #000;
   font-family: Roboto;
   font-size: 0.73169rem;
   font-weight: 400;
 }
-#reviewContainer .reviewDiv .deleteDiv {
+#review .review-div .delete-div {
   display: flex;
   align-items: flex-end;
   gap: 0.29931rem;
 }
-#reviewContainer .reviewDiv .preferImageDiv {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 1.37rem;
-}
-#reviewContainer .reviewDiv .preferDiv {
+#review .review-div .prefer-div {
   display: flex;
   gap: 0.5rem;
   width: 100%;
   height: 100%;
 }
-#reviewContainer .reviewDiv .preferDiv p {
+#review .review-div .prefer-image {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.37rem;
+}
+
+#review .review-div .prefer-div p {
   color: #a3a9be;
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.375rem;
 }
-#reviewContainer .reviewDiv .imagePrefer {
+#review .review-div .image-prefer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* height: 35rem; */
@@ -301,7 +189,7 @@
   overflow: auto;
   overflow-y: scroll;
 }
-#reviewContainer .reviewDiv .image_div {
+#review .review-div .image_div {
   width: 100%;
   aspect-ratio: 1;
   display: flex;
@@ -314,21 +202,31 @@
     url(<path-to-image>), lightgray 50% / cover no-repeat; */
 }
 
-#reviewContainer .reviewDiv .image_div img {
+#review .review-div .image_div img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
   object-position: center;
 }
+#review .review-div .add-more-button button {
+  padding: 0.75rem 1rem;
+  align-items: center;
+  border-radius: 0.3rem;
+  border: 0.5px solid #7e8195;
+  background: linear-gradient(94deg, #7e8195 3.63%, #7e8195 96.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-#reviewContainer .reviewDiv .footerButtonDiv {
+#review .review-div .footer-button {
   display: flex;
   width: 100%;
   justify-content: flex-start;
   gap: 1rem;
 }
-#reviewContainer .reviewDiv .footerButtonDiv button:nth-child(1) {
+#review .review-div .footer-button button:nth-child(1) {
   display: flex;
   padding: 0.75rem 1rem;
   align-items: center;
@@ -339,7 +237,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#reviewContainer .reviewDiv .footerButtonDiv button:nth-child(2) {
+#review .review-div .footer-button button:nth-child(2) {
   display: flex;
   padding: 0.75rem 1rem;
   align-items: center;
@@ -351,14 +249,4 @@
   font-weight: 500;
   border: 0.5px solid var(--CTA-Purple, #811db4);
   background: var(--Foundation-Primary-primary-400, #753394);
-}
-#reviewContainer .reviewDiv .addMoreButton button {
-  padding: 0.75rem 1rem;
-  align-items: center;
-  border-radius: 0.3rem;
-  border: 0.5px solid #7e8195;
-  background: linear-gradient(94deg, #7e8195 3.63%, #7e8195 96.37%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

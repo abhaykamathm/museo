@@ -40,12 +40,12 @@
   border-radius: 0.125rem;
 }
 #form-detail .detail .dropdown p,
-.dropdown select,
-.inputs p,
-.inputBtn button,
-.detail p,
-.inputs label,
-.dropdown label {
+#form-detail  .dropdown select,
+#form-detail .inputs p,
+#form-detail  .inputBtn button,
+#form-detail .detail p,
+#form-detail  .inputs label,
+#form-detail .dropdown label {
   font-family: Roboto;
   font-size: 0.75rem;
   background: linear-gradient(94deg, #7e8195 3.63%, #7e8195 96.37%);
@@ -54,7 +54,7 @@
   -webkit-text-fill-color: transparent;
 }
 #form-detail .detail .dropdown select,
-input {
+#form-detail .detail input {
   width: 100%;
   padding: 0.75rem 0.5rem;
   border: none;
@@ -68,24 +68,24 @@ input {
   gap: 2rem;
 }
 
-.detail button {
+#form-detail .detail button {
   padding: 0.5rem 1rem;
   align-items: center;
   gap: 2rem;
   border-radius: 0.5rem;
   border: 0.5px solid #a3a9be;
 }
-#credit {
+#form-detail .detail #credit {
   color: #fff;
 
   font-family: Roboto;
   font-size: 0.875rem;
 }
-#submitBtn {
+#form-detail .detail #submitBtn {
   display: flex;
   gap: 2rem;
 }
-#submitBtn button {
+#form-detail .detail #submitBtn button {
   align-items: center;
   padding: 0.75rem 1rem;
   border-radius: 0.125rem;
@@ -95,7 +95,7 @@ input {
   font-family: Roboto;
   font-size: 0.75rem;
 }
-#submitBtn button:hover {
+#form-detail .detail #submitBtn button:hover {
   border: 0.5px solid var(--CTA-Purple, #811db4);
   background: var(--Foundation-Primary-primary-400, #753394);
 }

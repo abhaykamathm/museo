@@ -5,8 +5,8 @@ import Logo from "./Images/Arrow Right.svg";
 function ProfileCompleted() {
   return (
     <>
-      <div id="profileComplete">
-        <div className="completedImage">
+      <div id="profile-complete">
+        <div className="completed-image">
           <img src={Completed}></img>
           <img src={Logo}></img>
         </div>

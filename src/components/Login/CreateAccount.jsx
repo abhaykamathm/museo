@@ -11,16 +11,16 @@ function CreateAcccount() {
   const navigate = useNavigate();
   return (
     <>
-      <div id="accountContainer">
+      <div id="account-container">
         <div id="account">
-          <div className="imageDiv">
+          <div className="image-div">
             <img src={Pic} alt="pic"></img>
           </div>
           <div className="text">
-            <h1>Create an Account</h1>
+            <div className="fs-32">Create an Account</div>
             <p>Your one step into the World of Art</p>
           </div>
-          <div className="loginBtn">
+          <div className="login-btn">
             <button>
               <img src={Google} alt="google"></img>
               <span>Continue with Google</span>
@@ -34,7 +34,7 @@ function CreateAcccount() {
               <span>Continue with Apple</span>
             </button>
             <button
-              className="btnDiv"
+              className="btn-div"
               onClick={() => {
                 navigate("/login/mobileLogin");
               }}

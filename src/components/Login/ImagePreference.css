@@ -1,0 +1,56 @@
+.image-prefer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 35rem; */
+  gap: 0.5rem;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  overflow-y: scroll;
+}
+.image-prefer .image_div {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+}
+.image-prefer .selected-image_div {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  border-radius: 0.47394rem;
+  border: 1.896px solid var(--Primary-Yellow, #dddf1c);
+}
+.image-prefer .image-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.image-prefer .image_div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  object-position: center;
+  pointer-events: none;
+  cursor: default;
+}
+.image-prefer .selected-image_div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  object-position: center;
+  /* pointer-events: none; */
+  pointer-events: none;
+  cursor: default;
+}
+.image-prefer .tick-image {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 1rem !important;
+  height: 1rem !important;
+}
