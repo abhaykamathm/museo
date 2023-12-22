@@ -73,6 +73,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #ffffff;
+  background: transparent;
 }
 
 #otpVerify .otpVerifyDiv .lineSection {
