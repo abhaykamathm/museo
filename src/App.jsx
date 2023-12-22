@@ -33,6 +33,8 @@ import DesktopProfileCompleted from "./components/Login/DesktopProfileCompleted"
 import { HowBiddingWorks } from "./components/Profile/HowBiddingWorks";
 import RightSideBar from "./components/Filter/RightSideBar";
 import ArtistFilter from "./components/Filter/ArtistFilter";
+import { Checkout } from "./components/Profile/Checkout";
+
 function App() {
   const context = useGlobalInfo();
   return (
@@ -59,6 +61,7 @@ function App() {
             <Route path="reminder" element={<ProfileReminder />} />
             <Route path="help" element={<Help />} />
           </Route>
+          <Route path="checkout" element={<Checkout />} />
           <Route path="/createAccount" element={<CreateAcccount />} />
           <Route path="/login/mobileLogin" element={<MobileSignIn />} />
           <Route path="/login/otpVerify" element={<OtpVerify />} />

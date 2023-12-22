@@ -112,12 +112,15 @@ function ProfilePanel() {
           </div>
           <div className="options-text">All Reminders</div>
         </div>
-        <div className="panel-option">
+        <Link to="/profile/HowBiddingWorks">
+        <div className="panel-option"  onClick={() => handleBackgroundColor(6)}
+            id={selectingOpt === 6 ? "my-bgm-highlight" : ""}>
           <div>
             <img src={Rectangle} alt="" />
           </div>
           <div className="options-text">How bidding works</div>
         </div>
+        </Link>
         <Link to="/profile/help">
           <div
             className="panel-option options-text"
