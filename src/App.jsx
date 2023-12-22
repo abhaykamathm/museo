@@ -5,6 +5,7 @@ import Profile from "./pages/Profile/Profile";
 import { ActiveSales } from "./components/Profile/ActiveSales";
 import { PastSales } from "./components/Profile/PastSales";
 import ProfilePanel from "./components/Profile/ProfilePanel";
+import ProfileReminder from "./components/Profile/ProfileReminder";
 import CreateAcccount from "./components/Login/CreateAccount";
 import MobileSignIn from "./components/Login/MobileSignIn";
 import OtpVerify from "./components/Login/OtpVerify";
@@ -31,6 +32,7 @@ import DesktopSignIn from "./components/Login/DesktopSignIn";
 import DesktopProfileCompleted from "./components/Login/DesktopProfileCompleted";
 import { HowBiddingWorks } from "./components/Profile/HowBiddingWorks";
 import RightSideBar from "./components/Filter/RightSideBar";
+import ArtistFilter from "./components/Filter/ArtistFilter";
 import { Checkout } from "./components/Profile/Checkout";
 
 function App() {
@@ -56,6 +58,7 @@ function App() {
             <Route path="pastSales" element={<PastSales />} />
             <Route path="readyToCheckOut" element={<ReadyToCheckOut />} />
             <Route path="HowBiddingWorks" element={<HowBiddingWorks />} />
+            <Route path="reminder" element={<ProfileReminder />} />
             <Route path="help" element={<Help />} />
           </Route>
           <Route path="checkout" element={<Checkout />} />
@@ -80,6 +83,7 @@ function App() {
           />
           <Route path="/SignIn/profileEnd" element={<DesktopProfileEnd />} />
           <Route path="/filter" element={<RightSideBar />} />
+          <Route path="/filter/artist" element={<ArtistFilter/>} />
         </Routes>
       </BrowserRouter>
     </div>
