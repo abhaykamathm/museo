@@ -22,7 +22,7 @@
 }
 
 #home-container #home-main .painting-info {
-  margin-top: clamp(12rem, 0rem + 15vw, 36rem);
+  margin-top: clamp(15rem, 0rem + 18.75vw, 45rem);
   color: #e8e8e8;
   display: flex;
   flex-direction: column;
@@ -39,6 +39,23 @@
 #home-container #home-main .painting-info #artist-name {
   font-size: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
   font-weight: 300;
+}
+
+#home-container #home-main .painting-info .auction-range {
+  display: flex;
+}
+
+#home-container #home-main .painting-info .auction-range .key {
+  font-weight: 300;
+}
+
+#home-container #home-main .painting-info .ends-in {
+  font-weight: 300;
+  color: #ffca60;
+  margin-top: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+#home-container #home-main .painting-info .auction-range .value {
 }
 
 #home-container #home-main .painting-info button {

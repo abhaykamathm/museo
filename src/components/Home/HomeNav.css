@@ -37,7 +37,7 @@
 }
 
 #home-container #home-nav #list-input-lot {
-  background-color: transparent;
+  background-color: transparent !important;
   border-radius: 8px;
   border: 1px solid #84899d;
   padding: 1rem;
@@ -70,10 +70,12 @@
 
 .carousel-options input {
   border: 1px solid #84899d;
+  background-color: transparent;
   border-radius: 0.5rem;
   outline: none;
   font-size: 1rem;
   padding: 0.75rem 1rem;
+  color: #84899d;
 }
 
 .carousel-options div {
@@ -94,23 +96,27 @@
 
 #home-container #home-nav .view-filter-container .view-toggle-container {
   display: flex;
-  gap: 0.5rem;
   align-items: center;
-  /* padding: 0.25rem 0.35rem; */
-  /* border-radius: 0.5rem; */
   background-color: rgba(115, 115, 115, 1);
   color: #e8e8e8;
-  /* padding: 0.5rem; */
+  padding: clamp(0.125rem, 0rem + 0.1563vw, 0.375rem);
+  gap: clamp(0.125rem, 0rem + 0.1563vw, 0.375rem);
+}
+
+#home-container
+  #home-nav
+  .view-filter-container
+  .view-toggle-container
+  .img-container {
+  display: flex;
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
 }
 
 .view-toggle-container img {
-  /* padding: 0.5rem; */
-  border-radius: 0.25rem;
-  /* width: clamp(1.5rem, -0.05rem + 1.9375vw, 4.6rem); */
   height: clamp(1.25rem, 0rem + 1.5625vw, 3.75rem);
 }
 
-.view-toggle-container img:hover {
+.view-toggle-container .img-container:hover {
   cursor: pointer;
   background-color: var(--primary-color);
 }
@@ -118,14 +124,10 @@
 #home-container #home-nav .filter {
   display: flex;
   align-items: center;
-  /* padding: 1rem; */
-  /* border-radius: 0.5rem; */
   background-color: rgba(115, 115, 115, 1);
   color: #e8e8e8;
-  /* padding: 0.5rem; */
 }
 
 #home-container #home-nav .filter img {
-  /* width: clamp(1rem, 0rem + 1.25vw, 3rem); */
   height: clamp(1rem, 0rem + 1.25vw, 3rem);
 }

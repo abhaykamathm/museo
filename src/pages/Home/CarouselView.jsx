@@ -29,7 +29,7 @@ export default function CarouselView({ auctionPieces }) {
         {auctionPieces.map((piece, index) => {
           return (
             <SwiperSlide key={index}>
-              <img src={piece.img_path} />
+              <img className="br-8" src={piece.img_path} />
             </SwiperSlide>
           );
         })}

@@ -7,8 +7,9 @@ import { useGlobalInfo } from "../../contexts/globalContext";
 function ViewToggle() {
   const context = useGlobalInfo();
   return (
-    <div className="view-toggle-container pd-8 br-8">
-      <img
+    <div className="view-toggle-container br-8">
+      <div
+        className="img-container br-8"
         style={{
           backgroundColor:
             context.landingView === "gallery" ? "var(--primary-color)" : "",
@@ -16,9 +17,11 @@ function ViewToggle() {
         onClick={() => {
           context.changeLandingView("gallery");
         }}
-        src={GalleryView}
-      />
-      <img
+      >
+        <img src={GalleryView} />
+      </div>
+      <div
+        className="img-container br-8"
         style={{
           backgroundColor:
             context.landingView === "carousel" ? "var(--primary-color)" : "",
@@ -26,9 +29,11 @@ function ViewToggle() {
         onClick={() => {
           context.changeLandingView("carousel");
         }}
-        src={CarouselView}
-      />
-      <img
+      >
+        <img src={CarouselView} />
+      </div>
+      <div
+        className="img-container br-8"
         style={{
           backgroundColor:
             context.landingView === "list" ? "var(--primary-color)" : "",
@@ -36,8 +41,9 @@ function ViewToggle() {
         onClick={() => {
           context.changeLandingView("list");
         }}
-        src={ListView}
-      />
+      >
+        <img src={ListView} />
+      </div>
     </div>
   );
 }

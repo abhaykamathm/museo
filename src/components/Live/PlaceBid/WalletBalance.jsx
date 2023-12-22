@@ -4,15 +4,15 @@ import "./Walletbalance.css";
 
 function WalletBalance() {
   return (
-    <div className="wallet-balance-container pd-8 br-4">
-      <div className="balance gp-8 fs-16">
+    <div className="wallet-balance-container br-4">
+      <div className="balance gp-4">
         <span>Wallet Balance</span>
         <span>$ 20,000</span>
       </div>
       <div className="action">
         <button className="br-8 gp-8">
           <img className="h-16" src={Add} />
-          <span className="fs-16">Add funds</span>
+          <span >Add funds</span>
         </button>
       </div>
     </div>

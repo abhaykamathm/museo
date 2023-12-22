@@ -1,6 +1,6 @@
 .swiper-coverflow {
   width: 100% !important;
-  height: calc(100% - 5.5rem) !important;
+  height: calc(100% - clamp(5.5rem, 0rem + 6.875vw, 16.5rem)) !important;
   overflow-x: hidden;
   display: flex !important;
   align-items: center !important;
@@ -23,9 +23,8 @@
   background-position: center;
   background-size: cover;
   width: 100% !important;
-  height: 50vh !important;
+  height: 48vh !important;
   display: block;
-  border-radius: 0.5rem;
   object-fit: cover;
 }
 

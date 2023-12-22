@@ -9,7 +9,7 @@
   border: 1px solid #ccc;
   border-radius: clamp(5rem, 0rem + 6.25vw, 15rem);
   padding: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem)
-    clamp(2rem, 0rem + 2.5vw, 6rem);
+    clamp(1rem, 0rem + 1.25vw, 3rem);
   color: #fff;
 }
 

@@ -22,7 +22,7 @@ function HomeNav() {
         ""
       )}
       {context.landingView === "gallery" ? (
-        <div className="options fs-16 br-8 pd-8">
+        <div className="options fs-16 br-8 pd-12">
           <div>Category</div>
           <div>Open</div>
           <div>Upcoming</div>
@@ -42,7 +42,7 @@ function HomeNav() {
       {context.landingView === "carousel" ? <CarouselOptions /> : ""}
       <div className="view-filter-container">
         <ViewToggle />
-        <div className="filter pd-8 br-8">
+        <div className="filter pd-12 br-8">
           <img src={filter} />
         </div>
       </div>

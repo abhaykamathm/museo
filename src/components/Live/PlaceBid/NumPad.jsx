@@ -8,8 +8,8 @@ import "./NumPad.css";
 
 function NumPad() {
   return (
-    <div className="numpad-container gp-12 br-8 pd-16">
-      <div className="output pd-24 br-4"></div>
+    <div className="numpad-container gp-12 br-8">
+      <div className="output br-4 fs-16">$73K</div>
       <div className="presets gp-16 fs-16">
         <div className="amount">$73K</div>
         <div className="amount">$73.5K</div>
@@ -25,19 +25,19 @@ function NumPad() {
         <div className="grid-item">5</div>
         <div className="grid-item">6</div>
         <div className="grid-item">
-          <img className="h-16" src={Space} />
+          <img src={Space} />
         </div>
         <div className="grid-item">7</div>
         <div className="grid-item">8</div>
         <div className="grid-item">9</div>
         <div className="grid-item">
-          <img className="h-16" src={Backspace} />
+          <img src={Backspace} />
         </div>
         <div className="grid-item">.</div>
         <div className="grid-item">0</div>
         <div className="grid-item">,</div>
         <div className="grid-item">
-          <img className="h-16" src={Arrow} />
+          <img src={Arrow} />
         </div>
       </div>
     </div>
