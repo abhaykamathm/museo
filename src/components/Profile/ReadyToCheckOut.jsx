@@ -3,14 +3,19 @@ import "./ReadyToCheckOut.css";
 import filter from "../Home/Images/filter.svg";
 import search from "../Home/Images/search.svg";
 import readyToCheckOut_data from "../../assets/Home/readyToCheckOut";
+import { useNavigate } from "react-router-dom";
 
 export const ReadyToCheckOut = () => {
+  const navigate = useNavigate()
   const [readyToCheckOut, setreadyToCheckOut] = useState(readyToCheckOut_data);
   const [selectedSale, setSelectedSales] = useState();
   const handleReadyToCheckOutelected = (index) => {
     // console.log(index);
     setSelectedSales(index);
   };
+  const handleCheckout = () =>{
+    navigate('/checkout')
+  }
   return (
     <div id="ReadyToCheckOut">
       <div className="ReadyToCheckOut-top-nav">
@@ -57,7 +62,7 @@ export const ReadyToCheckOut = () => {
                 </div>
                 <div className="btn-container">
                   <div className="cost-btn medium-font-weight">Cost Calculator</div>
-                  <div className="checkout-btn medium-font-weight">Checkout</div>
+                  <div className="checkout-btn medium-font-weight" onClick={handleCheckout}>Checkout</div>
                 </div>
               </div>
             </div>

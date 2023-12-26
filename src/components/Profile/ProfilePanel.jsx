@@ -42,7 +42,7 @@ function ProfilePanel() {
         </div>
         <Link to="/profile/yourWallet">
 
-          <div onClick={() => handleBackgroundColor(1)} id="wallet-text" >
+          <div onClick={() => handleBackgroundColor(1)} id="wallet-text" className="fs-20" >
             Your Wallet
           </div>
         </Link>
@@ -57,9 +57,9 @@ function ProfilePanel() {
               <img src={Rectangle} alt="" />
             </div>
 
-            <div className="options-text">My buyings & biddings</div>
+            <div className="options-text fs-18">My buyings & biddings</div>
           </div>
-          <div className="sub-options">
+          <div className="sub-options fs-16">
             <Link to="/profile/activeSales">
               <div
                 onClick={() => handleBackgroundColor(2)}
@@ -84,33 +84,19 @@ function ProfilePanel() {
                 Ready to checkout
               </div>
             </Link >
-            {/* <Link to='/profile/activeSales'>
-            <div onClick={()=>handleBackgroundColor(2)} 
-            id={selectingOpt === 2 ? 'my-bgm-highlight' : ''}
-
-            >Active Sales</div>
-            </Link>
-            <Link to='/profile/pastSales'>
-            <div
-              onClick={() => handleBackgroundColor(3)}
-              id={selectingOpt === 3 ? 'my-bgm-highlight' : ''}
-            >
-             Past Sales
-            </div>
-            </Link> */}
           </div>
         </div>
         <div className="panel-option">
           <div>
             <img src={Rectangle} alt="" />
           </div>
-          <div className="options-text">My List</div>
+          <div className="options-text fs-20">My List</div>
         </div>
         <div className="panel-option">
           <div>
             <img src={Rectangle} alt="" />
           </div>
-          <div className="options-text">All Reminders</div>
+          <div className="options-text fs-20">All Reminders</div>
         </div>
         <Link to="/profile/HowBiddingWorks">
         <div className="panel-option"  onClick={() => handleBackgroundColor(6)}
@@ -118,7 +104,7 @@ function ProfilePanel() {
           <div>
             <img src={Rectangle} alt="" />
           </div>
-          <div className="options-text">How bidding works</div>
+          <div className="options-text fs-20">How bidding works</div>
         </div>
         </Link>
         <Link to="/profile/help">
@@ -130,7 +116,7 @@ function ProfilePanel() {
             <div>
               <img src={Rectangle} alt="" />
             </div>
-            <div>Help</div>
+            <div className="fs-20">Help</div>
           </div>
         </Link>
       </div>
