@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import "./ProfileRemainder.css";
 import search from "../Home/Images/search.svg";
 import firstImage from "../../../public/Images/Profile/Rectangle 11615.png"
@@ -7,8 +7,8 @@ import clock from "../../../public/Images/Profile/Clock.png"
 const ProfileReminder = () => {
     // const[toggeleCard,setToggeleCard]=useState()
     return (
-        <div id='reminder_container' className='br-8 gp-16 pd-16'>
-            <div className="reminder_top_nav">
+        <div id='reminder_container' className='br-8'>
+            <div className="reminder_top_nav pd-16">
                 <div className="reminder_top_nav_left gp-8">
                     <div id="header-1" className='fs-24'>All Reminders</div>
                     <div className="line-bar fs-24">|</div>
@@ -41,14 +41,14 @@ const ProfileReminder = () => {
                                     Sandro Botticelli
                                 </div>
                                 <div className="card_footer">
-                                 <div className="card_footer_img">
-                                    <img src={clock} alt="" />
-                                 </div>
-                                <div className="card_footer_text">
-                                2hr : 30mins : 20sec left
+                                    <div className="card_footer_img">
+                                        <img src={clock} alt="" />
+                                    </div>
+                                    <div className="card_footer_text">
+                                        2hr : 30mins : 20sec left
+                                    </div>
                                 </div>
-                                </div>
-                            
+
                             </div>
                         </div>
                         <div className="card1">
@@ -63,14 +63,14 @@ const ProfileReminder = () => {
                                     Sandro Botticelli
                                 </div>
                                 <div className="card_footer">
-                                 <div className="card_footer_img">
-                                    <img src={clock} alt="" />
-                                 </div>
-                                <div className="card_footer_text">
-                                2hr : 30mins : 20sec left
+                                    <div className="card_footer_img">
+                                        <img src={clock} alt="" />
+                                    </div>
+                                    <div className="card_footer_text">
+                                        2hr : 30mins : 20sec left
+                                    </div>
                                 </div>
-                                </div>
-                            
+
                             </div>
                         </div>
                         <div className="card1">
@@ -85,14 +85,14 @@ const ProfileReminder = () => {
                                     Sandro Botticelli
                                 </div>
                                 <div className="card_footer">
-                                 <div className="card_footer_img">
-                                    <img src={clock} alt="" />
-                                 </div>
-                                <div className="card_footer_text">
-                                2hr : 30mins : 20sec left
+                                    <div className="card_footer_img">
+                                        <img src={clock} alt="" />
+                                    </div>
+                                    <div className="card_footer_text">
+                                        2hr : 30mins : 20sec left
+                                    </div>
                                 </div>
-                                </div>
-                            
+
                             </div>
                         </div>
                         <div className="card1">
@@ -107,45 +107,73 @@ const ProfileReminder = () => {
                                     Sandro Botticelli
                                 </div>
                                 <div className="card_footer">
-                                 <div className="card_footer_img">
-                                    <img src={clock} alt="" />
-                                 </div>
-                                <div className="card_footer_text">
-                                2hr : 30mins : 20sec left
+                                    <div className="card_footer_img">
+                                        <img src={clock} alt="" />
+                                    </div>
+                                    <div className="card_footer_text">
+                                        2hr : 30mins : 20sec left
+                                    </div>
                                 </div>
-                                </div>
-                            
+
                             </div>
                         </div>
+                        <div className="card1">
+                            <div className="card1_img">
+                                <img src={firstImage} alt="" />
+                            </div>
+                            <div className="card1_text_container">
+                                <div className="text1">
+                                    Portrait of Young Man Holding a Roundel
+                                </div>
+                                <div className="text2">
+                                    Sandro Botticelli
+                                </div>
+                                <div className="card_footer">
+                                    <div className="card_footer_img">
+                                        <img src={clock} alt="" />
+                                    </div>
+                                    <div className="card_footer_text">
+                                        2hr : 30mins : 20sec left
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
-                <div className="card_section">
+                <div className="card_section2">
                     <div className="card_section_header fs-20">
                         Ongoing Auctions
                     </div>
-                    <div className="cards_container card_section2">
+                    <div className="cards_container2">
                         <div className="card2">
-                            <div className="card1_img">
+                            <div className="card2_img">
+                                <img src={firstImage} alt="" />
+                            </div>
+                        </div>
+                         <div className="card2">
+                            <div className="card2_img">
                                 <img src={firstImage} alt="" />
                             </div>
                         </div>
                         <div className="card2">
-                            <div className="card1_img">
+                            <div className="card2_img">
+                                <img src={firstImage} alt="" />
+                            </div>
+                        </div>
+                         <div className="card2">
+                            <div className="card2_img">
                                 <img src={firstImage} alt="" />
                             </div>
                         </div>
                         <div className="card2">
-                            <div className="card1_img">
+                            <div className="card2_img">
                                 <img src={firstImage} alt="" />
                             </div>
                         </div>
-                        <div className="card2">
-                            <div className="card1_img">
-                                <img src={firstImage} alt="" />
-                            </div>
-                        </div>
-
+                    
                     </div>
                 </div>
             </div>

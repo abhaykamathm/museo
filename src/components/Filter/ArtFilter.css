@@ -1,4 +1,4 @@
-#artist-container {
+#art-container {
     width: 75.3125%;
     height: 100%;
     position: relative;
@@ -10,8 +10,8 @@
     overflow: hidden;
 }
 
-.top-section {
-    margin-bottom:clamp(1rem, 0rem + 1.25vw, 3rem);
+#art-container .top-section {
+    margin-bottom:clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
 }
 
 .top-section-text {
@@ -22,7 +22,7 @@
     letter-spacing: 0.0125rem;
 }
 
-#artist-container .top-section {
+#art-container .top-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,7 +83,7 @@
     opacity: 0.5;
 }
 
-#artist-container .main-section {
+#art-container .main-section {
     width: 100%;
     height: 100%;
     display: flex;
@@ -92,7 +92,7 @@
     gap: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
 }
 
-#artist-container .main-section::-webkit-scrollbar{
+#art-container .main-section::-webkit-scrollbar{
     display: none;
 }
 
@@ -107,6 +107,8 @@
     width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -122,14 +124,12 @@
     left:clamp(0.85rem, 0rem + 1.0625vw, 2.55rem);
 }
 
-.main-section-row-card .img-text {
+.main-section-row-card .Art-img-text {
     position: absolute;
     bottom:clamp(0.96rem, 0rem + 1.2vw, 2.88rem);;
-    left:clamp(3.79rem, 0rem + 4.7375vw, 11.37rem);
-    color: #203;
-    font-size: clamp(1.23194rem, 0rem + 1.5399vw, 3.69582rem);    font-style: normal;
-    font-weight: 500;
-    line-height:clamp(1.40788rem, 0rem + 1.7598vw, 4.22364rem);
+    color: #E8E8E8;
+    font-size: clamp(0.73106rem, 0rem + 0.9138vw, 2.19318rem);    font-weight: 500;
+    line-height:clamp(0.8355rem, 0rem + 1.0444vw, 2.5065rem);
 }
 
 

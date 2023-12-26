@@ -33,8 +33,6 @@ import DesktopProfileCompleted from "./components/Login/DesktopProfileCompleted"
 import { HowBiddingWorks } from "./components/Profile/HowBiddingWorks";
 import RightSideBar from "./components/Filter/RightSideBar";
 import ArtistFilter from "./components/Filter/ArtistFilter";
-import { Checkout } from "./components/Profile/Checkout";
-
 function App() {
   const context = useGlobalInfo();
   return (
@@ -84,6 +82,9 @@ function App() {
           <Route path="/SignIn/profileEnd" element={<DesktopProfileEnd />} />
           <Route path="/filter" element={<RightSideBar />} />
           <Route path="/filter/artist" element={<ArtistFilter/>} />
+          <Route path="/filter/art" element={<ArtFilter/>} />
+          <Route path="/filter/origin" element={<OriginFilter/>} />
+          <Route path="/map" element={<Map />} />
         </Routes>
       </BrowserRouter>
     </div>

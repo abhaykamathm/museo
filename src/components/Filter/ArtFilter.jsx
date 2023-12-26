@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import "./ArtistFilter.css";
-import firstImage from '../../../public/Images/Filter/Rectangle 11533.png';
+import "./ArtFilter.css";
+import firstImage from '../../../public/Images/Filter/ArtImage1.png';
+import secondImage from '../../../public/Images/Filter/Art Period.png';
 import checkbox from '../../../public/Images/Filter/Check Circle 3.png';
 import searchIcon from '../../../public/Images/Filter/Search.png';
 import micIcon from '../../../public/Images/Filter/Group 484890.png';
 
-const ArtistFilter = () => {
+const ArtFilter = () => {
     const [showDetails, setShowDetails] = useState(false);
 
     const handleClick = () => {
@@ -13,9 +14,9 @@ const ArtistFilter = () => {
     };
 
     return (
-        <div id="artist-container">
+        <div id="art-container">
             <div className="top-section-text fs-18">
-                Artist
+            Art Period
             </div>
             <div className="top-section">
                 <div className="input-box">
@@ -43,8 +44,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -56,8 +57,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -69,8 +70,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -82,13 +83,12 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
                     </div>
-
                 </div>
                 <div className="main-section-row">
                     <div className="main-section-row-card" onClick={handleClick}>
@@ -98,8 +98,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -111,8 +111,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -124,8 +124,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -137,15 +137,14 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
                     </div>
-
                 </div>
-                 <div className="main-section-row">
+                <div className="main-section-row">
                     <div className="main-section-row-card" onClick={handleClick}>
                         <img className='img' src={firstImage} alt="" />
                         {showDetails && (
@@ -153,8 +152,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -166,8 +165,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -179,8 +178,8 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
@@ -192,20 +191,16 @@ const ArtistFilter = () => {
                                 <div className="check-box">
                                     <img src={checkbox} alt="" />
                                 </div>
-                                <div className="img-text">
-                                    Anna Jose
+                                <div className="Art-img-text">
+                                Art Nouveau
                                 </div>
                             </>
                         )}
                     </div>
-
                 </div>
-              
             </div>
         </div>
     )
 }
 
-export default ArtistFilter;
-
-
+export default ArtFilter;
