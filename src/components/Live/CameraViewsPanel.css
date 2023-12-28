@@ -1,0 +1,34 @@
+.cam-view-panel-container {
+  width: fit-content;
+  height: calc(100% - clamp(2.75rem, 0rem + 3.4375vw, 8.25rem));
+  display: flex;
+  flex-direction: column;
+}
+
+.cam-view-panel-container .view-container {
+  width: clamp(13.5rem, 0rem + 16.875vw, 40.5rem);
+  height: clamp(13.5rem, 0rem + 16.875vw, 40.5rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cam-view-panel-container .view-container:hover {
+  cursor: pointer;
+}
+
+.cam-view-panel-container .view-container:hover > .identifier {
+  background-color: #dddf1c;
+}
+
+.cam-view-panel-container .view-container .identifier {
+  width: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  height: 100%;
+}
+
+.cam-view-panel-container .view-container img {
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+}

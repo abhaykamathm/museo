@@ -50,8 +50,8 @@
 
 .category-select-container .category-selector {
   background-color: transparent;
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
+  padding: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem)
+    clamp(1rem, 0rem + 1.25vw, 3rem);
   color: #84899d;
   outline: none;
 }
@@ -62,30 +62,30 @@
 
 .carousel-options {
   display: flex;
-  gap: 1rem;
   justify-content: space-between;
   position: relative;
-  left: 2.75rem;
+  left: clamp(2.75rem, 0rem + 3.4375vw, 8.25rem);
+  font-size: clamp(1rem, 0rem + 1.25vw, 3rem) !important;
 }
 
 .carousel-options input {
   border: 1px solid #84899d;
   background-color: transparent;
-  border-radius: 0.5rem;
   outline: none;
-  font-size: 1rem;
-  padding: 0.75rem 1rem;
+  padding: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem)
+    clamp(1rem, 0rem + 1.25vw, 3rem);
   color: #84899d;
 }
 
 .carousel-options div {
   border: 1px solid #7e8195;
   color: #e8e8e8;
-  border-radius: 0.5rem;
+  border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
   font-weight: 500;
-  padding: 0.75rem 1rem;
+  padding: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem)
+    clamp(1rem, 0rem + 1.25vw, 3rem);
   display: flex;
-  gap: 1rem;
+  gap: clamp(1rem, 0rem + 1.25vw, 3rem);
   align-items: center;
 }
 

@@ -6,6 +6,7 @@ import filter from "./Images/filter.svg";
 import ViewToggle from "./ViewToggle";
 import { useGlobalInfo } from "../../contexts/globalContext";
 import CarouselOptions from "./CarouselOptions";
+import { runDemo } from "../../scripts/demo";
 
 function HomeNav() {
   const context = useGlobalInfo();
@@ -42,7 +43,12 @@ function HomeNav() {
       {context.landingView === "carousel" ? <CarouselOptions /> : ""}
       <div className="view-filter-container">
         <ViewToggle />
-        <div className="filter pd-12 br-8">
+        <div
+          className="filter pd-12 br-8"
+          onClick={() => {
+            runDemo();
+          }}
+        >
           <img src={filter} />
         </div>
       </div>

@@ -8,7 +8,7 @@ import Video from "./Images/Video.svg";
 
 import "./ActionIcons.css";
 
-function ActionIcons({ setShowInfo }) {
+function ActionIcons({ setShowInfo, showCamViewPanel, setShowCamViewPanel }) {
   return (
     <div className="action-icons gp-12">
       <div className="icon-container">
@@ -24,13 +24,20 @@ function ActionIcons({ setShowInfo }) {
         <img src={AR} />
       </div>
       <div className="icon-container">
-        <img src={Video} />
+        <img
+          src={Video}
+          onClick={() => {
+            setShowInfo(false);
+            setShowCamViewPanel((showCamViewPanel) => !showCamViewPanel);
+          }}
+        />
       </div>
       <div className="icon-container">
         <img
           src={Fullscreen}
           onClick={() => {
             setShowInfo(false);
+            setShowCamViewPanel(false);
           }}
         />
       </div>

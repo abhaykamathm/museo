@@ -57,6 +57,7 @@ function TopFixedCard() {
         className="btn btn-primary fs-16 br-4 pd-8"
         onClick={() => {
           context.changeShowPlaceBid(!context.showPlaceBid);
+          context.changeShowAddFunds(false);
         }}
       >
         Place Bid

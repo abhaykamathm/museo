@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Clock from "./Images/Clock.svg";
 import Wall from "./Images/Wall.svg";
 import Eye from "./Images/Eye.svg";
@@ -10,21 +10,31 @@ import ActionIcons from "../../components/Live/ActionIcons";
 import Location from "../../components/Live/Location";
 import { useGlobalInfo } from "../../contexts/globalContext";
 import PlaceBid from "../../components/Live/PlaceBid";
+import BidPreview from "../../components/Live/PlaceBid/BidPreview";
+import BidPlaced from "../../components/Live/PlaceBid/BidPlaced";
+import AddFunds from "../../components/Live/PlaceBid/AddFunds";
+import CameraViewsPanel from "../../components/Live/CameraViewsPanel";
 
 function Live() {
   const context = useGlobalInfo();
   const [showInfo, setShowInfo] = useState(false);
+  const [showCamViewPanel, setShowCamViewPanel] = useState(false);
+  const live_container_ref = useRef(null);
   return (
     <div
       className="live-container pd-16"
+      ref={live_container_ref}
       style={{
         background:
           context.liveBackground === "map"
             ? `url("/Images/Live/Background2.png")`
-            : "",
+            : `url("/Images/Live/Background1.png")`,
       }}
     >
       {showInfo && <SideInfoPanel />}
+      {showCamViewPanel && (
+        <CameraViewsPanel live_container_ref={live_container_ref} />
+      )}
       <div className="live-top-bar fs-16 gp-8">
         <div className="info-location-container gp-16">
           <div className="info pd-12 br-8 gp-8">
@@ -39,7 +49,10 @@ function Live() {
           </div>
           <Location />
         </div>
-        <ActionIcons setShowInfo={setShowInfo} />
+        <ActionIcons
+          setShowInfo={setShowInfo}
+          setShowCamViewPanel={setShowCamViewPanel}
+        />
       </div>
       {!showInfo && (
         <div className="parent">
@@ -47,6 +60,7 @@ function Live() {
             <button
               className="pd-8 br-4 fs-12"
               onClick={() => {
+                setShowCamViewPanel(false);
                 setShowInfo((showInfo) => !showInfo);
               }}
             >
@@ -69,6 +83,9 @@ function Live() {
       {/* Absolute Content Below */}
       <img className="corner-image" src="/favicon.png" />
       {context.showPlaceBid && <PlaceBid />}
+      {context.showAddFunds && <AddFunds />}
+      {context.showBidPreview && <BidPreview />}
+      {context.showBidPlaced && <BidPlaced />}
     </div>
   );
 }

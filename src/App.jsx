@@ -33,19 +33,46 @@ import DesktopProfileCompleted from "./components/Login/DesktopProfileCompleted"
 import { HowBiddingWorks } from "./components/Profile/HowBiddingWorks";
 import RightSideBar from "./components/Filter/RightSideBar";
 import ArtistFilter from "./components/Filter/ArtistFilter";
+import ArtFilter from "./components/Filter/ArtFilter";
+import OriginFilter from "./components/Filter/OriginFilter";
+import Map from "./components/Map/Map";
+import { Checkout } from "./components/Profile/Checkout";
+import OffCanavas from "./components/OffCanvas/OffCanavas";
+import { useEffect, useState } from "react";
+import E_Auction from "./pages/E-Auction/E_Auction";
+import Landing from "./pages/Home/Landing";
 function App() {
   const context = useGlobalInfo();
+
+  const [isCanvasVisible, setCanvasVisible] = useState(false);
+
+  const handleMouseMove = (e) => {
+    const mouseX = e.clientX;
+    const edgeThreshold = 20;
+
+    if (mouseX <= edgeThreshold) {
+      setCanvasVisible(true);
+    }
+  };
+
   return (
     <div
       id="root-container"
       style={{
         background: context.landingView === "carousel" ? "#111" : "",
       }}
+      onMouseMove={handleMouseMove}
     >
       <BrowserRouter>
+        <OffCanavas
+          isCanvasVisible={isCanvasVisible}
+          setCanvasVisible={setCanvasVisible}
+        />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/live" element={<Live />} />
+          <Route path="/e_auction" element={<E_Auction />} />
           <Route path="/profile" element={<Profile />}>
             <Route path="" element={<CompleteProfileCard />} />
             <Route path="qrProfile" element={<QRCodeForProfile />} />
@@ -81,9 +108,9 @@ function App() {
           />
           <Route path="/SignIn/profileEnd" element={<DesktopProfileEnd />} />
           <Route path="/filter" element={<RightSideBar />} />
-          <Route path="/filter/artist" element={<ArtistFilter/>} />
-          <Route path="/filter/art" element={<ArtFilter/>} />
-          <Route path="/filter/origin" element={<OriginFilter/>} />
+          <Route path="/filter/artist" element={<ArtistFilter />} />
+          <Route path="/filter/art" element={<ArtFilter />} />
+          <Route path="/filter/origin" element={<OriginFilter />} />
           <Route path="/map" element={<Map />} />
         </Routes>
       </BrowserRouter>

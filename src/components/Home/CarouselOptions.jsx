@@ -7,22 +7,22 @@ function CarouselOptions() {
   return (
     <>
       <div className="category-select-container">
-        <select className="category-selector">
+        <select className="category-selector br-8 fs-16">
           <option>Category</option>
         </select>
       </div>
-      <div className="carousel-options">
-        <input placeholder="Search Lots" />
+      <div className="carousel-options gp-16 fs-16">
+        <input className="fs-16 br-8" placeholder="Search Lots" />
         <div>
-          <img src={Open} />
+          <img className="h-16" src={Open} />
           Open
         </div>
         <div>
-          <img src={Upcoming} />
+          <img className="h-16" src={Upcoming} />
           Upcoming
         </div>
         <div>
-          <img src={Past} />
+          <img className="h-16" src={Past} />
           Past
         </div>
       </div>

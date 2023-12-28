@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import auction_pieces from "../../assets/Home/auctionPieces";
 import "./Home.css";
 import HomeNav from "../../components/Home/HomeNav";
@@ -7,11 +7,21 @@ import AuctionPiecesRow from "../../components/Home/AuctionPiecesRow";
 import { useGlobalInfo } from "../../contexts/globalContext";
 import ListView from "./ListView";
 import CarouselView from "./CarouselView";
+import FocusContainer from "../../components/Carousel/FocusContainer";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const context = useGlobalInfo();
   const [auctionPieces, setAuctionPieces] = useState(auction_pieces);
   const [background, setBackground] = useState(auction_pieces[0]);
+  const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     navigate("/");
+  //   }, 5000);
+  // }, []);
+
   return (
     <div
       id="home-container"
@@ -69,7 +79,10 @@ function Home() {
         ""
       )}
       {context.landingView === "carousel" && (
-        <CarouselView auctionPieces={auctionPieces} />
+        <>
+          <CarouselView auctionPieces={auctionPieces} />
+          {/* <FocusContainer /> */}
+        </>
       )}
       {context.landingView === "list" && (
         <ListView auctionPieces={auctionPieces} />

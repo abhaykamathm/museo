@@ -9,7 +9,9 @@
 
 .swiper-wrapper {
   width: 100%;
-  height: auto !important;
+  height: 60% !important;
+  position: relative;
+  justify-content: center !important;
 }
 
 .swiper-slide {
@@ -17,13 +19,14 @@
   align-items: center;
   justify-content: center;
   height: 100% !important;
+  width: clamp(16rem, 0rem + 20vw, 48rem) !important;
 }
 
 .swiper-slide img {
   background-position: center;
   background-size: cover;
   width: 100% !important;
-  height: 48vh !important;
+  height: 100% !important;
   display: block;
   object-fit: cover;
 }
@@ -31,4 +34,8 @@
 .swiper-slide-active {
   -webkit-box-reflect: below 30px
     linear-gradient(transparent, transparent, #0006) !important;
+}
+
+.swiper-slide-active img {
+  object-fit: cover;
 }

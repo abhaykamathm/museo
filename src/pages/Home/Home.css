@@ -55,15 +55,28 @@
   margin-top: clamp(1rem, 0rem + 1.25vw, 3rem);
 }
 
-#home-container #home-main .painting-info .auction-range .value {
+#home-container #home-main .painting-info .buttons-container {
+  display: flex;
 }
 
 #home-container #home-main .painting-info button {
   margin-top: 1rem;
-  /* padding: 0.25rem 0.5rem; */
-  /* font-size: 1.25rem; */
   font-weight: 500;
-  /* border-radius: 0.5rem; */
+  display: flex;
+  align-items: center;
+  transition: all 0.25s;
+}
+
+#home-container #home-main .painting-info .watch-btn-hover-effect {
+  border: 2px solid #ffca60;
+  transform: scale(1.05);
+}
+
+#home-container #home-main .painting-info .remind-btn,
+.interested-btn {
+  background-color: transparent;
+  color: #d3d3d3;
+  border: clamp(0.0625rem, 0rem + 0.0781vw, 0.1875rem) solid #d3d3d3;
 }
 
 #home-container #home-main .live-paintings-container {
@@ -121,6 +134,18 @@
 }
 
 #home-container #home-main .live-paintings .img-container .auction_piece:hover {
+  border: 2px solid #ccc;
+  border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  transform: scale(1.01);
+  box-shadow: 0px 0px 16px 0px rgba(255, 202, 96, 0.5);
+  cursor: pointer;
+}
+
+#home-container
+  #home-main
+  .live-paintings
+  .img-container
+  .auction_piece_hover_effect {
   border: 2px solid #ccc;
   border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
   transform: scale(1.01);

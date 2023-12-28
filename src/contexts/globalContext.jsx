@@ -11,7 +11,11 @@ export function GlobalProvider({ children }) {
   const [landingView, setLandingView] = useState("gallery"); //gallery, carousel, list views
   const [liveBackground, setLiveBackground] = useState("stream"); //stream, map
   const [showPlaceBid, setShowPlaceBid] = useState(false);
+  const [showBidPreview, setShowBidPreview] = useState(false);
+  const [showBidPlaced, setShowBidPlaced] = useState(false);
+  const [showAddFunds, setShowAddFunds] = useState(false);
   const [count, setCount] = useState(0);
+  const [demoMode, setDemoMode] = useState(true);
 
   const [profileList, setProfileList] = useState({
     profileInformation: {
@@ -63,6 +67,19 @@ export function GlobalProvider({ children }) {
         changeShowPlaceBid: (new_value) => {
           setShowPlaceBid(new_value);
         },
+        showBidPreview,
+        changeShowBidPreview: (new_value) => {
+          setShowBidPreview(new_value);
+        },
+        showBidPlaced,
+        changeShowBidPlaced: (new_value) => {
+          setShowBidPlaced(new_value);
+        },
+        showAddFunds,
+        changeShowAddFunds: (new_value) => {
+          setShowAddFunds(new_value);
+        },
+        demoMode,
       }}
     >
       {children}

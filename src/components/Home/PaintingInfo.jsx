@@ -1,4 +1,6 @@
 import React from "react";
+import Bell from "../Live/Images/Bell.svg";
+import Like from "./Images/Like.svg";
 import { useNavigate } from "react-router";
 
 function PaintingInfo({ background }) {
@@ -12,12 +14,23 @@ function PaintingInfo({ background }) {
         <span className="value">$30k - $100k</span>
       </div>
       <div className="ends-in fs-18">Ends in : 20 mins</div>
-      <button
-        className="btn btn-secondary pd-8 fs-16 br-8"
-        onClick={() => navigate("/live")}
-      >
-        Watch
-      </button>
+      <div className="buttons-container gp-16">
+        <button
+          id="home-watch-button"
+          className="watch-btn pd-8 fs-16 br-8"
+          onClick={() => navigate("/live")}
+        >
+          Watch
+        </button>
+        <button className="remind-btn pd-8 fs-16 br-8 gp-16">
+          <img className="h-16" src={Bell} />
+          Set a reminder
+        </button>
+        <button className="interested-btn pd-8 fs-16 br-8 gp-16">
+          <img className="h-16" src={Like} />
+          Interested
+        </button>
+      </div>
     </div>
   );
 }

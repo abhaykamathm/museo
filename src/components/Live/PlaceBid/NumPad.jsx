@@ -5,8 +5,10 @@ import Backspace from "./Assets/Backspace.svg";
 import Arrow from "./Assets/Arrow.svg";
 
 import "./NumPad.css";
+import { useGlobalInfo } from "../../../contexts/globalContext";
 
 function NumPad() {
+  const context = useGlobalInfo();
   return (
     <div className="numpad-container gp-12 br-8">
       <div className="output br-4 fs-16">$73K</div>
@@ -36,7 +38,13 @@ function NumPad() {
         <div className="grid-item">.</div>
         <div className="grid-item">0</div>
         <div className="grid-item">,</div>
-        <div className="grid-item">
+        <div
+          className="grid-item"
+          onClick={() => {
+            context.changeShowPlaceBid(false);
+            context.changeShowBidPreview(true);
+          }}
+        >
           <img src={Arrow} />
         </div>
       </div>

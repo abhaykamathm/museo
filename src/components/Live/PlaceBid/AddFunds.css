@@ -1,0 +1,28 @@
+.live-container .add-funds-container {
+  position: absolute;
+  width: calc(100% - clamp(18.5rem, 0rem + 23.125vw, 55.5rem));
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: rgba(20, 20, 20, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-container .add-funds-container .qr-container {
+  margin-top: clamp(1.3125rem, 0rem + 1.6406vw, 3.9375rem);
+}
+
+.live-container .add-funds-container .qr-container img {
+  height: clamp(23.5rem, 0rem + 29.375vw, 70.5rem);
+  background-color: lightgray;
+}
+
+.live-container .add-funds-container .scan-message {
+  margin-top: clamp(2.375rem, 0rem + 2.9688vw, 7.125rem);
+  font-size: clamp(1.75rem, 0rem + 2.1875vw, 5.25rem);
+  font-weight: 500;
+  color: #e8e8e8;
+}

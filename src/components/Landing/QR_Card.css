@@ -1,0 +1,21 @@
+#root-container .layer .qr-card {
+  background-color: #fff;
+  width: clamp(10.75rem, 0rem + 13.4375vw, 32.25rem);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: clamp(2.9375rem, 0rem + 3.6719vw, 8.8125rem);
+  right: clamp(3.625rem, 0rem + 4.5313vw, 10.875rem);
+}
+
+#root-container .layer .qr-card .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  font-weight: 500;
+}
+
+#root-container .layer .qr-card img {
+  width: 100%;
+}

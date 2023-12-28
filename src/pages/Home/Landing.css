@@ -1,0 +1,28 @@
+#root-container .landing-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  font-family: var(--robot) !important;
+}
+
+#root-container .landing-container .layer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+
+  position: relative;
+}
+
+#root-container .landing-container .blacked-layer {
+  background: #141414;
+}
+
+#root-container .landing-container .layer .watermark {
+  height: clamp(2rem, 0rem + 2.5vw, 6rem);
+  position: absolute;
+  top: clamp(2.3125rem, 0rem + 2.8906vw, 6.9375rem);
+  left: clamp(2.75rem, 0rem + 3.4375vw, 8.25rem);
+}
