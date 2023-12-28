@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import "./Checkout.css";
 import QRCode from "qrcode.react";
 import Add from "/Images/Profile/Add 1.svg";
-import artist from "/Images/Home/painting1.png";
+import ArtistImage from "/Images/Profile/Artist-frame-image.png";
+import artist from '/Images/Home/painting1.png'
 import logo from '/Images/logo.png';
-import vector from '../Login/Images/Vector.svg'
+import Vector1 from '/Images/Profile/Vector1.png'
+import Frame from '/Images/Profile/photo-frame.svg'
+import Star1 from '/Images/Profile/Star1.png'
+import Star2 from '/Images/Profile/Star2.png'
 import { useNavigate } from "react-router-dom";
 
 
@@ -21,7 +25,7 @@ export const Checkout = () => {
     setCurrentStep(prev=>prev+1)
     setTimeout(()=>{
       navigate('/profile/readyToCheckOut')
-    } , 2000)
+    } , 3000)
     }else{
       
     setCurrentStep(prev=>prev+1)
@@ -33,21 +37,25 @@ export const Checkout = () => {
 
   return (
     <div id="checkout-container">
-      <div className="progress-section-container">
-        <div className="progress-bar-texts fs-16">
-          <div>Cost Calculation</div>
-          <div>Shipping</div>
-          <div>Payment</div>
-        </div>
-        <div className="progress-section">
-          
-  <div className="knob active"></div>
-  <div className="line"></div>
-  <div className={`knob ${currentStep >= 2 ? "active" : ""}`}></div>
-  <div className="line"></div>
-  <div className={`knob ${currentStep >= 3 ? "active" : ""}`}></div>
-        </div>
+      {
+        currentStep===4?
+<div className="progress-section-container"></div>:
+ <div className="progress-section-container">
+ <div className="progress-bar-texts fs-16">
+   <div>Cost Calculation</div>
+   <div>Shipping</div>
+   <div>Payment</div>
+ </div>
+ <div className="progress-section">
+   
+<div className="knob active"></div>
+<div className="line"></div>
+<div className={`knob ${currentStep >= 2 ? "active" : ""}`}></div>
+<div className="line"></div>
+<div className={`knob ${currentStep >= 3 ? "active" : ""}`}></div>
+ </div>
 </div>
+      }
       <div className="details-section">
       <div
       className="step-content"
@@ -114,10 +122,10 @@ export const Checkout = () => {
     </div>
     <div className="buttons-container">
       <div >
-        <button className="buttons br-8 fw-lighter opac-8" onClick={backToReadyToCheckout}>Close</button>
+        <button className="buttons br-8 fw-lighter" onClick={backToReadyToCheckout}>Close</button>
       </div>
       <div>
-        <button className="buttons br-8 fw-lighter opac-8" onClick={nextStepOfCheckout}>Continue</button>
+        <button className="active-buttons br-8 fw-lighter" onClick={nextStepOfCheckout}>Continue</button>
       </div>
     </div>
     <div className="footer-container fs-16">
@@ -232,7 +240,7 @@ export const Checkout = () => {
           
           <div className="Shipping-footer gp-16">
             <div>
-              <input type="checkbox" />
+              <input type="checkbox" className="checkbox"/>
             </div>
             <div>
               <label className="fs-16 fw-lighter">Pick your Lot from London Gallery</label>
@@ -243,7 +251,7 @@ export const Checkout = () => {
               <button className="buttons br-8 opac-7" onClick={prevStepOfCheckout}>Go back</button>
             </div>
             <div>
-              <button className="buttons br-8 opac-7" onClick={nextStepOfCheckout}>Continue</button>
+              <button className="active-buttons br-8 opac-7" onClick={nextStepOfCheckout}>Continue</button>
             </div>
           </div>
         </div>:''
@@ -285,7 +293,7 @@ export const Checkout = () => {
               <div className="card-details-footer-text card-details-lite-font">Credit and Debit Cards</div>
               <div className="payment-cards gp-8">
                 <div>
-                  <input type="radio" id="card1" name="card1" value="card1" />
+                  <input type="radio" id="card1" name="card1" value="card1" className="radio-btns"/>
                 </div>
                 <div className="payment-cards gp-8 fs-18">
                   <div className="fw-4">American Express Credit Card </div>
@@ -297,7 +305,7 @@ export const Checkout = () => {
               </div>
               <div className="payment-cards gp-8">
                 <div>
-                  <input type="radio" id="card1" name="card1" value="card1" />
+                  <input type="radio" id="card1" name="card1" value="card1" className="radio-btns"/>
                 </div>
                 <div className="payment-cards gp-8 fs-18">
                   <div className="fw-4">American Express Credit Card </div>
@@ -321,6 +329,7 @@ export const Checkout = () => {
                     id="metadata"
                     name="metadata"
                     value="metadata"
+                    className="radio-btns"
                   />
                 </div>
                 <div className="fs-18 fw-4">Metamask</div>
@@ -336,7 +345,7 @@ export const Checkout = () => {
               <button className="buttons br-8" onClick={backToReadyToCheckout}>Close</button>
             </div>
             <div>
-              <button className="buttons br-8" onClick={nextStepOfCheckout}>Finish Up</button>
+              <button className="active-buttons br-8" onClick={nextStepOfCheckout}>Finish Up</button>
             </div>
           </div>
         </div>:''
@@ -344,7 +353,16 @@ export const Checkout = () => {
      {
       currentStep === 4?
       <div className="Lot-container">
-          <img src={vector} alt="" className="vector-img" />
+          <img src={Vector1} alt="" className="vector-img" />
+          <div className="Lot-content-container">
+            <div><img src={Frame} alt="" id="frame-img" /></div>
+            <img src={ArtistImage} alt="" id="frame-artist-img"/>
+              
+          </div>
+          <div className="fs-32 lot-footer-text">Your Lot is on its way</div>
+          <img src={Star1} alt="" id="star1-img" />
+          <img src={Star2} alt="" id="star2-img"/>
+          
           
         </div>:''
      }
