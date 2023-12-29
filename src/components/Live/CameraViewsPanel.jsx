@@ -7,7 +7,7 @@ const cam_view_images = [
   "/Images/Live/cam3.png",
 ];
 
-function CameraViewsPanel({ live_container_ref }) {
+function CameraViewsPanel({ live_container_ref , handleShowInfo}) {
   return (
     <div className="cam-view-panel-container gp-8">
       {cam_view_images.map((image, index) => {
@@ -27,6 +27,7 @@ function CameraViewsPanel({ live_container_ref }) {
 
                 //Set cam image to background image
                 e.target.src = bg_img;
+                handleShowInfo()
               }}
             />
           </div>

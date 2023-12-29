@@ -1,0 +1,36 @@
+.InfoKnob-container{
+    width: 60%;
+    display: none;
+    /* height: fit-content; */
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    right: 20%;
+    justify-content: space-around;
+
+}
+
+.InfoKnob-container .selected{
+    box-shadow: none;
+}
+.infoknob-img{
+    width: clamp(2.875rem, 0rem + 3.5937vw, 8.625rem);
+    height: clamp(2.875rem, 0rem + 3.5937vw, 8.625rem);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.infoknob-img .clicked{
+    background-color: #422747;
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    width: clamp(14.8125rem, 0rem + 18.5156vw, 44.4375rem);
+    height: clamp(6.875rem, 0rem + 8.5938vw, 20.625rem);
+    background: #422747;
+    color: #e8e8e8;
+}
+.details-container .details-top{
+    display: flex;
+    align-items: center;
+}
