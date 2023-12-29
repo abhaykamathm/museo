@@ -43,6 +43,7 @@ import E_Auction from "./pages/E-Auction/E_Auction";
 import Landing from "./pages/Home/Landing";
 import Comment from "./components/Comment/comment";
 import Interest from "./components/InterestedCollection/Interest";
+import { CarouselARView } from "./components/Carousel/CarouselARView";
 
 function App() {
   const context = useGlobalInfo();
@@ -76,6 +77,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/live" element={<Live />} />
           <Route path="/e_auction" element={<E_Auction />} />
+          <Route path='/carouselARView' element={<CarouselARView />}/>
           <Route path="/profile" element={<Profile />}>
             <Route path="" element={<CompleteProfileCard />} />
             <Route path="qrProfile" element={<QRCodeForProfile />} />

@@ -14,16 +14,23 @@ import BidPreview from "../../components/Live/PlaceBid/BidPreview";
 import BidPlaced from "../../components/Live/PlaceBid/BidPlaced";
 import AddFunds from "../../components/Live/PlaceBid/AddFunds";
 import CameraViewsPanel from "../../components/Live/CameraViewsPanel";
+import { InfoKnob } from "../../components/Live/InfoKnob";
 
 function Live() {
   const context = useGlobalInfo();
   const [showInfo, setShowInfo] = useState(false);
   const [showCamViewPanel, setShowCamViewPanel] = useState(false);
+  const [showInfoKnob, setShowInfoKnob] = useState(false);
   const live_container_ref = useRef(null);
+  const handleShowInfo = () => {
+    setShowInfoKnob(true)
+  }
   return (
     <div
       className="live-container pd-16"
       ref={live_container_ref}
+      // onMouseEnter={() => setShowInfoKnob(true)}
+      // onMouseLeave={() => setShowInfoKnob(false)}
       style={{
         background:
           context.liveBackground === "map"
@@ -33,8 +40,10 @@ function Live() {
     >
       {showInfo && <SideInfoPanel />}
       {showCamViewPanel && (
-        <CameraViewsPanel live_container_ref={live_container_ref} />
+        <CameraViewsPanel live_container_ref={live_container_ref} handleShowInfo={handleShowInfo}/>
       )}
+       {showInfoKnob && <InfoKnob />} 
+       {/* <InfoKnob /> */}
       <div className="live-top-bar fs-16 gp-8">
         <div className="info-location-container gp-16">
           <div className="info pd-12 br-8 gp-8">
