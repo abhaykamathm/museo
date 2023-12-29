@@ -14,7 +14,7 @@ export const ProfileWallet = () => {
     console.log("paypal seleccted");
   };
   return (
-    <div id="profile-wallet">
+    <div id="profile-wallet" className="gp-16 br-8">
       <div id="header">
         <div id="header-text">Your Wallet</div>
         <div id="sub-header">

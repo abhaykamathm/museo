@@ -1,0 +1,64 @@
+.CarouselARView-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 6rem;
+}
+.options-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options-container .options-outer-div{
+    width: clamp(4rem, 0rem + 5vw, 12rem);
+    height: clamp(4rem, 0rem + 5vw, 12rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(22deg, rgba(112, 115, 127, 0.80) 10.58%, rgba(117, 121, 140, 0.20) 104.07%), linear-gradient(108deg, rgba(0, 0, 0, 0.80) 0%, rgba(255, 255, 255, 0.20) 100%);
+}
+.options-container .options-inner-div{
+    width: clamp(2.75rem, 0rem + 3.4375vw, 8.25rem);
+    height: clamp(2.75rem, 0rem + 3.4375vw, 8.25rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(22deg, rgba(112, 115, 127, 0.80) 10.58%, rgba(117, 121, 140, 0.20) 104.07%), linear-gradient(108deg, rgba(0, 0, 0, 0.80) 0%, rgba(255, 255, 255, 0.20) 100%);
+}
+.image-container{
+  width: clamp(31.8125rem, 0rem + 39.7656vw, 95.4375rem);
+  height: clamp(29.375rem, -3.6563rem + 41.2891vw, 95.4375rem);
+  object-fit: cover;
+}
+.artist-image{
+    height: 100%;
+    width: 100%;
+}
+.price-container{
+    width:  clamp(7.2rem, 0rem + 9vw, 21.6rem);
+    height: clamp(3.5rem, 0rem + 4.375vw, 10.5rem);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(22deg, rgba(112, 115, 127, 0.80) 10.58%, rgba(117, 121, 140, 0.20) 104.07%), linear-gradient(108deg, rgba(0, 0, 0, 0.80) 0%, rgba(255, 255, 255, 0.20) 100%);
+}
+.tags-img{
+    height: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+    width: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+    padding: 0.1rem;
+}
+.price-container .price{
+    color: #e8e8e8;
+}
+.footer-images-div{
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.logo-img{
+    width: clamp(1rem, 0rem + 1.25vw, 3rem);
+    opacity: 0.5;
+}

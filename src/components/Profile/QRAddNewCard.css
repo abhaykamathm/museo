@@ -1,19 +1,16 @@
 #QR-AddNewCard {
-    width: 73%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     background-color: #2d0043;
-    border-radius: 0.5rem;
-    padding: 1rem;
+    
   }
   #header {
     width: 100%;
     height: 20%;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
   }
   #header-text {
     display: flex;
@@ -21,7 +18,6 @@
     height: 50%;
     color: #e8e8e8;
     font-family: Roboto;
-    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
   }
@@ -30,20 +26,17 @@
     height: 50%;
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
   }
   #sub-header #text1 {
     color: #fdfdfd;
     font-family: Roboto;
-    font-size: 1.125rem;
     font-style: normal;
     font-weight: 500;
   }
   #sub-header #text2 {
       color: #fdfdfd;
       font-family: Roboto;
-      font-size: 1.125rem;
       font-style: normal;
       font-weight: 300;
     }
@@ -55,7 +48,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
   }
   
   #middle-container .qr-container {
@@ -65,16 +57,19 @@
     justify-content: center;
     align-items: center;
     background-color: #ffff;
-    border-radius: 0.5rem;
-    padding: 1rem;
   }
   #footer-text {
     display: flex;
     color: #ffff;
     font-family: Roboto;
-    font-size: 1.75rem;
     font-style: normal;
     font-weight: 500;
     line-height: 2.125rem;
   }
-  
+  .footer-logo-image{
+    position: absolute;
+      width: clamp(1rem, 0rem + 1.25vw, 3rem);
+      right: 3%;
+      bottom: 5%;
+      opacity: 0.5;
+  }

@@ -107,3 +107,18 @@
   bottom: 3.5rem;
   right: 2rem;
 }
+.InfoKnob-container{
+  display: none;
+  /* height: fit-content; */
+
+}
+.live-container:hover .InfoKnob-container{
+  width: 60%;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  right: 20%;
+  justify-content: space-around;
+
+}

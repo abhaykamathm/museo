@@ -21,7 +21,7 @@ export const Help = () => {
              <div className='image-div-text'>How can we help you today?</div>
              <div className='search-div'>
                 <img src={search} alt="" id='search-image' />
-                <input placeholder='Find Help Here' />
+                <input placeholder='Find Help Here'id='placeholder-text'/>
              </div>
         </div>
         <div className='btns-container'>
