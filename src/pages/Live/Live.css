@@ -70,6 +70,10 @@
   color: #fff;
 }
 
+.live-container .info-place-bid-container .info {
+  transition: all 0.25s;
+}
+
 .live-container .footer {
   background-color: #203;
   width: 100%;

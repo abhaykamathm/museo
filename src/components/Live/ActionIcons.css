@@ -4,11 +4,13 @@
 
 .action-icons .icon-container {
   background-color: #84899d;
-  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  width: clamp(2rem, 0rem + 2.5vw, 6rem);
+  height: clamp(2rem, 0rem + 2.5vw, 6rem);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+  box-sizing: border-box !important;
 }
 
 .action-icons .icon-container img {
@@ -19,9 +21,18 @@
   cursor: pointer;
   opacity: 0.9;
   transform: scale(1.05);
+  background-color: #203;
+  border: 1px solid #ffca60;
 }
 
 .action-icons .icon-container:active {
   opacity: 0.75;
   transform: scale(1);
+}
+
+.action-icons .icon-container-hover-effect-demo {
+  opacity: 0.9;
+  transform: scale(1.05);
+  background-color: #203;
+  border: 1px solid #ffca60;
 }

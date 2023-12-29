@@ -9,12 +9,22 @@
   width: clamp(2rem, 0rem + 2.5vw, 6rem);
   position: absolute;
   right: clamp(1rem, 0rem + 1.25vw, 3rem);
+  transition: scale 0.25s;
 }
 
 .side-info-panel-container .top-fixed-card-container #view-carousel:hover {
   cursor: pointer;
   opacity: 0.9;
   transform: scale(1.05);
+}
+
+.side-info-panel-container
+  .top-fixed-card-container
+  .view-carousel-hover-effect-demo {
+  opacity: 0.9;
+  transform: scale(1.05);
+  border: 2px solid #ffca60 !important;
+  border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
 }
 
 .side-info-panel-container button {

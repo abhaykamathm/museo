@@ -1,12 +1,11 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 
 import "./CarouselView.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
 
 export default function CarouselView({ auctionPieces }) {
   return (
@@ -23,34 +22,20 @@ export default function CarouselView({ auctionPieces }) {
           stretch: 0,
           depth: -80,
           modifier: 1.1,
-          slideShadows: true,
+          slideShadows: false,
         }}
-        modules={[EffectCoverflow]}
+        navigation={true}
+        modules={[EffectCoverflow, Navigation]}
         breakpoints={{
           1920: {},
           2560: {},
-          3840: {
-            // slidesPerView: 3,
-            // coverflowEffect: { depth: -240, rotate: 30 },
-          },
+          3840: {},
         }}
       >
         {auctionPieces.map((piece, index) => {
           return (
             <SwiperSlide key={index}>
-              <img
-                className="br-8"
-                src={piece.img_path}
-                // onClick={(e) => {
-                //   if (
-                //     e.target.parentNode.classList
-                //       .toString()
-                //       .includes("swiper-slide-active")
-                //   ) {
-                //     console.log(e.target);
-                //   }
-                // }}
-              />
+              <img className="br-8" src={piece.img_path} />
             </SwiperSlide>
           );
         })}

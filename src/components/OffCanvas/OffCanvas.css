@@ -76,3 +76,9 @@
   transform: scale(1);
   opacity: 0.9;
 }
+
+.off-canvas-container .icon-hover-effect-demo {
+  background-color: #fff;
+  color: #17071f;
+  transform: scale(1.02);
+}

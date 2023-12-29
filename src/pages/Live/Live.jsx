@@ -58,7 +58,7 @@ function Live() {
         <div className="parent">
           <div className="info-place-bid-container pd-16 gp-16">
             <button
-              className="pd-8 br-4 fs-12"
+              className="info pd-8 br-4 fs-12"
               onClick={() => {
                 setShowCamViewPanel(false);
                 setShowInfo((showInfo) => !showInfo);

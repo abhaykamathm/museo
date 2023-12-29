@@ -20,6 +20,7 @@
   justify-content: center;
   height: 100% !important;
   width: clamp(16rem, 0rem + 20vw, 48rem) !important;
+  /* user-select: none !important; */
 }
 
 .swiper-slide img {
@@ -38,4 +39,9 @@
 
 .swiper-slide-active img {
   object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: transparent;
 }

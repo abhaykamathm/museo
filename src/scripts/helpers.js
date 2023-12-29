@@ -16,6 +16,14 @@ export const simulateHover = async (element, className) => {
   element.classList.remove(className);
 };
 
+export const addClass = async (element, className) => {
+  element.classList.add(className);
+};
+
+export const removeClass = async (element, className) => {
+  element.classList.remove(className);
+};
+
 export const simulateVerticalScroll = async (element, distance) => {
   element.scrollTo({
     top: distance,

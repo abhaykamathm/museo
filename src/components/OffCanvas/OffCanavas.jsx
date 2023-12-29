@@ -14,6 +14,7 @@ function OffCanavas({ isCanvasVisible, setCanvasVisible }) {
   const navigate = useNavigate();
   return (
     <div
+      id="off-canvas-container"
       className={`off-canvas-container gp-12 ${
         isCanvasVisible ? "visible" : ""
       }`}
@@ -29,6 +30,7 @@ function OffCanavas({ isCanvasVisible, setCanvasVisible }) {
         <div className="fs-20">Trevor</div>
       </div>
       <div
+        id="off-canvas-home"
         className="home icon"
         onClick={() => {
           navigate("/home");
@@ -38,6 +40,7 @@ function OffCanavas({ isCanvasVisible, setCanvasVisible }) {
         <div>Home</div>
       </div>
       <div
+        id="off-canvas-live"
         className="live icon"
         onClick={() => {
           navigate("/live");
@@ -47,6 +50,7 @@ function OffCanavas({ isCanvasVisible, setCanvasVisible }) {
         <div>Live</div>
       </div>
       <div
+        id="off-canvas-e-auction"
         className="e-auction icon"
         onClick={() => {
           navigate("/e_auction");
@@ -55,15 +59,15 @@ function OffCanavas({ isCanvasVisible, setCanvasVisible }) {
         <img src={E_Auction} />
         <div>E-Auction</div>
       </div>
-      <div className="sealed icon">
+      <div id="off-canvas-sealed" className="sealed icon">
         <img src={Sealed} />
         <div>Sealed</div>
       </div>
-      <div className="buy-now icon">
+      <div id="off-canvas-buy-now" className="buy-now icon">
         <img src={BuyNow} />
         <div>Buy Now</div>
       </div>
-      <div className="ar-view icon">
+      <div id="off-canvas-ar" className="ar-view icon">
         <img src={AR} />
         <div>AR View</div>
       </div>

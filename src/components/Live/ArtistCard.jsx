@@ -7,12 +7,12 @@ function ArtistCard() {
       <span className="name">Sandro Botticelli</span>
       <span className="title fs-16">Artist</span>
       <div className="origin fs-16">
-        <snap className="key">Origin : </snap>
-        <snap className="value">Italy</snap>
+        <span className="key">Origin : </span>
+        <span className="value">Italy</span>
       </div>
       <div className="works fs-16">
-        <snap className="key">Works : </snap>
-        <snap className="value">“The Birth of Venus" and "Primavera"</snap>
+        <span className="key">Works : </span>
+        <span className="value">“The Birth of Venus" and "Primavera"</span>
       </div>
     </div>
   );

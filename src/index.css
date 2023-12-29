@@ -1,14 +1,16 @@
 :root {
   --primary-color: #2d0043;
-  --primary-background: linear-gradient(181deg,
-      #390a4f 0.5%,
-      #520079 0.5%,
-      #520079 0.5%,
-      #520079 0.5%,
-      #520079 0.5%,
-      #520079 0.5%,
-      #351840 0.51%,
-      #17071f 99.5%);
+  --primary-background: linear-gradient(
+    181deg,
+    #390a4f 0.5%,
+    #520079 0.5%,
+    #520079 0.5%,
+    #520079 0.5%,
+    #520079 0.5%,
+    #520079 0.5%,
+    #351840 0.51%,
+    #17071f 99.5%
+  );
   --robot: "Roboto", sans-serif;
 }
 
@@ -28,7 +30,8 @@
   padding: 0;
 }
 
-body {}
+body {
+}
 
 button {
   outline: none;
@@ -165,7 +168,6 @@ select {
   gap: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
 }
 
-
 /* BORDER RADIUS CLAMPS */
 /* BORDER RADIUS SIZE 0.25rem clamped */
 .br-4 {
@@ -196,4 +198,10 @@ select {
 
 .w-16 {
   width: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+/* Button Hover Effect in Demo */
+.demo-button-hover-effect {
+  border: 2px solid #ffca60 !important;
+  transform: scale(1.05) !important;
 }

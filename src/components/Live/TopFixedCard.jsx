@@ -22,7 +22,7 @@ function TopFixedCard() {
         src={ViewCarousel}
         onClick={() => {
           context.changeLandingView("carousel");
-          navigate("/");
+          navigate("/home");
         }}
       />
       <div className="lot fs-16">LOT NUMBER 25</div>

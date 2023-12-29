@@ -11,35 +11,37 @@ import "./ActionIcons.css";
 function ActionIcons({ setShowInfo, showCamViewPanel, setShowCamViewPanel }) {
   return (
     <div className="action-icons gp-12">
-      <div className="icon-container">
+      <div id="live-screen-add-icon" className="icon-container">
         <img src={Add} />
       </div>
-      <div className="icon-container">
+      <div id="live-screen-chat-icon" className="icon-container">
         <img src={Chat} />
       </div>
-      <div className="icon-container">
+      <div id="live-screen-share-icon" className="icon-container">
         <img src={Share} />
       </div>
-      <div className="icon-container">
+      <div id="live-screen-ar-icon" className="icon-container">
         <img src={AR} />
       </div>
-      <div className="icon-container">
-        <img
-          src={Video}
-          onClick={() => {
-            setShowInfo(false);
-            setShowCamViewPanel((showCamViewPanel) => !showCamViewPanel);
-          }}
-        />
+      <div
+        id="live-screen-video-icon"
+        className="icon-container"
+        onClick={() => {
+          setShowInfo(false);
+          setShowCamViewPanel((showCamViewPanel) => !showCamViewPanel);
+        }}
+      >
+        <img src={Video} />
       </div>
-      <div className="icon-container">
-        <img
-          src={Fullscreen}
-          onClick={() => {
-            setShowInfo(false);
-            setShowCamViewPanel(false);
-          }}
-        />
+      <div
+        id="live-screen-fullscreen-icon"
+        className="icon-container"
+        onClick={() => {
+          setShowInfo(false);
+          setShowCamViewPanel(false);
+        }}
+      >
+        <img src={Fullscreen} />
       </div>
     </div>
   );
