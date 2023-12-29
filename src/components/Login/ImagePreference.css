@@ -8,6 +8,9 @@
   overflow: auto;
   overflow-y: scroll;
 }
+.image-prefer::-webkit-scrollbar {
+  display: none;
+}
 .image-prefer .image_div {
   position: relative;
   width: 100%;

@@ -8,6 +8,7 @@ import Image3 from "./Images/Image3.svg";
 import Image4 from "./Images/Image4.svg";
 import Image5 from "./Images/Image5.svg";
 import Image6 from "./Images/Image6.svg";
+import Tick from "./Images/CheckCircle.svg";
 import ImagePreference from "./ImagePreference";
 import SearchIcon from "./Images/SearchIcon.svg";
 function Preferences() {
@@ -51,7 +52,7 @@ function Preferences() {
                   />
                 </div>
               </div>
-              <ImagePreference images={Images} />
+              <ImagePreference images={Images} Tick={Tick} />
             </div>
           </div>
           <div className="button-div">

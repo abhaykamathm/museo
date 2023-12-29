@@ -1,0 +1,125 @@
+#interest-div {
+  width: 26%;
+  height: 93%;
+  position: absolute;
+  padding-top: 6.3rem;
+  padding-left: 0.5rem;
+}
+.interest-section {
+  width: 87.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  background: linear-gradient(
+    211deg,
+    rgba(49, 49, 49, 0.9) 9.03%,
+    rgba(0, 0, 0, 0.9) 81.05%
+  );
+  padding: clamp(1.5rem, 0rem + 0.0781vw, 4.5rem);
+}
+#interest-div .interest-section .interest-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--Grey-Dark-modes-Grey-5, #dadce0);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+}
+#interest-div .interest-section .input-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: 1px solid var(--Foundation-Blacks-black-200, #9f9f9f);
+  padding: 0.38rem 0.62rem;
+}
+#interest-div .interest-section .search-icon {
+  display: flex;
+  align-items: center;
+}
+
+#interest-div .interest-section .input-box .input {
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #9f9f9f;
+  font-style: normal;
+  font-weight: 400;
+  line-height: clamp(1.25rem, 0rem + 1.5625vw, 3.75rem);
+  letter-spacing: 0.0125rem;
+}
+#interest-div .interest-section .interest-image {
+  display: flex;
+  flex-direction: column;
+  padding-left: clamp(2rem, 0rem + 2.5vw, 6rem);
+  height: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+}
+#interest-div .interest-section .images-div {
+  display: flex;
+  align-items: center;
+}
+#interest-div .interest-section .interest-image::-webkit-scrollbar {
+  display: none;
+}
+#interest-div .interest-section .image-collection {
+  /* width: 4rem;
+  height: 4rem; */
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+#interest-div .interest-section .image-collection img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+#interest-div .interest-section .add-collection {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(
+    --Gradient-Chip,
+    linear-gradient(
+      108deg,
+      rgba(43, 43, 43, 0.26) 0%,
+      rgba(255, 255, 255, 0.07) 100%
+    )
+  );
+}
+#interest-div .interest-section .add-collection button {
+  background: transparent;
+  border: none;
+}
+#interest-div .interest-section .images-div .image-name {
+  color: var(--Grey-Dark-modes-Grey-5, #dadce0);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem;
+  user-select: none;
+}
+#interest-div .interest-section .add-section {
+  display: flex;
+  align-items: center;
+}
+#interest-div .interest-section .add-section > div {
+  color: var(--Grey-Dark-modes-Grey-5, #dadce0);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.375rem;
+  user-select: none;
+}
