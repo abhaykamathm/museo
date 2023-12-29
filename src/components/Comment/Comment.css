@@ -1,0 +1,117 @@
+#comment-div {
+  width: 24%;
+  height: 93%;
+  position: absolute;
+  padding-top: 6.5rem;
+  padding-left: 0.5rem;
+}
+#comment-div .comment-section {
+  width: 84.3%;
+  height: 100%;
+  border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  background: linear-gradient(
+    211deg,
+    rgba(49, 49, 49, 0.9) 9.03%,
+    rgba(0, 0, 0, 0.9) 81.05%
+  );
+  padding: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  overflow-y: scroll;
+  padding-bottom: 1rem;
+}
+#comment-div .chat-section::-webkit-scrollbar {
+  display: none;
+}
+#comment-div .chat-section .send-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#comment-div .chat-section .send-head {
+  display: flex;
+  align-items: center;
+}
+#comment-div .chat-section .send-head div {
+  color: var(--Grey-Dark-modes-Grey-5, #dadce0);
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 0.00875rem;
+}
+#comment-div .chat-section .send-message span {
+  color: var(--White-1, #f0f0f0);
+  font-family: Roboto;
+  font-style: normal;
+  line-height: normal;
+  user-select: none;
+}
+
+#comment-div .chat-section .send-section button {
+  background: transparent;
+  border: none;
+  color: var(--Foundation-Blacks-black-200, #9f9f9f);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#comment-div .chat-section .send-section .reply-clicked {
+  border: 1px solid gray;
+  padding: 0.3rem 01rem;
+  border-radius: 1rem;
+  color: grey;
+}
+#comment-div .chat-section .send-header {
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+#comment-div .chat-footer {
+  display: flex;
+  padding: 0.75rem 0.5rem 1rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.25rem;
+  background: var(--Grey-Dark-modes-Grey-1, #292929);
+}
+
+#comment-div .chat-input input {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0.875rem;
+  border: none;
+  width: 100%;
+  border-radius: 0.25rem;
+  background: var(--Grey-Dark-modes-Grey-3, #4f4f4f);
+}
+#comment-div .voice-div {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--Foundation-Primary-primary-800, #2d0043);
+}
+#comment-div .voice-div img {
+  padding: 0.33rem;
+}
+#comment-div .flex-end {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#comment-div .vertical-line {
+  width: 0rem;
+  height: 100%;
+  padding-left: 0.5rem;
+  flex-shrink: 0;
+}
+#comment-div .reply-div {
+  display: flex;
+  align-items: center;
+}

@@ -41,6 +41,9 @@ import OffCanavas from "./components/OffCanvas/OffCanavas";
 import { useEffect, useState } from "react";
 import E_Auction from "./pages/E-Auction/E_Auction";
 import Landing from "./pages/Home/Landing";
+import Comment from "./components/Comment/comment";
+import Interest from "./components/InterestedCollection/Interest";
+
 function App() {
   const context = useGlobalInfo();
 
@@ -112,6 +115,8 @@ function App() {
           <Route path="/filter/art" element={<ArtFilter />} />
           <Route path="/filter/origin" element={<OriginFilter />} />
           <Route path="/map" element={<Map />} />
+          <Route path="/comment" element={<Comment />} />
+          <Route path="/interestedCollection" element={<Interest />} />
         </Routes>
       </BrowserRouter>
     </div>
